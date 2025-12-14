@@ -9,12 +9,12 @@ plugins {
 
 android {
     namespace = "com.github.reygnn.hocschwiiz"
-    compileSdk = 35 // Target 35 (Vanilla Ice Cream)
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.github.reygnn.hocschwiiz"
-        minSdk = 26
-        targetSdk = 35
+        minSdk = 36
+        targetSdk = 36
         versionCode = 1
         versionName = "0.1"
 
