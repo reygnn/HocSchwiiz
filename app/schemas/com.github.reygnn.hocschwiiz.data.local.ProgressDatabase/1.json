@@ -1,0 +1,54 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "e74e184582c9222c4b974ab8af9f12b2",
+    "entities": [
+      {
+        "tableName": "learning_progress",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`wordId` TEXT NOT NULL, `correctCount` INTEGER NOT NULL, `wrongCount` INTEGER NOT NULL, `lastPracticed` INTEGER, `streak` INTEGER NOT NULL, PRIMARY KEY(`wordId`))",
+        "fields": [
+          {
+            "fieldPath": "wordId",
+            "columnName": "wordId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "correctCount",
+            "columnName": "correctCount",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "wrongCount",
+            "columnName": "wrongCount",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastPracticed",
+            "columnName": "lastPracticed",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "streak",
+            "columnName": "streak",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "wordId"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'e74e184582c9222c4b974ab8af9f12b2')"
+    ]
+  }
+}
