@@ -1,11 +1,12 @@
 package com.github.reygnn.hocschwiiz.domain.model
 
+/**
+ * Result of a completed quiz.
+ */
 data class QuizResult(
-    val totalQuestions: Int,
     val correctAnswers: Int,
-    val wrongAnswers: List<QuizQuestion>,
-    val quizType: QuizType,
-    val durationMillis: Long = 0L
+    val totalQuestions: Int,
+    val wrongAnswers: List<QuizQuestion>
 ) {
     val scorePercent: Int
         get() = if (totalQuestions > 0) {
@@ -13,8 +14,8 @@ data class QuizResult(
         } else 0
 
     val isPerfect: Boolean
-        get() = correctAnswers == totalQuestions
+        get() = correctAnswers == totalQuestions && totalQuestions > 0
 
     val isGood: Boolean
-        get() = scorePercent >= 80
+        get() = scorePercent >= 70
 }

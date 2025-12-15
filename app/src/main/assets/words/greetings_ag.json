@@ -1,0 +1,86 @@
+{
+  "version": 4,
+  "dialect": "ag",
+  "words": [
+    {
+      "id": "greetings_001",
+      "german": "Guten Tag",
+      "swiss": "Guete Tag",
+      "vietnamese": "Xin chào",
+      "notes": "Standard Begrüssung",
+      "examples": [
+        "Guete Tag mitenand"
+      ]
+    },
+    {
+      "id": "greetings_002",
+      "german": "Hallo",
+      "swiss": "Sali",
+      "vietnamese": "Chào",
+      "notes": "Sehr verbreitet im Aargau",
+      "alt_spellings": [
+        "Hoi",
+        "Salü"
+      ]
+    },
+    {
+      "id": "greetings_003",
+      "german": "Auf Wiedersehen",
+      "swiss": "Uf Widerluege",
+      "vietnamese": "Tạm biệt",
+      "alt_spellings": [
+        "Ade",
+        "Tschüss"
+      ]
+    },
+    {
+      "id": "greetings_004",
+      "german": "Tschüss",
+      "swiss": "Tschau",
+      "vietnamese": "Tạm biệt",
+      "notes": "Oder: Tschau zäme"
+    },
+    {
+      "id": "greetings_005",
+      "german": "Guten Morgen",
+      "swiss": "Guete Morge",
+      "vietnamese": "Chào buổi sáng"
+    },
+    {
+      "id": "greetings_006",
+      "german": "Guten Abend",
+      "swiss": "Guete Aabig",
+      "vietnamese": "Chào buổi tối"
+    },
+    {
+      "id": "greetings_008",
+      "german": "Wie geht es dir?",
+      "swiss": "Wie gohts der?",
+      "vietnamese": "Bạn khỏe không?",
+      "alt_spellings": [
+        "Wie gohts?",
+        "Alles klar?"
+      ]
+    },
+    {
+      "id": "greetings_009",
+      "german": "Danke",
+      "swiss": "Merci",
+      "vietnamese": "Cảm ơn",
+      "alt_spellings": [
+        "Danke",
+        "Danke vielmol"
+      ]
+    },
+    {
+      "id": "greetings_011",
+      "german": "Grüß Gott (höflich)",
+      "swiss": "Grüess ech",
+      "vietnamese": "Kính chào",
+      "notes": "Sehr respektvolle, ältere Höflichkeitsform.",
+      "examples": [
+        "Grüess ech wohl"
+      ]
+    }
+  ]
+}

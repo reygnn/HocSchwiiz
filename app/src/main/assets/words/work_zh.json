@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "dialect": "zh",
+  "words": [
+    {
+      "id": "work_001",
+      "german": "Arbeiten",
+      "swiss": "Schaffe",
+      "vietnamese": "Làm việc",
+      "notes": "Verb"
+    },
+    {
+      "id": "work_002",
+      "german": "Feierabend",
+      "swiss": "Fiirabig",
+      "vietnamese": "Giờ tan tầm",
+      "gender": "MASCULINE",
+      "examples": [
+        "Schöne Fiirabig!"
+      ]
+    },
+    {
+      "id": "work_003",
+      "german": "Büro",
+      "swiss": "Büro",
+      "vietnamese": "Văn phòng",
+      "gender": "NEUTER"
+    },
+    {
+      "id": "work_004",
+      "german": "Geld",
+      "swiss": "Gäld",
+      "vietnamese": "Tiền",
+      "gender": "NEUTER",
+      "alt_spellings": [
+        "Stutz"
+      ]
+    },
+    {
+      "id": "work_005",
+      "german": "Chef",
+      "swiss": "Chef",
+      "vietnamese": "Sếp",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "work_006",
+      "german": "Sitzung",
+      "swiss": "Sitzig",
+      "vietnamese": "Cuộc họp",
+      "gender": "FEMININE"
+    }
+  ]
+}

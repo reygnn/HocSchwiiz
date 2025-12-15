@@ -1,0 +1,32 @@
+{
+  "version": 4,
+  "dialect": "ag",
+  "words": [
+    {
+      "id": "expressions_001",
+      "german": "Ich verstehe nicht",
+      "swiss": "I verstoh ned",
+      "vietnamese": "Tôi không hiểu",
+      "notes": "'I' statt 'Ich', 'ned' statt 'nöd'"
+    },
+    {
+      "id": "expressions_002",
+      "german": "Kein Problem",
+      "swiss": "Keis Problem",
+      "vietnamese": "Không sao"
+    },
+    {
+      "id": "expressions_006",
+      "german": "Schau mal",
+      "swiss": "Lueg mol",
+      "vietnamese": "Nhìn kìa",
+      "notes": "'mol' statt 'mal'"
+    },
+    {
+      "id": "expressions_007",
+      "german": "Komm jetzt",
+      "swiss": "Chumm jetzt",
+      "vietnamese": "Đến đây nào"
+    }
+  ]
+}

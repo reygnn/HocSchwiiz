@@ -12,34 +12,38 @@ import javax.inject.Singleton
 
 @Singleton
 class WordRepositoryImpl @Inject constructor(
-    private val dataSource: WordDataSource
+    private val wordDataSource: WordDataSource,
+    private val categoryDataSource: CategoryDataSource
 ) : WordRepository {
 
     override fun getAll(dialect: Dialect): Flow<List<Word>> = flow {
-        emit(dataSource.loadWords(dialect))
+        emit(wordDataSource.loadWords(dialect))
     }
 
-    override fun getByCategory(category: Category, dialect: Dialect): Flow<List<Word>> = flow {
-        val words = dataSource.loadWords(dialect)
-            .filter { it.category == category }
+    override fun getByCategory(categoryId: String, dialect: Dialect): Flow<List<Word>> = flow {
+        val words = wordDataSource.loadWords(dialect)
+            .filter { it.category.id == categoryId }
         emit(words)
     }
 
     override suspend fun getById(id: String, dialect: Dialect): Word? {
-        return dataSource.loadWords(dialect).find { it.id == id }
+        return wordDataSource.loadWords(dialect).find { it.id == id }
     }
 
     override fun getCategories(dialect: Dialect): Flow<List<Category>> = flow {
-        val words = dataSource.loadWords(dialect)
-        val categories = words
+        val words = wordDataSource.loadWords(dialect)
+
+        // Get all categories that have at least one word
+        val categoriesWithWords = words
             .map { it.category }
-            .distinct()
-            .sortedBy { it.ordinal }
-        emit(categories)
+            .distinctBy { it.id }
+            .sortedBy { it.order }
+
+        emit(categoriesWithWords)
     }
 
     override fun getWordCountByCategory(dialect: Dialect): Flow<Map<Category, Int>> = flow {
-        val words = dataSource.loadWords(dialect)
+        val words = wordDataSource.loadWords(dialect)
         val countMap = words
             .groupBy { it.category }
             .mapValues { it.value.size }
@@ -47,7 +51,7 @@ class WordRepositoryImpl @Inject constructor(
     }
 
     override fun getTotalWordCount(dialect: Dialect): Flow<Int> = flow {
-        emit(dataSource.loadWords(dialect).size)
+        emit(wordDataSource.loadWords(dialect).size)
     }
 
     override fun search(query: String, dialect: Dialect): Flow<List<Word>> = flow {
@@ -58,7 +62,7 @@ class WordRepositoryImpl @Inject constructor(
             return@flow
         }
 
-        val words = dataSource.loadWords(dialect)
+        val words = wordDataSource.loadWords(dialect)
         val results = words.filter { word ->
             word.german.containsNormalized(trimmedQuery) ||
                     word.swiss.containsNormalized(trimmedQuery) ||
@@ -72,17 +76,17 @@ class WordRepositoryImpl @Inject constructor(
         count: Int,
         dialect: Dialect,
         excludeId: String?,
-        preferCategory: Category?
+        preferCategoryId: String?
     ): List<Word> {
-        val allWords = dataSource.loadWords(dialect)
+        val allWords = wordDataSource.loadWords(dialect)
             .filter { it.id != excludeId }
 
         if (allWords.isEmpty()) return emptyList()
 
         // Prefer words from same category for better quiz distractors
-        return if (preferCategory != null) {
-            val sameCategoryWords = allWords.filter { it.category == preferCategory }
-            val otherWords = allWords.filter { it.category != preferCategory }
+        return if (preferCategoryId != null) {
+            val sameCategoryWords = allWords.filter { it.category.id == preferCategoryId }
+            val otherWords = allWords.filter { it.category.id != preferCategoryId }
 
             // Take from same category first, fill with others
             (sameCategoryWords.shuffled() + otherWords.shuffled())

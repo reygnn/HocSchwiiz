@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "dialect": "zh",
+  "words": [
+    {
+      "id": "food_001",
+      "german": "Frühstück",
+      "swiss": "Zmorge",
+      "vietnamese": "Bữa sáng",
+      "gender": "NEUTER"
+    },
+    {
+      "id": "food_002",
+      "german": "Mittagessen",
+      "swiss": "Zmittag",
+      "vietnamese": "Bữa trưa",
+      "gender": "NEUTER"
+    },
+    {
+      "id": "food_003",
+      "german": "Abendessen",
+      "swiss": "Znacht",
+      "vietnamese": "Bữa tối",
+      "gender": "NEUTER"
+    },
+    {
+      "id": "food_011",
+      "german": "Croissant",
+      "swiss": "Gipfeli",
+      "vietnamese": "Bánh sừng bò",
+      "gender": "NEUTER",
+      "notes": "Typisch schweizerisch"
+    },
+    {
+      "id": "food_012",
+      "german": "Schokolade",
+      "swiss": "Schoggi",
+      "vietnamese": "Sô cô la",
+      "gender": "FEMININE"
+    },
+    {
+      "id": "food_013",
+      "german": "Kartoffel",
+      "swiss": "Härdöpfel",
+      "vietnamese": "Khoai tây",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "food_014",
+      "german": "Bier",
+      "swiss": "Stange",
+      "vietnamese": "Bia",
+      "gender": "FEMININE",
+      "notes": "Kleines Bier im Glas"
+    }
+  ]
+}

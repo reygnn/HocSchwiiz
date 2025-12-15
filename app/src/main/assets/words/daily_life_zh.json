@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "dialect": "zh",
+  "words": [
+    {
+      "id": "daily_011",
+      "german": "Mülleimer",
+      "swiss": "Chübel",
+      "vietnamese": "Thùng rác",
+      "gender": "MASCULINE",
+      "notes": "Oder Abfallchübel"
+    },
+    {
+      "id": "daily_012",
+      "german": "Einkaufen",
+      "swiss": "Poschte",
+      "vietnamese": "Mua sắm",
+      "notes": "Verb (Ich gang go poschte)"
+    },
+    {
+      "id": "daily_013",
+      "german": "Handy",
+      "swiss": "Natel",
+      "vietnamese": "Điện thoại di động",
+      "gender": "NEUTER"
+    }
+  ]
+}

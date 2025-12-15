@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "dialect": "zh",
+  "words": [
+    {
+      "id": "transport_001",
+      "german": "Strassenbahn",
+      "swiss": "Tram",
+      "vietnamese": "Xe điện",
+      "gender": "NEUTER",
+      "notes": "Das wichtigste in Zürich!"
+    },
+    {
+      "id": "transport_002",
+      "german": "Fahrrad",
+      "swiss": "Velo",
+      "vietnamese": "Xe đạp",
+      "gender": "NEUTER"
+    },
+    {
+      "id": "transport_003",
+      "german": "Zug",
+      "swiss": "Zug",
+      "vietnamese": "Tàu hỏa",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "transport_004",
+      "german": "Fahrkarte",
+      "swiss": "Billet",
+      "vietnamese": "Vé",
+      "gender": "NEUTER"
+    },
+    {
+      "id": "transport_005",
+      "german": "Bahnhof",
+      "swiss": "Bahnhof",
+      "vietnamese": "Nhà ga",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "transport_006",
+      "german": "Auto",
+      "swiss": "Auto",
+      "vietnamese": "Ô tô",
+      "gender": "NEUTER",
+      "alt_spellings": [
+        "Charre"
+      ]
+    }
+  ]
+}

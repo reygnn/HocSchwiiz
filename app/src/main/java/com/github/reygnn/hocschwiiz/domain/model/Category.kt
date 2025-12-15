@@ -1,18 +1,31 @@
 package com.github.reygnn.hocschwiiz.domain.model
 
-enum class Category(
+/**
+ * Represents a word category, loaded dynamically from categories.json.
+ *
+ * @param id Unique identifier, matches filename prefix (e.g., "greetings")
+ * @param displayNameDe German display name
+ * @param displayNameVi Vietnamese display name
+ * @param icon Material icon name for UI display
+ * @param order Sort order for consistent display
+ */
+data class Category(
+    val id: String,
     val displayNameDe: String,
     val displayNameVi: String,
-    val icon: String
+    val icon: String,
+    val order: Int
 ) {
-    GREETINGS("Begrüssungen", "Lời chào", "waving_hand"),
-    FOOD_DRINK("Essen & Trinken", "Ăn uống", "restaurant"),
-    DAILY_LIFE("Alltag", "Cuộc sống", "home"),
-    WORK("Arbeit", "Công việc", "work"),
-    NUMBERS_TIME("Zahlen & Zeit", "Số & Thời gian", "schedule"),
-    NATURE("Natur & Wetter", "Thiên nhiên", "park"),
-    FAMILY("Familie", "Gia đình", "family_restroom"),
-    TRANSPORT("Verkehr", "Giao thông", "directions_car"),
-    EXPRESSIONS("Redewendungen", "Thành ngữ", "chat_bubble"),
-    SWEAR_WORDS("Fluchen", "Chửi thề", "sentiment_very_dissatisfied")
+    companion object {
+        /**
+         * Fallback category for words with unknown category ID.
+         */
+        val UNKNOWN = Category(
+            id = "unknown",
+            displayNameDe = "Sonstiges",
+            displayNameVi = "Khác",
+            icon = "help",
+            order = Int.MAX_VALUE
+        )
+    }
 }

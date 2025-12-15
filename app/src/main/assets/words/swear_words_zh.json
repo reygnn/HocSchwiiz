@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "dialect": "zh",
+  "words": [
+    {
+      "id": "swear_001",
+      "german": "Verdammt",
+      "swiss": "Huere",
+      "vietnamese": "Chết tiệt",
+      "notes": "Verstärkerwort (z.B. huere guet)",
+      "examples": [
+        "Das isch huere guet!"
+      ]
+    },
+    {
+      "id": "swear_002",
+      "german": "Idiot",
+      "swiss": "Lappi",
+      "vietnamese": "Đồ ngốc",
+      "gender": "MASCULINE",
+      "notes": "Eher harmlos"
+    },
+    {
+      "id": "swear_003",
+      "german": "Dummkopf",
+      "swiss": "Tubel",
+      "vietnamese": "Kẻ ngu ngốc",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "swear_004",
+      "german": "Arschloch",
+      "swiss": "Schoofseckel",
+      "vietnamese": "Đồ khốn",
+      "gender": "MASCULINE",
+      "notes": "Der Klassiker (wörtl. Schafshoden)"
+    },
+    {
+      "id": "swear_005",
+      "german": "Halt den Mund",
+      "swiss": "Heb d'Schnurre",
+      "vietnamese": "Câm miệng",
+      "notes": "Sehr direkt"
+    }
+  ]
+}

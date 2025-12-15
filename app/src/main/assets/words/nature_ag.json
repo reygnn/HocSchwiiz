@@ -1,0 +1,66 @@
+{
+  "version": 4,
+  "dialect": "ag",
+  "words": [
+    {
+      "id": "nature_001",
+      "german": "Regen",
+      "swiss": "Räge",
+      "vietnamese": "Mưa",
+      "gender": "MASCULINE",
+      "examples": [
+        "Es rägnet"
+      ]
+    },
+    {
+      "id": "nature_002",
+      "german": "Sonne",
+      "swiss": "Sunne",
+      "vietnamese": "Mặt trời",
+      "gender": "FEMININE"
+    },
+    {
+      "id": "nature_003",
+      "german": "Fluss",
+      "swiss": "Fluss",
+      "vietnamese": "Sông",
+      "gender": "MASCULINE",
+      "examples": [
+        "D'Aare",
+        "D'Reuss",
+        "D'Suhre"
+      ]
+    },
+    {
+      "id": "nature_004",
+      "german": "Berg",
+      "swiss": "Bärg",
+      "vietnamese": "Núi",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "nature_005",
+      "german": "Wald",
+      "swiss": "Wald",
+      "vietnamese": "Rừng",
+      "gender": "MASCULINE",
+      "examples": [
+        "Mer gönd in Wald"
+      ],
+      "alt_spellings": [
+        "Waud"
+      ]
+    },
+    {
+      "id": "nature_008",
+      "german": "Pilz",
+      "swiss": "Schwomm",
+      "vietnamese": "Nấm",
+      "gender": "MASCULINE",
+      "notes": "Plural: Schwümm. (I go go Schwömm sueche)",
+      "examples": [
+        "Es het viel Schwömm im Wald"
+      ]
+    }
+  ]
+}

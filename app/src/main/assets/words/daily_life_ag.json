@@ -1,0 +1,49 @@
+{
+  "version": 4,
+  "dialect": "ag",
+  "words": [
+    {
+      "id": "daily_011",
+      "german": "Mülleimer",
+      "swiss": "Chübel",
+      "vietnamese": "Thùng rác",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "daily_012",
+      "german": "Einkaufen",
+      "swiss": "Poschte",
+      "vietnamese": "Mua sắm",
+      "notes": "Verb (I go go poschte)",
+      "examples": [
+        "I go go poschte"
+      ]
+    },
+    {
+      "id": "daily_013",
+      "german": "Handy",
+      "swiss": "Natel",
+      "vietnamese": "Điện thoại di động",
+      "gender": "NEUTER"
+    },
+    {
+      "id": "daily_014",
+      "german": "Schwamm",
+      "swiss": "Schwomm",
+      "vietnamese": "Miếng bọt biển",
+      "gender": "MASCULINE",
+      "notes": "Zum Putzen. (Gleiches Wort wie für Pilz)"
+    },
+    {
+      "id": "daily_015",
+      "german": "Seele",
+      "swiss": "Seu",
+      "vietnamese": "Linh hồn",
+      "gender": "FEMININE",
+      "alt_spellings": [
+        "Sewu"
+      ],
+      "notes": "Sehr weiches w, fast vokalisiert."
+    }
+  ]
+}

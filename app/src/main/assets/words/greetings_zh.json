@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "dialect": "zh",
+  "words": [
+    {
+      "id": "greetings_001",
+      "german": "Guten Tag",
+      "swiss": "Grüezi",
+      "vietnamese": "Xin chào",
+      "notes": "Der Zürcher Standard",
+      "examples": [
+        "Grüezi mitenand"
+      ]
+    },
+    {
+      "id": "greetings_002",
+      "german": "Hallo",
+      "swiss": "Hoi",
+      "vietnamese": "Chào",
+      "notes": "Sehr häufig in Zürich",
+      "alt_spellings": [
+        "Sali",
+        "Hey"
+      ]
+    },
+    {
+      "id": "greetings_003",
+      "german": "Auf Wiedersehen",
+      "swiss": "Ade",
+      "vietnamese": "Tạm biệt",
+      "alt_spellings": [
+        "Uf Widerluege",
+        "Adieu"
+      ]
+    },
+    {
+      "id": "greetings_004",
+      "german": "Tschüss",
+      "swiss": "Tschau",
+      "vietnamese": "Tạm biệt",
+      "notes": "Oder: Tschau zäme"
+    },
+    {
+      "id": "greetings_005",
+      "german": "Guten Morgen",
+      "swiss": "Guete Morge",
+      "vietnamese": "Chào buổi sáng"
+    },
+    {
+      "id": "greetings_006",
+      "german": "Guten Abend",
+      "swiss": "Guete Aabig",
+      "vietnamese": "Chào buổi tối"
+    },
+    {
+      "id": "greetings_008",
+      "german": "Wie geht es dir?",
+      "swiss": "Wie gaats?",
+      "vietnamese": "Bạn khỏe không?",
+      "alt_spellings": [
+        "Alles fit?"
+      ]
+    },
+    {
+      "id": "greetings_009",
+      "german": "Danke",
+      "swiss": "Merci",
+      "vietnamese": "Cảm ơn",
+      "alt_spellings": [
+        "Danke vielmal"
+      ]
+    }
+  ]
+}

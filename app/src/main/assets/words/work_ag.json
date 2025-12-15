@@ -1,0 +1,61 @@
+{
+  "version": 4,
+  "dialect": "ag",
+  "words": [
+    {
+      "id": "work_001",
+      "german": "Arbeiten",
+      "swiss": "Schaffe",
+      "vietnamese": "Làm việc",
+      "examples": [
+        "I mues go schaffe"
+      ]
+    },
+    {
+      "id": "work_002",
+      "german": "Feierabend",
+      "swiss": "Fyrobe",
+      "vietnamese": "Giờ tan tầm",
+      "gender": "MASCULINE",
+      "alt_spellings": [
+        "Fiirabig"
+      ],
+      "notes": "Suhrental/Bern-Aargau: Fyrobe (dunkles o)"
+    },
+    {
+      "id": "work_003",
+      "german": "Büro",
+      "swiss": "Büro",
+      "vietnamese": "Văn phòng",
+      "gender": "NEUTER"
+    },
+    {
+      "id": "work_004",
+      "german": "Geld",
+      "swiss": "Gäut",
+      "vietnamese": "Tiền",
+      "gender": "NEUTER",
+      "alt_spellings": [
+        "Stutz"
+      ],
+      "notes": "Mit L-Vokalisierung (statt Gäld)"
+    },
+    {
+      "id": "work_005",
+      "german": "Chef",
+      "swiss": "Chef",
+      "vietnamese": "Sếp",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "work_007",
+      "german": "Melken",
+      "swiss": "Mäuä",
+      "vietnamese": "Vắt sữa",
+      "notes": "Reitnau: Mäuä / Bottenwil: Mälä",
+      "examples": [
+        "D'Chue mäuä"
+      ]
+    }
+  ]
+}

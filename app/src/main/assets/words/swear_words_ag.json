@@ -1,0 +1,37 @@
+{
+  "version": 4,
+  "dialect": "ag",
+  "words": [
+    {
+      "id": "swear_001",
+      "german": "Verdammt",
+      "swiss": "Huere",
+      "vietnamese": "Chết tiệt",
+      "notes": "Verstärker (huere guet, huere siech)"
+    },
+    {
+      "id": "swear_002",
+      "german": "Gottverdammt",
+      "swiss": "Gopferdammi",
+      "vietnamese": "Chết tiệt (nặng hơn)",
+      "alt_spellings": [
+        "Gopf"
+      ]
+    },
+    {
+      "id": "swear_003",
+      "german": "Dummkopf",
+      "swiss": "Löli",
+      "vietnamese": "Kẻ ngốc nghếch",
+      "gender": "MASCULINE",
+      "notes": "Typisch Aargau/Solothurn"
+    },
+    {
+      "id": "swear_004",
+      "german": "Arschloch",
+      "swiss": "Schoofseckel",
+      "vietnamese": "Đồ khốn",
+      "gender": "MASCULINE"
+    }
+  ]
+}

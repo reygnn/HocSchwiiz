@@ -12,7 +12,6 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
-import com.github.reygnn.hocschwiiz.domain.model.QuizType
 import com.github.reygnn.hocschwiiz.presentation.home.HomeScreen
 import com.github.reygnn.hocschwiiz.presentation.theme.HocSchwiizTheme
 import dagger.hilt.android.AndroidEntryPoint
@@ -90,7 +89,7 @@ fun HocSchwiizApp() {
             composable(Screen.Categories.route) {
                 CategoriesScreen(
                     onCategoryClick = { category ->
-                        navController.navigate(Screen.WordList.createRoute(category.name))
+                        navController.navigate(Screen.WordList.createRoute(category.id))
                     }
                 )
             }

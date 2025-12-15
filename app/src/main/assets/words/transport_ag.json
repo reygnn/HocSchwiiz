@@ -1,0 +1,48 @@
+{
+  "version": 4,
+  "dialect": "ag",
+  "words": [
+    {
+      "id": "transport_001",
+      "german": "Bus",
+      "swiss": "Bus",
+      "vietnamese": "Xe buýt",
+      "gender": "MASCULINE",
+      "examples": [
+        "I nimm de Bus"
+      ]
+    },
+    {
+      "id": "transport_002",
+      "german": "Fahrrad",
+      "swiss": "Velo",
+      "vietnamese": "Xe đạp",
+      "gender": "NEUTER"
+    },
+    {
+      "id": "transport_003",
+      "german": "Zug",
+      "swiss": "Zug",
+      "vietnamese": "Tàu hỏa",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "transport_006",
+      "german": "Auto",
+      "swiss": "Auto",
+      "vietnamese": "Ô tô",
+      "gender": "NEUTER",
+      "examples": [
+        "I fahr mit em Auto"
+      ]
+    },
+    {
+      "id": "transport_007",
+      "german": "Autobahn",
+      "swiss": "Autobahn",
+      "vietnamese": "Đường cao tốc",
+      "gender": "FEMININE",
+      "notes": "A1"
+    }
+  ]
+}

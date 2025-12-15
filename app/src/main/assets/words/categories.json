@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "id": "greetings",
+      "display_name_de": "Begrüssungen",
+      "display_name_vi": "Lời chào",
+      "icon": "waving_hand",
+      "order": 0
+    },
+    {
+      "id": "food_drink",
+      "display_name_de": "Essen & Trinken",
+      "display_name_vi": "Ăn uống",
+      "icon": "restaurant",
+      "order": 1
+    },
+    {
+      "id": "daily_life",
+      "display_name_de": "Alltag",
+      "display_name_vi": "Cuộc sống",
+      "icon": "home",
+      "order": 2
+    },
+    {
+      "id": "work",
+      "display_name_de": "Arbeit",
+      "display_name_vi": "Công việc",
+      "icon": "work",
+      "order": 3
+    },
+    {
+      "id": "numbers_time",
+      "display_name_de": "Zahlen & Zeit",
+      "display_name_vi": "Số & Thời gian",
+      "icon": "schedule",
+      "order": 4
+    },
+    {
+      "id": "nature",
+      "display_name_de": "Natur & Wetter",
+      "display_name_vi": "Thiên nhiên",
+      "icon": "park",
+      "order": 5
+    },
+    {
+      "id": "family",
+      "display_name_de": "Familie",
+      "display_name_vi": "Gia đình",
+      "icon": "family_restroom",
+      "order": 6
+    },
+    {
+      "id": "transport",
+      "display_name_de": "Verkehr",
+      "display_name_vi": "Giao thông",
+      "icon": "directions_car",
+      "order": 7
+    },
+    {
+      "id": "expressions",
+      "display_name_de": "Redewendungen",
+      "display_name_vi": "Thành ngữ",
+      "icon": "chat_bubble",
+      "order": 8
+    },
+    {
+      "id": "swear_words",
+      "display_name_de": "Fluchen",
+      "display_name_vi": "Chửi thề",
+      "icon": "sentiment_very_dissatisfied",
+      "order": 9
+    }
+  ]
+}

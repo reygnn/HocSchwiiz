@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "dialect": "zh",
+  "words": [
+    {
+      "id": "nature_001",
+      "german": "Regen",
+      "swiss": "Räge",
+      "vietnamese": "Mưa",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "nature_002",
+      "german": "Sonne",
+      "swiss": "Sunne",
+      "vietnamese": "Mặt trời",
+      "gender": "FEMININE"
+    },
+    {
+      "id": "nature_003",
+      "german": "See",
+      "swiss": "See",
+      "vietnamese": "Hồ",
+      "gender": "MASCULINE",
+      "examples": [
+        "Mir gönd an Zürisee"
+      ]
+    },
+    {
+      "id": "nature_004",
+      "german": "Berg",
+      "swiss": "Bärg",
+      "vietnamese": "Núi",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "nature_005",
+      "german": "Wald",
+      "swiss": "Wald",
+      "vietnamese": "Rừng",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "nature_006",
+      "german": "Nebel",
+      "swiss": "Näbel",
+      "vietnamese": "Sương mù",
+      "gender": "MASCULINE",
+      "notes": "Häufig in Zürich im Winter"
+    },
+    {
+      "id": "nature_007",
+      "german": "Schnee",
+      "swiss": "Schnee",
+      "vietnamese": "Tuyết",
+      "gender": "MASCULINE"
+    }
+  ]
+}

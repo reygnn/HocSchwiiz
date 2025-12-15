@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "dialect": "zh",
+  "words": [
+    {
+      "id": "expressions_001",
+      "german": "Ich verstehe nicht",
+      "swiss": "Ich verstah nöd",
+      "vietnamese": "Tôi không hiểu"
+    },
+    {
+      "id": "expressions_002",
+      "german": "Kein Problem",
+      "swiss": "Keis Problem",
+      "vietnamese": "Không sao"
+    },
+    {
+      "id": "expressions_006",
+      "german": "Schau mal",
+      "swiss": "Lueg mal",
+      "vietnamese": "Nhìn kìa"
+    },
+    {
+      "id": "expressions_007",
+      "german": "Komm jetzt",
+      "swiss": "Chumm jetzt",
+      "vietnamese": "Đến đây nào"
+    }
+  ]
+}
