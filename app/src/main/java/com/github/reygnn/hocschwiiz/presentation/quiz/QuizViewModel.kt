@@ -24,7 +24,8 @@ data class QuizUiState(
     val showFeedback: Boolean = false,    // true = Zeige Rot/Grün und disable Buttons
     val isLoading: Boolean = true,
     val isFinished: Boolean = false,
-    val quizResult: QuizResult? = null // Wird am Ende gesetzt für Navigation
+    val quizResult: QuizResult? = null, // Wird am Ende gesetzt für Navigation
+    val answeredQuestions: List<QuizQuestion> = emptyList()
 ) {
     val currentQuestion: QuizQuestion?
         get() = questions.getOrNull(currentQuestionIndex)
@@ -83,7 +84,9 @@ class QuizViewModel @Inject constructor(
                     questions = questions,
                     isLoading = false,
                     currentQuestionIndex = 0,
-                    isFinished = false
+                    isFinished = false,
+                    quizResult = null,
+                    answeredQuestions = emptyList()
                 )
             }
         }
@@ -100,12 +103,12 @@ class QuizViewModel @Inject constructor(
             val checkedQuestion = checkAnswerUseCase(currentQ, answer)
             val isCorrect = checkedQuestion.answeredCorrectly == true
 
-            // 2. UI Update: Zeige Feedback (Farbe)
             _uiState.update {
                 it.copy(
                     selectedAnswer = answer,
                     isAnswerCorrect = isCorrect,
-                    showFeedback = true
+                    showFeedback = true,
+                    answeredQuestions = it.answeredQuestions + checkedQuestion
                 )
             }
 
@@ -129,11 +132,23 @@ class QuizViewModel @Inject constructor(
                     showFeedback = false
                 )
             } else {
-                // Quiz beendet -> Result berechnen wir im Screen oder navigieren direkt
-                // Hier markieren wir nur als finished, UI navigiert dann
+                // Quiz beendet -> Result berechnen
+                val answered = state.answeredQuestions
+                val correct = answered.count { it.answeredCorrectly == true }
+                val wrong = answered.filter { it.answeredCorrectly == false }
+
+                val result = QuizResult(
+                    totalQuestions = answered.size,
+                    correctAnswers = correct,
+                    wrongAnswers = wrong,
+                    quizType = QuizType.valueOf(quizTypeArg),
+                    durationMillis = System.currentTimeMillis() - startTimeMillis
+                )
+
                 state.copy(
                     isFinished = true,
-                    showFeedback = false
+                    showFeedback = false,
+                    quizResult = result
                 )
             }
         }

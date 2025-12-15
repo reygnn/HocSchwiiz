@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -21,22 +22,39 @@ import com.github.reygnn.hocschwiiz.presentation.navigation.BottomNavBar
 import com.github.reygnn.hocschwiiz.presentation.navigation.Screen
 import com.github.reygnn.hocschwiiz.presentation.categories.CategoriesScreen
 import androidx.compose.material3.Text
+import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Alignment
 import androidx.navigation.NavType
 import androidx.navigation.navArgument
+import com.github.reygnn.hocschwiiz.domain.model.DarkMode
+import com.github.reygnn.hocschwiiz.domain.repository.PreferencesRepository
 import com.github.reygnn.hocschwiiz.presentation.quiz.QuizScreen
+import com.github.reygnn.hocschwiiz.presentation.settings.SettingsScreen
 import com.github.reygnn.hocschwiiz.presentation.wordlist.WordListScreen
+import javax.inject.Inject
+import androidx.compose.runtime.getValue
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
+
+    @Inject
+    lateinit var preferencesRepository: PreferencesRepository
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        // Aktiviert den Edge-to-Edge Modus (transparente Statusbar)
         enableEdgeToEdge()
 
         setContent {
-            HocSchwiizTheme {
+            val darkModePref by preferencesRepository.darkMode
+                .collectAsState(initial = DarkMode.SYSTEM)
+
+            val darkTheme = when (darkModePref) {
+                DarkMode.LIGHT -> false
+                DarkMode.DARK -> true
+                DarkMode.SYSTEM -> isSystemInDarkTheme()
+            }
+
+            HocSchwiizTheme(darkTheme = darkTheme) {
                 HocSchwiizApp()
             }
         }
@@ -125,9 +143,7 @@ fun HocSchwiizApp() {
 
             // 6. Settings
             composable(Screen.Settings.route) {
-                Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                    Text("Einstellungen kommen bald!")
-                }
+                SettingsScreen()
             }
         }
     }

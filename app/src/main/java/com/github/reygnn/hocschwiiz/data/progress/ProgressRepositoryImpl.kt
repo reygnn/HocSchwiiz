@@ -33,7 +33,7 @@ class ProgressRepositoryImpl @Inject constructor(
     }
 
     override suspend fun saveProgress(progress: LearningProgress) {
-        progressDao.insertProgress(ProgressEntity.fromDomain(progress))
+        progressDao.insertProgress(ProgressEntity.Companion.fromDomain(progress))
     }
 
     override fun getWeakWordIds(): Flow<List<String>> {
@@ -55,6 +55,9 @@ class ProgressRepositoryImpl @Inject constructor(
     override fun getMaxStreak(): Flow<Int> {
         return progressDao.getMaxStreak()
     }
+
+    override fun getTotalWordsLearned(): Flow<Int> =
+        progressDao.getPracticedWordCount()
 
     override suspend fun resetAllProgress() {
         progressDao.deleteAll()

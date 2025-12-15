@@ -37,16 +37,6 @@ fun QuizScreen(
         onBack()
     }
 
-    // Navigation Trigger
-    LaunchedEffect(uiState.isFinished) {
-        if (uiState.isFinished) {
-            // Hier müssten wir eigentlich das Result aus dem VM holen oder berechnen
-            // Einfachheitshalber navigieren wir hier nur,
-            // idealerweise übergibt man das Result object via Navigation
-            onBack() // Placeholder, siehe unten "Nächste Schritte"
-        }
-    }
-
     // Haptic Feedback bei Antwort
     LaunchedEffect(uiState.showFeedback) {
         if (uiState.showFeedback) {
@@ -78,6 +68,12 @@ fun QuizScreen(
         ) {
             if (uiState.isLoading) {
                 CircularProgressIndicator(modifier = Modifier.align(Alignment.Center))
+            } else if (uiState.isFinished && uiState.quizResult != null) {
+                QuizResultContent(
+                    result = uiState.quizResult!!,
+                    onPlayAgain = { viewModel.loadQuiz() },
+                    onBack = onBack
+                )
             } else {
                 uiState.currentQuestion?.let { question ->
                     Column(
@@ -118,6 +114,96 @@ fun QuizScreen(
                     }
                 }
             }
+        }
+    }
+}
+
+@Composable
+private fun QuizResultContent(
+    result: QuizResult,
+    onPlayAgain: () -> Unit,
+    onBack: () -> Unit
+) {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(24.dp)
+            .verticalScroll(rememberScrollState()),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        // Emoji basierend auf Score
+        Text(
+            text = when {
+                result.isPerfect -> "🎉"
+                result.isGood -> "👍"
+                else -> "💪"
+            },
+            style = MaterialTheme.typography.displayLarge
+        )
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        // Score
+        Text(
+            text = "${result.correctAnswers} / ${result.totalQuestions}",
+            style = MaterialTheme.typography.displayMedium
+        )
+
+        Text(
+            text = "${result.scorePercent}% richtig",
+            style = MaterialTheme.typography.titleLarge,
+            color = MaterialTheme.colorScheme.onSurfaceVariant
+        )
+
+        Spacer(modifier = Modifier.height(32.dp))
+
+        // Falsche Antworten anzeigen
+        if (result.wrongAnswers.isNotEmpty()) {
+            Text(
+                text = "Zum Üben:",
+                style = MaterialTheme.typography.titleMedium,
+                modifier = Modifier.align(Alignment.Start)
+            )
+            Spacer(modifier = Modifier.height(8.dp))
+
+            result.wrongAnswers.forEach { question ->
+                Card(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(vertical = 4.dp)
+                ) {
+                    Column(modifier = Modifier.padding(12.dp)) {
+                        Text(
+                            text = question.questionText,
+                            style = MaterialTheme.typography.bodyMedium
+                        )
+                        Text(
+                            text = "→ ${question.correctAnswer}",
+                            style = MaterialTheme.typography.bodyLarge,
+                            color = MaterialTheme.colorScheme.primary
+                        )
+                    }
+                }
+            }
+        }
+
+        Spacer(modifier = Modifier.weight(1f))
+
+        // Buttons
+        Button(
+            onClick = onPlayAgain,
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("Nochmal spielen")
+        }
+
+        Spacer(modifier = Modifier.height(8.dp))
+
+        OutlinedButton(
+            onClick = onBack,
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("Zurück")
         }
     }
 }

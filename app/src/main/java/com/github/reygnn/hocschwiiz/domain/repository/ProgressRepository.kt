@@ -61,6 +61,7 @@ interface ProgressRepository {
      * This is the maximum streak across all words.
      */
     fun getMaxStreak(): Flow<Int>
+    fun getTotalWordsLearned(): Flow<Int>
 
     /**
      * Reset all progress data.
