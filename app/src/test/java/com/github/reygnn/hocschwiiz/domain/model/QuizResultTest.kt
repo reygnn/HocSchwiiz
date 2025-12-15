@@ -9,14 +9,14 @@ class QuizResultTest {
 
     private fun createResult(
         total: Int,
-        correct: Int,
-        wrongCount: Int = 0
+        correct: Int
     ) = QuizResult(
         totalQuestions = total,
         correctAnswers = correct,
-        wrongAnswers = emptyList(),
-        quizType = QuizType.MIXED
+        wrongAnswers = emptyList()
     )
+
+    // ==================== scorePercent ====================
 
     @Test
     fun `scorePercent - 0 when no questions`() {
@@ -54,6 +54,8 @@ class QuizResultTest {
         assertEquals(66, result.scorePercent)  // 66.66... -> 66
     }
 
+    // ==================== isPerfect ====================
+
     @Test
     fun `isPerfect - true when all correct`() {
         val result = createResult(total = 10, correct = 10)
@@ -67,26 +69,28 @@ class QuizResultTest {
     }
 
     @Test
-    fun `isPerfect - true when empty quiz`() {
+    fun `isPerfect - false when empty quiz`() {
         val result = createResult(total = 0, correct = 0)
-        assertTrue(result.isPerfect)
+        assertFalse(result.isPerfect)
+    }
+
+    // ==================== isGood ====================
+
+    @Test
+    fun `isGood - true when 70 percent`() {
+        val result = createResult(total = 10, correct = 7)
+        assertTrue(result.isGood)
     }
 
     @Test
-    fun `isGood - true when 80 percent`() {
+    fun `isGood - true when above 70 percent`() {
         val result = createResult(total = 10, correct = 8)
         assertTrue(result.isGood)
     }
 
     @Test
-    fun `isGood - true when above 80 percent`() {
-        val result = createResult(total = 10, correct = 9)
-        assertTrue(result.isGood)
-    }
-
-    @Test
-    fun `isGood - false when below 80 percent`() {
-        val result = createResult(total = 10, correct = 7)
+    fun `isGood - false when below 70 percent`() {
+        val result = createResult(total = 10, correct = 6)
         assertFalse(result.isGood)
     }
 
@@ -97,33 +101,8 @@ class QuizResultTest {
     }
 
     @Test
-    fun `isGood - false when 79 percent`() {
-        val result = createResult(total = 100, correct = 79)
+    fun `isGood - false when 69 percent`() {
+        val result = createResult(total = 100, correct = 69)
         assertFalse(result.isGood)
-    }
-
-    @Test
-    fun `isGood - edge case rounding`() {
-        // 8/10 = 80% -> isGood
-        val result = createResult(total = 10, correct = 8)
-        assertTrue(result.isGood)
-    }
-
-    @Test
-    fun `durationMillis default is 0`() {
-        val result = createResult(total = 10, correct = 8)
-        assertEquals(0L, result.durationMillis)
-    }
-
-    @Test
-    fun `durationMillis preserved`() {
-        val result = QuizResult(
-            totalQuestions = 10,
-            correctAnswers = 8,
-            wrongAnswers = emptyList(),
-            quizType = QuizType.MIXED,
-            durationMillis = 45000L
-        )
-        assertEquals(45000L, result.durationMillis)
     }
 }

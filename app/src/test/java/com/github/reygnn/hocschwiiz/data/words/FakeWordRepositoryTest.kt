@@ -1,9 +1,12 @@
 package com.github.reygnn.hocschwiiz.data.words
 
-import com.github.reygnn.hocschwiiz.domain.model.Category
 import com.github.reygnn.hocschwiiz.domain.model.Dialect
 import com.github.reygnn.hocschwiiz.domain.model.Word
 import com.github.reygnn.hocschwiiz.fakes.FakeWordRepository
+import com.github.reygnn.hocschwiiz.fakes.FakeWordRepository.Companion.CATEGORY_DAILY_LIFE
+import com.github.reygnn.hocschwiiz.fakes.FakeWordRepository.Companion.CATEGORY_FOOD_DRINK
+import com.github.reygnn.hocschwiiz.fakes.FakeWordRepository.Companion.CATEGORY_GREETINGS
+import com.github.reygnn.hocschwiiz.fakes.FakeWordRepository.Companion.CATEGORY_NATURE
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert.assertEquals
@@ -54,15 +57,15 @@ class FakeWordRepositoryTest {
 
     @Test
     fun `getByCategory returns filtered words`() = runTest {
-        val greetings = repository.getByCategory(Category.GREETINGS, Dialect.AARGAU).first()
+        val greetings = repository.getByCategory(CATEGORY_GREETINGS.id, Dialect.AARGAU).first()
 
         assertEquals(4, greetings.size)
-        assertTrue(greetings.all { it.category == Category.GREETINGS })
+        assertTrue(greetings.all { it.category == CATEGORY_GREETINGS })
     }
 
     @Test
     fun `getByCategory returns empty for category with no words`() = runTest {
-        val nature = repository.getByCategory(Category.NATURE, Dialect.AARGAU).first()
+        val nature = repository.getByCategory(CATEGORY_NATURE.id, Dialect.AARGAU).first()
 
         assertTrue(nature.isEmpty())
     }
@@ -97,18 +100,18 @@ class FakeWordRepositoryTest {
         val categories = repository.getCategories(Dialect.AARGAU).first()
 
         assertEquals(3, categories.size)
-        assertTrue(categories.contains(Category.GREETINGS))
-        assertTrue(categories.contains(Category.FOOD_DRINK))
-        assertTrue(categories.contains(Category.DAILY_LIFE))
+        assertTrue(categories.contains(CATEGORY_GREETINGS))
+        assertTrue(categories.contains(CATEGORY_FOOD_DRINK))
+        assertTrue(categories.contains(CATEGORY_DAILY_LIFE))
     }
 
     @Test
-    fun `getCategories returns sorted by ordinal`() = runTest {
+    fun `getCategories returns sorted by order`() = runTest {
         val categories = repository.getCategories(Dialect.AARGAU).first()
 
-        assertEquals(Category.GREETINGS, categories[0])
-        assertEquals(Category.FOOD_DRINK, categories[1])
-        assertEquals(Category.DAILY_LIFE, categories[2])
+        assertEquals(CATEGORY_GREETINGS, categories[0])
+        assertEquals(CATEGORY_FOOD_DRINK, categories[1])
+        assertEquals(CATEGORY_DAILY_LIFE, categories[2])
     }
 
     // ==================== getWordCountByCategory ====================
@@ -117,9 +120,9 @@ class FakeWordRepositoryTest {
     fun `getWordCountByCategory returns correct counts`() = runTest {
         val counts = repository.getWordCountByCategory(Dialect.AARGAU).first()
 
-        assertEquals(4, counts[Category.GREETINGS])
-        assertEquals(4, counts[Category.FOOD_DRINK])
-        assertEquals(2, counts[Category.DAILY_LIFE])
+        assertEquals(4, counts[CATEGORY_GREETINGS])
+        assertEquals(4, counts[CATEGORY_FOOD_DRINK])
+        assertEquals(2, counts[CATEGORY_DAILY_LIFE])
     }
 
     // ==================== search ====================
@@ -216,11 +219,11 @@ class FakeWordRepositoryTest {
                 count = 4,
                 dialect = Dialect.AARGAU,
                 excludeId = "food_001",
-                preferCategory = Category.FOOD_DRINK
+                preferCategoryId = CATEGORY_FOOD_DRINK.id
             )
 
             // Should have at least some from FOOD_DRINK (3 remaining after exclude)
-            val foodCount = words.count { it.category == Category.FOOD_DRINK }
+            val foodCount = words.count { it.category == CATEGORY_FOOD_DRINK }
             assertTrue("Expected some FOOD_DRINK words", foodCount >= 2)
         }
     }

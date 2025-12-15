@@ -2,54 +2,79 @@ package com.github.reygnn.hocschwiiz.presentation.home
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.github.reygnn.hocschwiiz.domain.model.Dialect
 import com.github.reygnn.hocschwiiz.domain.repository.PreferencesRepository
+import com.github.reygnn.hocschwiiz.domain.usecase.home.GetCategoryProgressUseCase
+import com.github.reygnn.hocschwiiz.domain.usecase.home.GetDailyStreakUseCase
+import com.github.reygnn.hocschwiiz.domain.usecase.home.GetTimeBasedGreetingUseCase
+import com.github.reygnn.hocschwiiz.domain.usecase.home.GetWordOfTheDayUseCase
+import com.github.reygnn.hocschwiiz.domain.usecase.home.WordOfDayResult
 import com.github.reygnn.hocschwiiz.domain.usecase.progress.GetProgressStatsUseCase
 import com.github.reygnn.hocschwiiz.domain.usecase.progress.GetWeakWordsUseCase
-import com.github.reygnn.hocschwiiz.domain.usecase.progress.ProgressStats
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.flow.*
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.flatMapLatest
+import kotlinx.coroutines.flow.launchIn
+import kotlinx.coroutines.flow.onEach
 import javax.inject.Inject
-
-data class HomeUiState(
-    val dialect: Dialect = Dialect.AARGAU,
-    val stats: ProgressStats? = null,
-    val weakWordCount: Int = 0,
-    val isLoading: Boolean = true
-)
 
 @HiltViewModel
 class HomeViewModel @Inject constructor(
     private val preferencesRepository: PreferencesRepository,
     private val getProgressStatsUseCase: GetProgressStatsUseCase,
-    private val getWeakWordsUseCase: GetWeakWordsUseCase
+    private val getWeakWordsUseCase: GetWeakWordsUseCase,
+    private val getTimeBasedGreetingUseCase: GetTimeBasedGreetingUseCase,
+    private val getWordOfTheDayUseCase: GetWordOfTheDayUseCase,
+    private val getDailyStreakUseCase: GetDailyStreakUseCase,
+    private val getCategoryProgressUseCase: GetCategoryProgressUseCase
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(HomeUiState())
     val uiState: StateFlow<HomeUiState> = _uiState.asStateFlow()
 
     init {
-        // Wir kombinieren Flows, damit bei jeder Änderung (Dialekt oder Stats)
-        // die UI aktualisiert wird.
-        combine(
-            preferencesRepository.selectedDialect,
+        // Greeting is not reactive (doesn't need to update while screen is open)
+        val greeting = getTimeBasedGreetingUseCase()
+
+        // Combine dialect-independent flows
+        val baseFlows = combine(
             getProgressStatsUseCase(),
-            // Hier ein kleiner Trick: Wenn WeakWordsCount keinen Flow hat,
-            // müssten wir ihn triggern. Laut Briefing ist count() aber ein Flow<Int>.
-            // Achtung: WeakWords hängen evtl. nicht vom Dialekt ab, wenn sie global gespeichert sind,
-            // aber laut Signatur braucht invoke(dialect) den Dialekt.
-            // count() hat keine Parameter in deiner Signatur, ich gehe davon aus es ist global oder holt sich Dialekt intern.
-            // Falls count() Parameter braucht, müssten wir flatMapLatest nutzen.
+            getDailyStreakUseCase(),
             getWeakWordsUseCase.count()
-        ) { dialect, stats, weakCount ->
-            HomeUiState(
-                dialect = dialect,
-                stats = stats,
-                weakWordCount = weakCount,
-                isLoading = false
-            )
-        }.onEach { newState ->
-            _uiState.value = newState
-        }.launchIn(viewModelScope)
+        ) { stats, dailyStreak, weakCount ->
+            Triple(stats, dailyStreak, weakCount)
+        }
+
+        // Dialect-dependent flows need flatMapLatest
+        preferencesRepository.selectedDialect
+            .flatMapLatest { dialect ->
+                combine(
+                    baseFlows,
+                    getWordOfTheDayUseCase(dialect),
+                    getCategoryProgressUseCase(dialect)
+                ) { (stats, dailyStreak, weakCount), wordOfDayResult, categoryProgress ->
+                    val wordOfDay = when (wordOfDayResult) {
+                        is WordOfDayResult.Success -> wordOfDayResult.word
+                        is WordOfDayResult.NoWords -> null
+                    }
+
+                    HomeUiState(
+                        dialect = dialect,
+                        greeting = greeting,
+                        stats = stats,
+                        dailyStreak = dailyStreak,
+                        weakWordCount = weakCount,
+                        wordOfDay = wordOfDay,
+                        categoryProgress = categoryProgress,
+                        isLoading = false
+                    )
+                }
+            }
+            .onEach { newState ->
+                _uiState.value = newState
+            }
+            .launchIn(viewModelScope)
     }
 }

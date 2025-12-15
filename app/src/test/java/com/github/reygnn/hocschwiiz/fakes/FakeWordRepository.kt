@@ -52,9 +52,9 @@ class FakeWordRepository : WordRepository {
         emit(words[dialect]?.toList() ?: emptyList())
     }
 
-    override fun getByCategory(category: Category, dialect: Dialect): Flow<List<Word>> = flow {
+    override fun getByCategory(categoryId: String, dialect: Dialect): Flow<List<Word>> = flow {
         if (shouldThrowError) throw RuntimeException(errorMessage)
-        val result = words[dialect]?.filter { it.category == category } ?: emptyList()
+        val result = words[dialect]?.filter { it.category.id == categoryId } ?: emptyList()
         emit(result)
     }
 
@@ -68,7 +68,7 @@ class FakeWordRepository : WordRepository {
         val categories = words[dialect]
             ?.map { it.category }
             ?.distinct()
-            ?.sortedBy { it.ordinal }
+            ?.sortedBy { it.order }
             ?: emptyList()
         emit(categories)
     }
@@ -110,15 +110,15 @@ class FakeWordRepository : WordRepository {
         count: Int,
         dialect: Dialect,
         excludeId: String?,
-        preferCategory: Category?
+        preferCategoryId: String?
     ): List<Word> {
         if (shouldThrowError) throw RuntimeException(errorMessage)
 
         val allWords = words[dialect]?.filter { it.id != excludeId } ?: emptyList()
 
-        return if (preferCategory != null) {
-            val sameCategoryWords = allWords.filter { it.category == preferCategory }
-            val otherWords = allWords.filter { it.category != preferCategory }
+        return if (preferCategoryId != null) {
+            val sameCategoryWords = allWords.filter { it.category.id == preferCategoryId }
+            val otherWords = allWords.filter { it.category.id != preferCategoryId }
             (sameCategoryWords.shuffled() + otherWords.shuffled()).take(count)
         } else {
             allWords.shuffled().take(count)
@@ -126,6 +126,39 @@ class FakeWordRepository : WordRepository {
     }
 
     companion object {
+        // Test categories
+        val CATEGORY_GREETINGS = Category(
+            id = "greetings",
+            displayNameDe = "Begrüssungen",
+            displayNameVi = "Lời chào",
+            icon = "waving_hand",
+            order = 0
+        )
+
+        val CATEGORY_FOOD_DRINK = Category(
+            id = "food_drink",
+            displayNameDe = "Essen & Trinken",
+            displayNameVi = "Đồ ăn & Thức uống",
+            icon = "restaurant",
+            order = 1
+        )
+
+        val CATEGORY_DAILY_LIFE = Category(
+            id = "daily_life",
+            displayNameDe = "Alltag",
+            displayNameVi = "Cuộc sống hàng ngày",
+            icon = "home",
+            order = 2
+        )
+
+        val CATEGORY_NATURE = Category(
+            id = "nature",
+            displayNameDe = "Natur",
+            displayNameVi = "Thiên nhiên",
+            icon = "park",
+            order = 3
+        )
+
         /**
          * Create sample words for testing.
          */
@@ -136,7 +169,7 @@ class FakeWordRepository : WordRepository {
                 german = "Guten Tag",
                 swiss = "Guete Tag",
                 vietnamese = "Xin chào",
-                category = Category.GREETINGS,
+                category = CATEGORY_GREETINGS,
                 dialect = Dialect.AARGAU,
                 notes = "Formelle Begrüssung"
             ),
@@ -145,7 +178,7 @@ class FakeWordRepository : WordRepository {
                 german = "Hallo",
                 swiss = "Sali",
                 vietnamese = "Chào",
-                category = Category.GREETINGS,
+                category = CATEGORY_GREETINGS,
                 dialect = Dialect.AARGAU,
                 altSpellings = listOf("Salü")
             ),
@@ -154,7 +187,7 @@ class FakeWordRepository : WordRepository {
                 german = "Auf Wiedersehen",
                 swiss = "Uf Widerluege",
                 vietnamese = "Tạm biệt",
-                category = Category.GREETINGS,
+                category = CATEGORY_GREETINGS,
                 dialect = Dialect.AARGAU,
                 altSpellings = listOf("Uf Widerseh")
             ),
@@ -163,7 +196,7 @@ class FakeWordRepository : WordRepository {
                 german = "Tschüss",
                 swiss = "Tschau",
                 vietnamese = "Tạm biệt",
-                category = Category.GREETINGS,
+                category = CATEGORY_GREETINGS,
                 dialect = Dialect.AARGAU
             ),
             // Food & Drink
@@ -172,7 +205,7 @@ class FakeWordRepository : WordRepository {
                 german = "Frühstück",
                 swiss = "Zmorge",
                 vietnamese = "Bữa sáng",
-                category = Category.FOOD_DRINK,
+                category = CATEGORY_FOOD_DRINK,
                 dialect = Dialect.AARGAU,
                 gender = Gender.NEUTER
             ),
@@ -181,7 +214,7 @@ class FakeWordRepository : WordRepository {
                 german = "Mittagessen",
                 swiss = "Zmittag",
                 vietnamese = "Bữa trưa",
-                category = Category.FOOD_DRINK,
+                category = CATEGORY_FOOD_DRINK,
                 dialect = Dialect.AARGAU,
                 gender = Gender.NEUTER
             ),
@@ -190,7 +223,7 @@ class FakeWordRepository : WordRepository {
                 german = "Abendessen",
                 swiss = "Znacht",
                 vietnamese = "Bữa tối",
-                category = Category.FOOD_DRINK,
+                category = CATEGORY_FOOD_DRINK,
                 dialect = Dialect.AARGAU,
                 gender = Gender.NEUTER
             ),
@@ -199,7 +232,7 @@ class FakeWordRepository : WordRepository {
                 german = "Brot",
                 swiss = "Brot",
                 vietnamese = "Bánh mì",
-                category = Category.FOOD_DRINK,
+                category = CATEGORY_FOOD_DRINK,
                 dialect = Dialect.AARGAU,
                 gender = Gender.NEUTER
             ),
@@ -209,7 +242,7 @@ class FakeWordRepository : WordRepository {
                 german = "Tisch",
                 swiss = "Tisch",
                 vietnamese = "Cái bàn",
-                category = Category.DAILY_LIFE,
+                category = CATEGORY_DAILY_LIFE,
                 dialect = Dialect.AARGAU,
                 gender = Gender.MASCULINE
             ),
@@ -218,7 +251,7 @@ class FakeWordRepository : WordRepository {
                 german = "Stuhl",
                 swiss = "Stuehl",
                 vietnamese = "Cái ghế",
-                category = Category.DAILY_LIFE,
+                category = CATEGORY_DAILY_LIFE,
                 dialect = Dialect.AARGAU,
                 gender = Gender.MASCULINE
             ),
@@ -228,7 +261,7 @@ class FakeWordRepository : WordRepository {
                 german = "Guten Tag",
                 swiss = "Grüezi",
                 vietnamese = "Xin chào",
-                category = Category.GREETINGS,
+                category = CATEGORY_GREETINGS,
                 dialect = Dialect.ZUERICH,
                 notes = "Typisch Züridütsch"
             ),
@@ -237,7 +270,7 @@ class FakeWordRepository : WordRepository {
                 german = "Hallo",
                 swiss = "Hoi",
                 vietnamese = "Chào",
-                category = Category.GREETINGS,
+                category = CATEGORY_GREETINGS,
                 dialect = Dialect.ZUERICH
             )
         )
