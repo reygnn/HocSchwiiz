@@ -61,8 +61,8 @@ class FakeProgressRepository : ProgressRepository {
     override fun getWeakWordIds(): Flow<List<String>> {
         return progressMap.map { map ->
             map.values
-                .filter { it.isWeak }
-                .sortedBy { it.successRate }
+                .filter { it.wrongCount > it.correctCount && it.streak < 2 }
+                .sortedByDescending { it.wrongCount - it.correctCount }
                 .map { it.wordId }
         }
     }

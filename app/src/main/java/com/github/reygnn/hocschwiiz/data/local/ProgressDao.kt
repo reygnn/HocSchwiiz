@@ -25,11 +25,10 @@ interface ProgressDao {
     suspend fun insertProgress(progress: ProgressEntity)
 
     @Query("""
-        SELECT wordId FROM learning_progress 
-        WHERE (correctCount + wrongCount) >= 3 
-        AND (CAST(correctCount AS REAL) / (correctCount + wrongCount)) < 0.5
-        ORDER BY (CAST(correctCount AS REAL) / (correctCount + wrongCount)) ASC
-    """)
+    SELECT wordId FROM learning_progress 
+    WHERE wrongCount > correctCount AND streak < 2
+    ORDER BY (wrongCount - correctCount) DESC
+""")
     fun getWeakWordIds(): Flow<List<String>>
 
     @Query("SELECT COUNT(*) FROM learning_progress")
@@ -40,6 +39,7 @@ interface ProgressDao {
 
     @Query("SELECT COALESCE(SUM(wrongCount), 0) FROM learning_progress")
     fun getTotalWrongCount(): Flow<Int>
+
 
     @Query("SELECT COALESCE(MAX(streak), 0) FROM learning_progress")
     fun getMaxStreak(): Flow<Int>

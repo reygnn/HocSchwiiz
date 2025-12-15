@@ -153,41 +153,6 @@ class GetWeakWordsUseCaseTest {
         assertTrue(weakWords.isEmpty())
     }
 
-    @Test
-    fun `word is not weak with less than 3 attempts`() = runTest {
-        progressRepository.setProgress(
-            "greetings_001",
-            LearningProgress(
-                wordId = "greetings_001",
-                correctCount = 0,
-                wrongCount = 2, // Only 2 attempts
-                streak = 0
-            )
-        )
-
-        val weakWords = useCase(Dialect.AARGAU).first()
-
-        assertTrue(weakWords.isEmpty())
-    }
-
-    @Test
-    fun `word is weak with 3 plus attempts and below 50 percent`() = runTest {
-        progressRepository.setProgress(
-            "greetings_001",
-            LearningProgress(
-                wordId = "greetings_001",
-                correctCount = 1,
-                wrongCount = 2, // 3 attempts, 33% success
-                streak = 0
-            )
-        )
-
-        val weakWords = useCase(Dialect.AARGAU).first()
-
-        assertEquals(1, weakWords.size)
-        assertEquals("greetings_001", weakWords[0].id)
-    }
-
     // ==================== count() ====================
 
     @Test
@@ -242,5 +207,154 @@ class GetWeakWordsUseCaseTest {
         val count = useCase.count().first()
 
         assertEquals(1, count)
+    }
+
+    // ==================== Weak Word Definition ====================
+
+    @Test
+    fun `word is weak when wrongCount greater than correctCount and streak below 2`() = runTest {
+        progressRepository.setProgress(
+            "greetings_001",
+            LearningProgress(
+                wordId = "greetings_001",
+                correctCount = 1,
+                wrongCount = 2,
+                streak = 0
+            )
+        )
+
+        val weakWords = useCase(Dialect.AARGAU).first()
+
+        assertEquals(1, weakWords.size)
+        assertEquals("greetings_001", weakWords[0].id)
+    }
+
+    @Test
+    fun `word is not weak when correctCount equals wrongCount`() = runTest {
+        progressRepository.setProgress(
+            "greetings_001",
+            LearningProgress(
+                wordId = "greetings_001",
+                correctCount = 3,
+                wrongCount = 3,
+                streak = 0
+            )
+        )
+
+        val weakWords = useCase(Dialect.AARGAU).first()
+
+        assertTrue(weakWords.isEmpty())
+    }
+
+    @Test
+    fun `word is not weak when correctCount greater than wrongCount`() = runTest {
+        progressRepository.setProgress(
+            "greetings_001",
+            LearningProgress(
+                wordId = "greetings_001",
+                correctCount = 4,
+                wrongCount = 3,
+                streak = 0
+            )
+        )
+
+        val weakWords = useCase(Dialect.AARGAU).first()
+
+        assertTrue(weakWords.isEmpty())
+    }
+
+// ==================== Streak Healing ====================
+
+    @Test
+    fun `word is healed when streak reaches 2 even with more wrong than correct`() = runTest {
+        progressRepository.setProgress(
+            "greetings_001",
+            LearningProgress(
+                wordId = "greetings_001",
+                correctCount = 2,
+                wrongCount = 7,  // Still more wrong!
+                streak = 2       // But streak >= 2 = healed
+            )
+        )
+
+        val weakWords = useCase(Dialect.AARGAU).first()
+
+        assertTrue(weakWords.isEmpty())
+    }
+
+    @Test
+    fun `word is still weak with streak 1`() = runTest {
+        progressRepository.setProgress(
+            "greetings_001",
+            LearningProgress(
+                wordId = "greetings_001",
+                correctCount = 1,
+                wrongCount = 5,
+                streak = 1  // Not yet healed
+            )
+        )
+
+        val weakWords = useCase(Dialect.AARGAU).first()
+
+        assertEquals(1, weakWords.size)
+    }
+
+    @Test
+    fun `healed word becomes weak again when streak resets`() = runTest {
+        // First: healed
+        progressRepository.setProgress(
+            "greetings_001",
+            LearningProgress(
+                wordId = "greetings_001",
+                correctCount = 2,
+                wrongCount = 5,
+                streak = 2
+            )
+        )
+        assertTrue(useCase(Dialect.AARGAU).first().isEmpty())
+
+        // Then: wrong answer resets streak
+        progressRepository.setProgress(
+            "greetings_001",
+            LearningProgress(
+                wordId = "greetings_001",
+                correctCount = 2,
+                wrongCount = 6,
+                streak = 0  // Reset!
+            )
+        )
+
+        val weakWords = useCase(Dialect.AARGAU).first()
+        assertEquals(1, weakWords.size)
+    }
+
+    @Test
+    fun `returns weak words sorted by difference descending`() = runTest {
+        // Word with diff = 3 (weakest)
+        progressRepository.setProgress(
+            "greetings_001",
+            LearningProgress(
+                wordId = "greetings_001",
+                correctCount = 1,
+                wrongCount = 4,  // diff = 3
+                streak = 0
+            )
+        )
+        // Word with diff = 1
+        progressRepository.setProgress(
+            "greetings_002",
+            LearningProgress(
+                wordId = "greetings_002",
+                correctCount = 2,
+                wrongCount = 3,  // diff = 1
+                streak = 0
+            )
+        )
+
+        val weakWords = useCase(Dialect.AARGAU).first()
+
+        assertEquals(2, weakWords.size)
+        assertEquals("greetings_001", weakWords[0].id) // Größte Differenz zuerst
+        assertEquals("greetings_002", weakWords[1].id)
     }
 }
