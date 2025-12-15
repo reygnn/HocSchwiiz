@@ -6,13 +6,13 @@ sealed class Screen(val route: String) {
 
     // Einfache Route für Quiz Settings/Start
     object QuizGraph : Screen("quiz_graph")
-    object QuizPlay : Screen("quiz_play/{categoryName}/{quizType}") {
-        fun createRoute(categoryName: String?, quizType: String?) =
-            "quiz_play/${categoryName ?: "all"}/${quizType ?: "FROM_SETTINGS"}"
+    object QuizPlay : Screen("quiz_play/{categoryId}/{quizType}") {
+        fun createRoute(categoryId: String?, quizType: String?) =
+            "quiz_play/${categoryId ?: "all"}/${quizType ?: "FROM_SETTINGS"}"
     }
 
-    object WordList : Screen("wordlist/{categoryName}") {
-        fun createRoute(categoryName: String) = "wordlist/$categoryName"
+    object WordList : Screen("wordlist/{categoryId}") {
+        fun createRoute(categoryId: String) = "wordlist/$categoryId"
     }
 
     object Settings : Screen("settings")

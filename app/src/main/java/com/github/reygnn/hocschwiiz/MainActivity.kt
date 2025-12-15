@@ -81,7 +81,12 @@ fun HocSchwiizApp() {
                         // Quick Start: Startet sofort ein gemischtes Quiz
                         navController.navigate(Screen.QuizPlay.createRoute(null, null))
                     },
-                    onPracticeWeakWords = { /* TODO later */ }
+                    onPracticeWeakWords = {
+                        navController.navigate(Screen.QuizPlay.createRoute("WEAK_WORDS", null))
+                    },
+                    onWordOfDayClick = { categoryId ->
+                        navController.navigate(Screen.WordList.createRoute(categoryId))
+                    }
                 )
             }
 
@@ -98,7 +103,7 @@ fun HocSchwiizApp() {
             composable(
                 route = Screen.WordList.route,
                 arguments = listOf(
-                    navArgument("categoryName") { type = NavType.StringType }
+                    navArgument("categoryId") { type = NavType.StringType }
                 )
             ) {
                 WordListScreen(
@@ -124,7 +129,7 @@ fun HocSchwiizApp() {
                 route = Screen.QuizPlay.route,
                 arguments = listOf(
                     navArgument("quizType") { type = NavType.StringType },
-                    navArgument("categoryName") {
+                    navArgument("categoryId") {
                         type = NavType.StringType
                         nullable = true // Category ist optional
                         defaultValue = null

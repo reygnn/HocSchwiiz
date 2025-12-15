@@ -23,10 +23,11 @@ class GenerateQuizUseCase @Inject constructor(
         categoryId: String? = null,
         dialect: Dialect,
         questionCount: Int,
-        quizType: QuizType
+        quizType: QuizType,
+        preSelectedWords: List<Word>? = null
     ): List<QuizQuestion> {
         // Get words for quiz
-        val words = if (categoryId != null) {
+        val words = preSelectedWords ?: if (categoryId != null) {
             wordRepository.getByCategory(categoryId, dialect).first()
         } else {
             wordRepository.getAll(dialect).first()

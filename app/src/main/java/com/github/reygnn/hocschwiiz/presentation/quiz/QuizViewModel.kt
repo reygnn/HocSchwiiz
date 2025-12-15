@@ -6,8 +6,11 @@ import androidx.lifecycle.viewModelScope
 import com.github.reygnn.hocschwiiz.domain.model.QuizQuestion
 import com.github.reygnn.hocschwiiz.domain.model.QuizResult
 import com.github.reygnn.hocschwiiz.domain.model.QuizType
+import com.github.reygnn.hocschwiiz.domain.model.Word
 import com.github.reygnn.hocschwiiz.domain.repository.PreferencesRepository
+import com.github.reygnn.hocschwiiz.domain.usecase.progress.GetWeakWordsUseCase
 import com.github.reygnn.hocschwiiz.domain.usecase.quiz.GenerateQuizUseCase
+import com.github.reygnn.hocschwiiz.domain.usecase.quiz.SubmitAnswerUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -40,6 +43,8 @@ data class QuizUiState(
 class QuizViewModel @Inject constructor(
     savedStateHandle: SavedStateHandle,
     private val generateQuizUseCase: GenerateQuizUseCase,
+    private val getWeakWordsUseCase: GetWeakWordsUseCase,
+    private val submitAnswerUseCase: SubmitAnswerUseCase,
     private val preferencesRepository: PreferencesRepository
 ) : ViewModel() {
 
@@ -81,11 +86,16 @@ class QuizViewModel @Inject constructor(
                 // Category - null or "all" means all categories
                 val categoryId = categoryArg?.takeIf { it != "all" && it != "null" }
 
+                val preSelectedWords: List<Word>? = if (categoryArg == "WEAK_WORDS") {
+                    getWeakWordsUseCase(dialect).first()
+                } else null
+
                 val questions = generateQuizUseCase(
-                    categoryId = categoryId,
+                    categoryId = categoryId?.takeIf { it != "WEAK_WORDS" },
                     dialect = dialect,
                     questionCount = questionCount,
-                    quizType = quizType
+                    quizType = quizType,
+                    preSelectedWords = preSelectedWords
                 )
 
                 _uiState.value = QuizUiState(
@@ -110,6 +120,10 @@ class QuizViewModel @Inject constructor(
 
         // Track answered question
         answeredQuestions.add(currentQuestion.copy(answeredCorrectly = isCorrect))
+
+        viewModelScope.launch {
+            submitAnswerUseCase(currentQuestion.word.id, isCorrect)
+        }
 
         _uiState.value = state.copy(
             selectedAnswer = answer,
