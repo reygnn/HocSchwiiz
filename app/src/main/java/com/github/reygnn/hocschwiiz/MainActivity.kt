@@ -80,7 +80,7 @@ fun HocSchwiizApp() {
                 HomeScreen(
                     onStartQuiz = {
                         // Quick Start: Startet sofort ein gemischtes Quiz
-                        navController.navigate(Screen.QuizPlay.createRoute(null, QuizType.MIXED.name))
+                        navController.navigate(Screen.QuizPlay.createRoute(null, null))
                     },
                     onPracticeWeakWords = { /* TODO later */ }
                 )
@@ -113,9 +113,9 @@ fun HocSchwiizApp() {
                 // Für jetzt ein Placeholder:
                 Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                     androidx.compose.material3.Button(onClick = {
-                        navController.navigate(Screen.QuizPlay.createRoute(null, QuizType.MIXED.name))
+                        navController.navigate(Screen.QuizPlay.createRoute(null, null))
                     }) {
-                        Text("Quiz starten (Mixed)")
+                        Text("Quiz starten")
                     }
                 }
             }

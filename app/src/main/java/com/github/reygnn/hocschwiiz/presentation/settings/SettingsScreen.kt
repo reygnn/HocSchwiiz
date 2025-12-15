@@ -526,8 +526,20 @@ private fun AppInfoCard() {
 
             Spacer(modifier = Modifier.height(12.dp))
 
+            HorizontalDivider()
+
+            Spacer(modifier = Modifier.height(12.dp))
+
             Text(
-                text = "Version 1.0.0",
+                text = "Von Uli mit Liebe für seine Phương ❤️\nĐể em học tiếng Thụy Sĩ!",
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.primary
+            )
+
+            Spacer(modifier = Modifier.height(12.dp))
+
+            Text(
+                text = "Version 0.9",
                 style = MaterialTheme.typography.labelSmall,
                 color = MaterialTheme.colorScheme.outline
             )

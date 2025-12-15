@@ -47,9 +47,10 @@ class QuizViewModel @Inject constructor(
 
     // Argumente aus Navigation
     private val categoryArg: String? = savedStateHandle["category"] // Name der Category oder null
-    private val quizTypeArg: String = savedStateHandle["quizType"] ?: QuizType.MIXED.name
+    private val quizTypeArg: String? = savedStateHandle["quizType"]
 
     private var startTimeMillis: Long = 0L
+    private var resolvedQuizType: QuizType = QuizType.MIXED
 
     init {
         loadQuiz()
@@ -66,7 +67,11 @@ class QuizViewModel @Inject constructor(
             val category = categoryArg?.let {
                 if (it != "null") Category.valueOf(it) else null
             }
-            val quizType = QuizType.valueOf(quizTypeArg)
+            val quizType = quizTypeArg
+                ?.takeIf { it != "FROM_SETTINGS" }
+                ?.let { QuizType.valueOf(it) }
+                ?: preferencesRepository.preferredQuizType.first()
+            resolvedQuizType = quizType
 
             // UseCase aufrufen
             val questions = generateQuizUseCase(
@@ -141,7 +146,7 @@ class QuizViewModel @Inject constructor(
                     totalQuestions = answered.size,
                     correctAnswers = correct,
                     wrongAnswers = wrong,
-                    quizType = QuizType.valueOf(quizTypeArg),
+                    quizType = resolvedQuizType,
                     durationMillis = System.currentTimeMillis() - startTimeMillis
                 )
 
