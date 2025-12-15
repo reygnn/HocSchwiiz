@@ -11,6 +11,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
+import com.github.reygnn.hocschwiiz.domain.model.QuizType
 import com.github.reygnn.hocschwiiz.presentation.home.HomeScreen
 import com.github.reygnn.hocschwiiz.presentation.theme.HocSchwiizTheme
 import dagger.hilt.android.AndroidEntryPoint
@@ -20,6 +21,11 @@ import com.github.reygnn.hocschwiiz.presentation.navigation.BottomNavBar
 import com.github.reygnn.hocschwiiz.presentation.navigation.Screen
 import com.github.reygnn.hocschwiiz.presentation.categories.CategoriesScreen
 import androidx.compose.material3.Text
+import androidx.compose.ui.Alignment
+import androidx.navigation.NavType
+import androidx.navigation.navArgument
+import com.github.reygnn.hocschwiiz.presentation.quiz.QuizScreen
+import com.github.reygnn.hocschwiiz.presentation.wordlist.WordListScreen
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -55,38 +61,74 @@ fun HocSchwiizApp() {
             composable(Screen.Home.route) {
                 HomeScreen(
                     onStartQuiz = {
-                        // Quick Start: Navigiere zum Quiz (Dummy für jetzt)
-                        navController.navigate(Screen.QuizGraph.route)
+                        // Quick Start: Startet sofort ein gemischtes Quiz
+                        navController.navigate(Screen.QuizPlay.createRoute(null, QuizType.MIXED.name))
                     },
                     onPracticeWeakWords = { /* TODO later */ }
                 )
             }
 
-            // 2. Categories Screen (Wörterbuch)
+            // 2. Categories Screen
             composable(Screen.Categories.route) {
                 CategoriesScreen(
                     onCategoryClick = { category ->
-                        // Hier geht's dann später zur WordList
-                        // navController.navigate(Screen.WordList.createRoute(category.name))
+                        navController.navigate(Screen.WordList.createRoute(category.name))
                     }
                 )
             }
 
-            // 3. Quiz Placeholder (damit die App nicht abstürzt beim Klick)
+            // 3. Word List Screen Route
+            composable(
+                route = Screen.WordList.route,
+                arguments = listOf(
+                    navArgument("categoryName") { type = NavType.StringType }
+                )
+            ) {
+                WordListScreen(
+                    onNavigateBack = { navController.popBackStack() }
+                )
+            }
+
+            // 4. Quiz Tab (Übersicht/Einstellungen vor dem Start)
             composable(Screen.QuizGraph.route) {
-                Box(modifier = Modifier.fillMaxSize(), contentAlignment = androidx.compose.ui.Alignment.Center) {
-                    Text("Quiz-Bereich kommt bald!")
+                // Hier kommt später der Screen hin, wo man "Anzahl Fragen" etc. einstellt.
+                // Für jetzt ein Placeholder:
+                Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+                    androidx.compose.material3.Button(onClick = {
+                        navController.navigate(Screen.QuizPlay.createRoute(null, QuizType.MIXED.name))
+                    }) {
+                        Text("Quiz starten (Mixed)")
+                    }
                 }
             }
 
-            // 4. Settings Placeholder
+            // 5. Quiz Play (Das eigentliche Spiel)
+            composable(
+                route = Screen.QuizPlay.route,
+                arguments = listOf(
+                    navArgument("quizType") { type = NavType.StringType },
+                    navArgument("categoryName") {
+                        type = NavType.StringType
+                        nullable = true // Category ist optional
+                        defaultValue = null
+                    }
+                )
+            ) {
+                QuizScreen(
+                    onBack = { navController.popBackStack() },
+                    onQuizFinished = { result ->
+                        // TODO: Später hier zum Result Screen navigieren
+                        navController.popBackStack()
+                    }
+                )
+            }
+
+            // 6. Settings
             composable(Screen.Settings.route) {
-                Box(modifier = Modifier.fillMaxSize(), contentAlignment = androidx.compose.ui.Alignment.Center) {
+                Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                     Text("Einstellungen kommen bald!")
                 }
             }
-
-            // Hier später: WordList Route, QuizPlay Route, Result Route...
         }
     }
 }

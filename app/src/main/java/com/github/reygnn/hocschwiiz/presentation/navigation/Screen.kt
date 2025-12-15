@@ -6,7 +6,7 @@ sealed class Screen(val route: String) {
 
     // Einfache Route für Quiz Settings/Start
     object QuizGraph : Screen("quiz_graph")
-    object QuizPlay : Screen("quiz_play/{category}/{quizType}") {
+    object QuizPlay : Screen("quiz_play/{categoryName}/{quizType}") {
         fun createRoute(categoryName: String?, quizType: String) =
             "quiz_play/${categoryName ?: "all"}/$quizType"
     }
