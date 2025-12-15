@@ -89,6 +89,10 @@ class FakeProgressRepository : ProgressRepository {
         }
     }
 
+    override fun getTotalWordsLearned(): Flow<Int> {
+        return getPracticedWordCount()
+    }
+
     override suspend fun resetAllProgress() {
         if (shouldThrowError) throw RuntimeException(errorMessage)
         progressMap.value = emptyMap()

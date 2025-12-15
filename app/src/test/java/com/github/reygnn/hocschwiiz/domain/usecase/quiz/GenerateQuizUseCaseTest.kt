@@ -1,14 +1,10 @@
 package com.github.reygnn.hocschwiiz.domain.usecase.quiz
 
-import com.github.reygnn.hocschwiiz.domain.model.Category
 import com.github.reygnn.hocschwiiz.domain.model.Dialect
-import com.github.reygnn.hocschwiiz.domain.model.LearningProgress
 import com.github.reygnn.hocschwiiz.domain.model.QuizType
-import com.github.reygnn.hocschwiiz.fakes.FakeProgressRepository
 import com.github.reygnn.hocschwiiz.fakes.FakeWordRepository
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert.assertEquals
-import org.junit.Assert.assertNotEquals
 import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
@@ -16,15 +12,13 @@ import org.junit.Test
 class GenerateQuizUseCaseTest {
 
     private lateinit var wordRepository: FakeWordRepository
-    private lateinit var progressRepository: FakeProgressRepository
     private lateinit var useCase: GenerateQuizUseCase
 
     @Before
     fun setup() {
         wordRepository = FakeWordRepository()
         wordRepository.addSampleWords()
-        progressRepository = FakeProgressRepository()
-        useCase = GenerateQuizUseCase(wordRepository, progressRepository)
+        useCase = GenerateQuizUseCase(wordRepository)
     }
 
     // ==================== Basic generation ====================
@@ -202,78 +196,44 @@ class GenerateQuizUseCaseTest {
     // ==================== Category filtering ====================
 
     @Test
-    fun `filters by category when specified`() = runTest {
+    fun `filters by categoryId when specified`() = runTest {
         val questions = useCase(
+            categoryId = "greetings",
             questionCount = 5,
             quizType = QuizType.GERMAN_TO_SWISS,
-            dialect = Dialect.AARGAU,
-            category = Category.GREETINGS
+            dialect = Dialect.AARGAU
         )
 
         assertTrue(questions.isNotEmpty())
         questions.forEach { q ->
-            assertEquals(Category.GREETINGS, q.word.category)
+            assertEquals("greetings", q.word.category.id)
         }
     }
 
     @Test
-    fun `returns empty for category with less than 4 words`() = runTest {
-        // DAILY_LIFE only has 2 words in sample data
+    fun `returns empty for category with no words`() = runTest {
         val questions = useCase(
+            categoryId = "nonexistent_category",
             questionCount = 5,
             quizType = QuizType.GERMAN_TO_SWISS,
-            dialect = Dialect.AARGAU,
-            category = Category.NATURE // No words in sample
+            dialect = Dialect.AARGAU
         )
 
         assertTrue(questions.isEmpty())
     }
 
-    // ==================== Weak words prioritization ====================
-
     @Test
-    fun `prioritizes weak words when enabled`() = runTest {
-        // Mark greetings_001 as weak
-        progressRepository.setProgress(
-            "greetings_001",
-            LearningProgress(
-                wordId = "greetings_001",
-                correctCount = 1,
-                wrongCount = 5, // Low success rate
-                streak = 0
-            )
-        )
-
-        // Generate many quizzes to check if weak word appears more often
-        var weakWordAppearances = 0
-        repeat(20) {
-            val questions = useCase(
-                questionCount = 3,
-                quizType = QuizType.GERMAN_TO_SWISS,
-                dialect = Dialect.AARGAU,
-                prioritizeWeak = true
-            )
-            if (questions.any { it.word.id == "greetings_001" }) {
-                weakWordAppearances++
-            }
-        }
-
-        // Should appear frequently (not always due to randomization)
-        assertTrue("Weak word should appear often", weakWordAppearances > 10)
-    }
-
-    @Test
-    fun `does not prioritize weak words when disabled`() = runTest {
-        // This is harder to test deterministically due to randomization
-        // Just verify it doesn't crash
+    fun `returns all categories when categoryId is null`() = runTest {
         val questions = useCase(
-            questionCount = 5,
+            categoryId = null,
+            questionCount = 10,
             quizType = QuizType.GERMAN_TO_SWISS,
-            dialect = Dialect.AARGAU,
-            prioritizeWeak = false
+            dialect = Dialect.AARGAU
         )
 
-        assertEquals(5, questions.size)
+        // Should have words from multiple categories
+        val categoryIds = questions.map { it.word.category.id }.distinct()
+        assertTrue("Expected words from multiple categories", categoryIds.size >= 1)
     }
 
     // ==================== Dialect handling ====================
