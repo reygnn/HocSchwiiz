@@ -72,6 +72,17 @@
       "phonetic": "Gòpfrédstòtz",
       "vietnamese": "Chết tiệt",
       "notes": "Abgemilderte Variante"
-    }
+    },
+    {
+  "id": "expressions_gaitschicheib",
+  "german": "Wüterich / rücksichtsloser Mensch",
+  "swiss": "Gäitschichéib",
+  "phonetic": "gäit-schĭ-chéib",
+  "vietnamese": "kẻ hung hăng / người nóng nảy bất chấp",
+  "gender": "MASCULINE",
+  "freiamt": "Wüeterich",
+  "notes": "Zusammensetzung aus 'gäitschä' (Rage) und 'Chéib' (Kerl/Lümmel). Bezeichnet jemanden, der rücksichtslos redet & wütet.",
+  "category": "swear_words"
+  }
   ]
 }

@@ -239,6 +239,28 @@
       "vietnamese": "ong bắp cày",
       "gender": "FEMININE",
       "notes": "Ross-U (ù)"
+    },
+    {
+      "id": "behavior_gaitschae",
+      "german": "wütend bellen / rücksichtslos wüten",
+      "swiss": "gäitschä",
+      "phonetic": "gäit-schặ",
+      "vietnamese": "sủa dữ dội / nổi trận lôi đình",
+      "gender": "NEUTER",
+      "freiamt": "bölle / chläffe",
+      "notes": "Hund: Kampfmodus mit Zähnefletschen. Mensch: In Rage reden ohne Rücksicht.",
+      "category": "animals"
+    },
+    {
+      "id": "behavior_guanae",
+      "german": "fixierend anstarren (beim Betteln)",
+      "swiss": "guänä",
+      "phonetic": "guặ-nặ",
+      "vietnamese": "nhìn chằm chằm / nhìn chằm chằm xin ăn",
+      "gender": "NEUTER",
+      "freiamt": "gaffe / stiere",
+      "notes": "Hund: Hypnotisches Starren am Tisch. Mensch: Stilles Betteln (z.B. vor dem Coop).",
+      "category": "animals"
     }
   ]
 }

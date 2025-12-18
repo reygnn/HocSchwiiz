@@ -84,6 +84,17 @@
       "swiss": "réchtig",
       "phonetic": "réchtĭg",
       "vietnamese": "thật sự"
+    },
+    {
+      "id": "behavior_hoischae",
+      "german": "fordern / drängend bitten",
+      "swiss": "höischä",
+      "phonetic": "hö́i-schặ",
+      "vietnamese": "đòi hỏi / nài nỉ",
+      "gender": "NEUTER",
+      "freiamt": "heische / fordere",
+      "notes": "Vom hochdeutschen 'heischen'. Hund: Forderndes Winseln/Fiepen. Mensch: Hartnäckiges Verlangen.",
+      "category": "expressions"
     }
   ]
 }
