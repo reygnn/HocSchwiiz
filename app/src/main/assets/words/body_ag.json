@@ -1,0 +1,183 @@
+{
+  "version": 4,
+  "dialect": "ag",
+  "words": [
+    {
+      "id": "body_kopf",
+      "german": "Kopf",
+      "swiss": "Chopf",
+      "phonetic": "Chòpf",
+      "vietnamese": "Đầu",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "body_haar",
+      "german": "Haar",
+      "swiss": "Hoor",
+      "phonetic": "Hòòr",
+      "vietnamese": "Tóc",
+      "gender": "NEUTER"
+    },
+    {
+      "id": "body_auge",
+      "german": "Auge",
+      "swiss": "Oug",
+      "phonetic": "Òụg",
+      "vietnamese": "Mắt",
+      "gender": "NEUTER",
+      "notes": "Plural: Ougä (Òụgặ)"
+    },
+    {
+      "id": "body_ohr",
+      "german": "Ohr",
+      "swiss": "Oor",
+      "phonetic": "Óór",
+      "vietnamese": "Tai",
+      "gender": "NEUTER"
+    },
+    {
+      "id": "body_nase",
+      "german": "Nase",
+      "swiss": "Nase",
+      "phonetic": "Nààsặ",
+      "vietnamese": "Mũi",
+      "gender": "FEMININE"
+    },
+    {
+      "id": "body_mund",
+      "german": "Mund",
+      "swiss": "Muu",
+      "phonetic": "Muu",
+      "vietnamese": "Miệng",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "body_zunge",
+      "german": "Zunge",
+      "swiss": "Tsongä",
+      "phonetic": "Tsóngặ",
+      "vietnamese": "Lưỡi",
+      "gender": "FEMININE"
+    },
+    {
+      "id": "body_zahn",
+      "german": "Zahn",
+      "swiss": "Tsand",
+      "phonetic": "Tsànd",
+      "vietnamese": "Răng",
+      "gender": "MASCULINE",
+      "notes": "Plural: Tsänd"
+    },
+    {
+      "id": "body_hals",
+      "german": "Hals",
+      "swiss": "Haus",
+      "phonetic": "Hàụs",
+      "vietnamese": "Cổ",
+      "gender": "MASCULINE",
+      "freiamt": "Hals",
+      "rule_hint": "al→àụ"
+    },
+    {
+      "id": "body_schulter",
+      "german": "Schulter",
+      "swiss": "Schoutterä",
+      "phonetic": "Schòụtterặ",
+      "vietnamese": "Vai",
+      "gender": "FEMININE",
+      "freiamt": "Schulter",
+      "rule_hint": "ul→òụ"
+    },
+    {
+      "id": "body_arm",
+      "german": "Arm",
+      "swiss": "Arm",
+      "phonetic": "Àrm",
+      "vietnamese": "Cánh tay",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "body_hand",
+      "german": "Hand",
+      "swiss": "Hand",
+      "phonetic": "Hànd",
+      "vietnamese": "Tay",
+      "gender": "FEMININE"
+    },
+    {
+      "id": "body_finger",
+      "german": "Finger",
+      "swiss": "Fenger",
+      "phonetic": "Féngér",
+      "vietnamese": "Ngón tay",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "body_bauch",
+      "german": "Bauch",
+      "swiss": "Buuch",
+      "phonetic": "Buuch",
+      "vietnamese": "Bụng",
+      "gender": "MASCULINE",
+      "rule_hint": "au→uu"
+    },
+    {
+      "id": "body_ruecken",
+      "german": "Rücken",
+      "swiss": "Röggä",
+      "phonetic": "Rö́ggặ",
+      "vietnamese": "Lưng",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "body_bein",
+      "german": "Bein",
+      "swiss": "Bei",
+      "phonetic": "Béí",
+      "vietnamese": "Chân",
+      "gender": "NEUTER",
+      "notes": "Beide Vokale gespannt (Mundwinkel angezogen)"
+    },
+    {
+      "id": "body_knie",
+      "german": "Knie",
+      "swiss": "Chnöi",
+      "phonetic": "Chnö́i",
+      "vietnamese": "Đầu gối",
+      "gender": "NEUTER"
+    },
+    {
+      "id": "body_fuss",
+      "german": "Fuss",
+      "swiss": "Fuess",
+      "phonetic": "Fuèss",
+      "vietnamese": "Bàn chân",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "body_zehe",
+      "german": "Zehe",
+      "swiss": "Tzechä",
+      "phonetic": "Tséchặ",
+      "vietnamese": "Ngón chân",
+      "gender": "FEMININE"
+    },
+    {
+      "id": "body_herz",
+      "german": "Herz",
+      "swiss": "Härz",
+      "phonetic": "Härts",
+      "vietnamese": "Tim",
+      "gender": "NEUTER"
+    },
+    {
+      "id": "body_haut",
+      "german": "Haut",
+      "swiss": "Huut",
+      "phonetic": "Huut",
+      "vietnamese": "Da",
+      "gender": "FEMININE",
+      "rule_hint": "au→uu"
+    }
+  ]
+}

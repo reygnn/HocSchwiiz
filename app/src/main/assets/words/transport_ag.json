@@ -3,46 +3,102 @@
   "dialect": "ag",
   "words": [
     {
-      "id": "transport_001",
-      "german": "Bus",
-      "swiss": "Bus",
-      "vietnamese": "Xe buýt",
+      "id": "transport_fuehrerschein",
+      "german": "Führerschein",
+      "swiss": "Bilet",
+      "phonetic": "Bĭ-lét",
+      "vietnamese": "Bằng lái xe",
       "gender": "MASCULINE",
-      "examples": [
-        "I nimm de Bus"
-      ]
+      "notes": "T aspiriert (wie dt. Tee)"
     },
     {
-      "id": "transport_002",
-      "german": "Fahrrad",
-      "swiss": "Velo",
-      "vietnamese": "Xe đạp",
+      "id": "transport_zugticket",
+      "german": "Zugticket",
+      "swiss": "Zogbilet",
+      "phonetic": "Zóg-bĭ-lét",
+      "vietnamese": "Vé tàu",
       "gender": "NEUTER"
     },
     {
-      "id": "transport_003",
-      "german": "Zug",
-      "swiss": "Zug",
-      "vietnamese": "Tàu hỏa",
-      "gender": "MASCULINE"
-    },
-    {
-      "id": "transport_006",
-      "german": "Auto",
-      "swiss": "Auto",
-      "vietnamese": "Ô tô",
+      "id": "transport_flugticket",
+      "german": "Flugticket",
+      "swiss": "Flogbilet",
+      "phonetic": "Flòg-bĭ-lét",
+      "vietnamese": "Vé máy bay",
       "gender": "NEUTER",
-      "examples": [
-        "I fahr mit em Auto"
-      ]
+      "notes": "Auch: Flogticket"
     },
     {
-      "id": "transport_007",
-      "german": "Autobahn",
-      "swiss": "Autobahn",
-      "vietnamese": "Đường cao tốc",
+      "id": "transport_kinokarte",
+      "german": "Kinokarte",
+      "swiss": "Kinobilet",
+      "phonetic": "Kĭ-no-bĭ-lét",
+      "vietnamese": "Vé xem phim",
+      "gender": "NEUTER"
+    },
+    {
+      "id": "transport_stau",
+      "german": "Stau",
+      "swiss": "Schtòu",
+      "phonetic": "Schtòu",
+      "vietnamese": "Tắc đường",
+      "gender": "MASCULINE",
+      "notes": "ò=Gott, u=kurz"
+    },
+    {
+      "id": "transport_kreuzung",
+      "german": "Kreuzung",
+      "swiss": "Chrüüzig",
+      "phonetic": "Chrüü-zĭg",
+      "vietnamese": "Ngã tư",
+      "gender": "FEMININE"
+    },
+    {
+      "id": "transport_kreisel",
+      "german": "Kreisel",
+      "swiss": "Chréisu",
+      "phonetic": "Chréĭ-su",
+      "vietnamese": "Vòng xuyến",
+      "gender": "MASCULINE",
+      "notes": "é=geschlossen, ĭ+u=kurz"
+    },
+    {
+      "id": "transport_benzin",
+      "german": "Benzin",
+      "swiss": "Bännsiin",
+      "phonetic": "Bänn-siin",
+      "vietnamese": "Xăng",
+      "gender": "NEUTER",
+      "notes": "Wie dt. Miete"
+    },
+    {
+      "id": "transport_pneu",
+      "german": "Pneu",
+      "swiss": "Pnöö",
+      "phonetic": "Pnö́ö",
+      "vietnamese": "Lốp xe",
+      "gender": "MASCULINE",
+      "notes": "ö́=geschlossen (frz. bleu)"
+    },
+    {
+      "id": "transport_postauto",
+      "german": "Postauto / Bus",
+      "swiss": "Poschtouto",
+      "phonetic": "Pòsht-òú-tò",
+      "vietnamese": "xe buýt bưu điện",
+      "gender": "NEUTER",
+      "rule_hint": "au→òu",
+      "notes": "Zweimal Ross-O (ò) und L-Vokalisierung im 'outo'."
+    },
+    {
+      "id": "transport_hauptstrasse",
+      "german": "Hauptstrasse",
+      "swiss": "Houptschtross",
+      "phonetic": "Hòúpt-shtròòss",
+      "vietnamese": "đường chính",
       "gender": "FEMININE",
-      "notes": "A1"
+      "rule_hint": "au→òu",
+      "notes": "L-Vokalisierung bei Houpt. Ross-O bei Schtrooss."
     }
   ]
 }

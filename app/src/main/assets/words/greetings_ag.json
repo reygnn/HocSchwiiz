@@ -3,9 +3,10 @@
   "dialect": "ag",
   "words": [
     {
-      "id": "greetings_001",
+      "id": "greetings_guten_tag",
       "german": "Guten Tag",
       "swiss": "Guete Tag",
+      "phonetic": "Gúätặ Tàg",
       "vietnamese": "Xin chào",
       "notes": "Standard Begrüssung",
       "examples": [
@@ -13,73 +14,85 @@
       ]
     },
     {
-      "id": "greetings_002",
+      "id": "greetings_hoi",
       "german": "Hallo",
-      "swiss": "Sali",
+      "swiss": "Hoi",
+      "phonetic": "Hòi",
       "vietnamese": "Chào",
-      "notes": "Sehr verbreitet im Aargau",
+      "notes": "Per-Du: Freunde, Kollegen, Gleichaltrige",
       "alt_spellings": [
-        "Hoi",
+        "Sali",
         "Salü"
       ]
     },
     {
-      "id": "greetings_003",
+      "id": "greetings_auf_wiedersehen",
       "german": "Auf Wiedersehen",
       "swiss": "Uf Widerluege",
+      "phonetic": "Ùf Wédèrluègặ",
       "vietnamese": "Tạm biệt",
+      "notes": "L bleibt, u+e separat",
       "alt_spellings": [
         "Ade",
         "Tschüss"
       ]
     },
     {
-      "id": "greetings_004",
+      "id": "greetings_tschuess",
       "german": "Tschüss",
-      "swiss": "Tschau",
+      "swiss": "Tschou",
+      "phonetic": "Tschòu",
       "vietnamese": "Tạm biệt",
-      "notes": "Oder: Tschau zäme"
+      "notes": "ò=Gott. Auch: Tschou zäme"
     },
     {
-      "id": "greetings_005",
+      "id": "greetings_guten_morgen",
       "german": "Guten Morgen",
       "swiss": "Guete Morge",
+      "phonetic": "Gúätặ Mòrgặ",
       "vietnamese": "Chào buổi sáng"
     },
     {
-      "id": "greetings_006",
+      "id": "greetings_guten_abend",
       "german": "Guten Abend",
-      "swiss": "Guete Aabig",
-      "vietnamese": "Chào buổi tối"
+      "swiss": "Guete n'Obe",
+      "phonetic": "Gúätặ‿n'Òbặ",
+      "vietnamese": "Chào buổi tối",
+      "freiamt": "Guete Aabig",
+      "notes": "Binde-N vermeidet Vokal-Kollision"
     },
     {
-      "id": "greetings_008",
+      "id": "greetings_wie_gehts",
       "german": "Wie geht es dir?",
       "swiss": "Wie gohts der?",
+      "phonetic": "Wĭä gòts dér?",
       "vietnamese": "Bạn khỏe không?",
       "alt_spellings": [
-        "Wie gohts?",
-        "Alles klar?"
+        "We gohts?",
+        "Aus klar?"
       ]
     },
     {
-      "id": "greetings_009",
+      "id": "greetings_danke",
       "german": "Danke",
-      "swiss": "Merci",
+      "swiss": "Danke",
+      "phonetic": "Tàngkặ",
       "vietnamese": "Cảm ơn",
+      "notes": "T aspiriert (wie dt. Tee), ngk=Rachen-K",
       "alt_spellings": [
-        "Danke",
-        "Danke vielmol"
+        "Merci",
+        "Danke vöumou"
       ]
     },
     {
-      "id": "greetings_011",
-      "german": "Grüß Gott (höflich)",
+      "id": "greetings_gruess_gott",
+      "german": "Grüss Euch",
       "swiss": "Grüess ech",
+      "phonetic": "Grüèss‿èch",
       "vietnamese": "Kính chào",
-      "notes": "Sehr respektvolle, ältere Höflichkeitsform.",
+      "notes": "Sehr respektvoll, ältere Höflichkeitsform",
       "examples": [
-        "Grüess ech wohl"
+        "Grüess ech wou"
       ]
     }
   ]

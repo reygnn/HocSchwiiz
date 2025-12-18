@@ -3,9 +3,10 @@
   "dialect": "ag",
   "words": [
     {
-      "id": "nature_001",
+      "id": "nature_regen",
       "german": "Regen",
       "swiss": "Räge",
+      "phonetic": "Rägặ",
       "vietnamese": "Mưa",
       "gender": "MASCULINE",
       "examples": [
@@ -13,54 +14,147 @@
       ]
     },
     {
-      "id": "nature_002",
+      "id": "nature_sonne",
       "german": "Sonne",
-      "swiss": "Sunne",
+      "swiss": "Sonnä",
+      "phonetic": "Sónnặ",
       "vietnamese": "Mặt trời",
-      "gender": "FEMININE"
+      "gender": "FEMININE",
+      "notes": "Geschlossenes O (Rose), im Gegensatz zum deutschen offenen O"
     },
     {
-      "id": "nature_003",
+      "id": "nature_fluss",
       "german": "Fluss",
-      "swiss": "Fluss",
+      "swiss": "Floss",
+      "phonetic": "Flóss",
       "vietnamese": "Sông",
       "gender": "MASCULINE",
       "examples": [
         "D'Aare",
-        "D'Reuss",
-        "D'Suhre"
-      ]
+        "D'Röiss",
+        "De Ry"
+      ],
+      "notes": "Minimalpaar: Flóss (kurz, geschlossen) = Fluss, Flóóss (lang) = Floss, Flòss (kurz, offen) = Zahnseide"
     },
     {
-      "id": "nature_004",
+      "id": "nature_berg",
       "german": "Berg",
       "swiss": "Bärg",
+      "phonetic": "Bärg",
       "vietnamese": "Núi",
       "gender": "MASCULINE"
     },
     {
-      "id": "nature_005",
+      "id": "nature_wald",
       "german": "Wald",
-      "swiss": "Wald",
+      "swiss": "Waud",
+      "phonetic": "Wàụd",
       "vietnamese": "Rừng",
       "gender": "MASCULINE",
+      "freiamt": "Wald",
+      "rule_hint": "al→àụ",
       "examples": [
-        "Mer gönd in Wald"
-      ],
-      "alt_spellings": [
-        "Waud"
+        "Mer gönd in Waud"
       ]
     },
     {
-      "id": "nature_008",
+      "id": "nature_pilz",
       "german": "Pilz",
       "swiss": "Schwomm",
+      "phonetic": "Schwòmm",
       "vietnamese": "Nấm",
       "gender": "MASCULINE",
-      "notes": "Plural: Schwümm. (I go go Schwömm sueche)",
+      "notes": "Reitnau-Lexikon. Plural: Schwömm (Schwö́mm)",
       "examples": [
-        "Es het viel Schwömm im Wald"
+        "Es hèt vö́ụ Schwömm im Wàụd"
+      ],
+      "alt_spellings": [
+        "Pöuz"
       ]
+    },
+    {
+      "id": "nature_chrachae",
+      "german": "abgelegenes Tal",
+      "swiss": "Chrachä",
+      "phonetic": "Chrā-chặ",
+      "vietnamese": "thung lũng hẻo lánh",
+      "gender": "MASCULINE",
+      "notes": "Kratzendes CH"
+    },
+    {
+      "id": "nature_huegel",
+      "german": "Hügel",
+      "swiss": "Hoger",
+      "phonetic": "Hò-gär",
+      "vietnamese": "đồi",
+      "gender": "MASCULINE",
+      "notes": "Ross-O (ò)"
+    },
+    {
+      "id": "nature_pflotsch",
+      "german": "Matsch / Schnee",
+      "swiss": "Pflotsch",
+      "phonetic": "Pflòtsh",
+      "vietnamese": "bùn lầy",
+      "gender": "MASCULINE",
+      "notes": "Ross-O (ò)"
+    },
+    {
+      "id": "nature_es_regnet",
+      "german": "es regnet",
+      "swiss": "es räänet",
+      "phonetic": "ès rääät-nèt",
+      "vietnamese": "trời đang mưa",
+      "notes": "Kein g! Das ä ist extrem lang gezogen."
+    },
+    {
+      "id": "nature_sonne_scheint",
+      "german": "die Sonne scheint",
+      "swiss": "d'Sonnä schiint",
+      "phonetic": "t'Són-nä shĭĭnt",
+      "vietnamese": "trời đang nắng",
+      "notes": "Sónnä mit Rosen-O (spitz/geschlossen). schiint mit langem i."
+    },
+    {
+      "id": "nature_schuettet",
+      "german": "es schüttet (starker Regen)",
+      "swiss": "es schöttet",
+      "phonetic": "ès shő́t-tèt",
+      "vietnamese": "trời mưa như trút nước",
+      "notes": "Wichtig: Spitzes ő (geschlossen). Kurze, betonte erste Silbe."
+    },
+    {
+      "id": "nature_starker_regen",
+      "german": "Es regnet richtig fest.",
+      "swiss": "Es rääätnet rächt fèrtig.",
+      "phonetic": "Ès rääät-nèt rächt fèr-tĭg.",
+      "vietnamese": "Trời mưa thực sự rất to.",
+      "notes": "rääätnet (kein g!), rächt (Verstärkung), fèrtig (hier: heftig)."
+    },
+    {
+      "id": "nature_heiss",
+      "german": "heiss",
+      "swiss": "heiss",
+      "phonetic": "héiss",
+      "vietnamese": "nóng",
+      "notes": "Geschlossenes é, das in ein i gleitet."
+    },
+    {
+      "id": "nature_garten",
+      "german": "Garten",
+      "swiss": "Gartä",
+      "phonetic": "Gàrtä",
+      "vietnamese": "vườn",
+      "gender": "MASCULINE",
+      "notes": "Das r wird leicht angerollt, das ä am Ende ist kurz."
+    },
+    {
+      "id": "nature_unkraut_jaeten",
+      "german": "Unkraut jäten",
+      "swiss": "Ochruut iättä",
+      "phonetic": "Óch-rúút iättä",
+      "vietnamese": "nhổ cỏ",
+      "notes": "iättä: Das i gleitet direkt ins ä (Gleitlaut)."
     }
   ]
 }

@@ -1,0 +1,146 @@
+{
+  "version": 4,
+  "dialect": "ag",
+  "words": [
+    {
+      "id": "family_mutter",
+      "german": "Mutter",
+      "swiss": "Muetter",
+      "phonetic": "Mùättẹr",
+      "vietnamese": "Mẹ",
+      "gender": "FEMININE",
+      "notes": "Doppel-t"
+    },
+    {
+      "id": "family_vater",
+      "german": "Vater",
+      "swiss": "Vatter",
+      "phonetic": "Fàttẹr",
+      "vietnamese": "Bố",
+      "gender": "MASCULINE",
+      "notes": "V→F"
+    },
+    {
+      "id": "family_bruder",
+      "german": "Bruder",
+      "swiss": "Brüeder",
+      "phonetic": "Brüädẹr",
+      "vietnamese": "Anh/Em trai",
+      "gender": "MASCULINE",
+      "notes": "üe=Diphthong"
+    },
+    {
+      "id": "family_schwester",
+      "german": "Schwester",
+      "swiss": "Schwöschter",
+      "phonetic": "Schwö̀schtẹr",
+      "vietnamese": "Chị/Em gái",
+      "gender": "FEMININE",
+      "notes": "ö̀=offen (Götter)"
+    },
+    {
+      "id": "family_grossmutter",
+      "german": "Grossmutter",
+      "swiss": "Grossmuetter",
+      "phonetic": "Gròssmùättẹr",
+      "vietnamese": "Bà",
+      "gender": "FEMININE"
+    },
+    {
+      "id": "family_grossvater",
+      "german": "Grossvater",
+      "swiss": "Grossvatter",
+      "phonetic": "Gròssfàttẹr",
+      "vietnamese": "Ông",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "family_kind",
+      "german": "Kind",
+      "swiss": "Chind",
+      "phonetic": "Chĭnd",
+      "vietnamese": "Con",
+      "gender": "NEUTER",
+      "notes": "ĭ=kurz"
+    },
+    {
+      "id": "family_sohn",
+      "german": "Sohn",
+      "swiss": "Sohn",
+      "phonetic": "Sòòn",
+      "vietnamese": "Con trai",
+      "gender": "MASCULINE",
+      "notes": "Langes òò"
+    },
+    {
+      "id": "family_tochter",
+      "german": "Tochter",
+      "swiss": "Tochter",
+      "phonetic": "Tòchtẹr",
+      "vietnamese": "Con gái",
+      "gender": "FEMININE"
+    },
+    {
+      "id": "family_onkel",
+      "german": "Onkel",
+      "swiss": "Onglä",
+      "phonetic": "Őnglặ",
+      "vietnamese": "Chú/Cậu",
+      "gender": "MASCULINE",
+      "notes": "Spitzes ő (Rosen-Ö)"
+    },
+    {
+      "id": "family_tante",
+      "german": "Tante",
+      "swiss": "Tantä",
+      "phonetic": "Tàntặ",
+      "vietnamese": "Cô/Dì",
+      "gender": "FEMININE"
+    },
+    {
+      "id": "family_enkel",
+      "german": "Enkel",
+      "swiss": "Ängku",
+      "phonetic": "Ängkụ",
+      "vietnamese": "Cháu",
+      "gender": "MASCULINE",
+      "notes": "L-Vokalisierung, fast wie Ängkä"
+    },
+    {
+      "id": "family_cousin",
+      "german": "Cousin",
+      "swiss": "Gusäng",
+      "phonetic": "Gù-säng",
+      "vietnamese": "anh em họ (nam)",
+      "gender": "MASCULINE",
+      "notes": "Franz. Lehnwort"
+    },
+    {
+      "id": "family_cousine",
+      "german": "Cousine",
+      "swiss": "Gusine",
+      "phonetic": "Gù-sĭ-nặ",
+      "vietnamese": "anh em họ (nữ)",
+      "gender": "FEMININE",
+      "notes": "Franz. Lehnwort"
+    },
+    {
+      "id": "family_frau",
+      "german": "Frau",
+      "swiss": "Frou",
+      "phonetic": "Fròụ",
+      "vietnamese": "phụ nữ",
+      "gender": "FEMININE",
+      "rule_hint": "au→òu"
+    },
+    {
+      "id": "family_mann",
+      "german": "Mann",
+      "swiss": "Maa",
+      "phonetic": "Màà",
+      "vietnamese": "đàn ông",
+      "gender": "MASCULINE",
+      "notes": "Langes à"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "version": 4,
+  "dialect": "ag",
+  "words": [
+    {
+      "id": "clothing_kittel",
+      "german": "Arbeitsjacke / Kittel",
+      "swiss": "Chéttu",
+      "phonetic": "Chét-tụ",
+      "vietnamese": "áo khoác",
+      "gender": "MASCULINE",
+      "freiamt": "Chittel",
+      "rule_hint": "el→ụ",
+      "notes": "é-Regel"
+    },
+    {
+      "id": "clothing_hemd",
+      "german": "Hemd",
+      "swiss": "Hömmli",
+      "phonetic": "Hö́mm-lĭ",
+      "vietnamese": "áo sơ mi",
+      "gender": "NEUTER",
+      "notes": "Kein Diminutiv!"
+    },
+    {
+      "id": "clothing_hose",
+      "german": "Hose",
+      "swiss": "Hosä",
+      "phonetic": "Hò-sä",
+      "vietnamese": "quần dài",
+      "gender": "FEMININE",
+      "notes": "Ross-O (ò)"
+    },
+    {
+      "id": "clothing_schuhe",
+      "german": "Schuhe",
+      "swiss": "Schuä",
+      "phonetic": "Shú-ä",
+      "vietnamese": "giày",
+      "gender": "PLURAL",
+      "notes": "u-ä Gleitlaut"
+    },
+    {
+      "id": "clothing_gummistiefel",
+      "german": "Gummistiefel",
+      "swiss": "Gummistiblä",
+      "phonetic": "Gùmmĭ-stĭblä",
+      "vietnamese": "ủng cao su",
+      "gender": "PLURAL",
+      "notes": "Plural: d'Stiblä. Das L bleibt."
+    },
+    {
+      "id": "clothing_pyjama",
+      "german": "Schlafanzug (Pyjama)",
+      "swiss": "Bischama",
+      "phonetic": "Bĭ-shà-mà",
+      "vietnamese": "đồ ngủ",
+      "gender": "MASCULINE",
+      "notes": "Urchiger Dialektausdruck für Pyjama."
+    },
+    {
+      "id": "clothing_pyjama_diminutiv",
+      "german": "Pyjama-chen (niedlich)",
+      "swiss": "Bischämänggeli",
+      "phonetic": "Bĭ-shä-mäng-gè-lĭ",
+      "vietnamese": "đồ ngủ nhỏ / dễ thương",
+      "gender": "NEUTER",
+      "notes": "Der ultimative Reitnauer Diminutiv. Mit starkem -ngg- in der Mitte."
+    }
+  ]
+}

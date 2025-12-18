@@ -1,0 +1,197 @@
+{
+  "version": 4,
+  "dialect": "ag",
+  "words": [
+    {
+      "id": "shopping_laden",
+      "german": "Laden",
+      "swiss": "Lààde",
+      "phonetic": "Làà-dặ",
+      "vietnamese": "Cửa hàng",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "shopping_geschaeft",
+      "german": "Geschäft",
+      "swiss": "G'schäft",
+      "phonetic": "G'schäft",
+      "vietnamese": "Cửa hàng",
+      "gender": "NEUTER"
+    },
+    {
+      "id": "shopping_kasse",
+      "german": "Kasse",
+      "swiss": "Kassä",
+      "phonetic": "Kàs-sặ",
+      "vietnamese": "Quầy thu ngân",
+      "gender": "FEMININE"
+    },
+    {
+      "id": "shopping_preis",
+      "german": "Preis",
+      "swiss": "Priis",
+      "phonetic": "Priis",
+      "vietnamese": "Giá",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "shopping_teuer",
+      "german": "teuer",
+      "swiss": "tüür",
+      "phonetic": "tüür",
+      "vietnamese": "Đắt"
+    },
+    {
+      "id": "shopping_billig",
+      "german": "billig",
+      "swiss": "böuig",
+      "phonetic": "bö́-ụig",
+      "vietnamese": "Rẻ",
+      "freiamt": "billig",
+      "rule_hint": "il→öu"
+    },
+    {
+      "id": "shopping_gratis",
+      "german": "gratis",
+      "swiss": "graatis",
+      "phonetic": "gràà-tis",
+      "vietnamese": "Miễn phí"
+    },
+    {
+      "id": "shopping_rabatt",
+      "german": "Rabatt",
+      "swiss": "Rabatt",
+      "phonetic": "Rà-bặtt",
+      "vietnamese": "Giảm giá",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "shopping_aktion",
+      "german": "Aktion",
+      "swiss": "Aktion",
+      "phonetic": "Àk-tsión",
+      "vietnamese": "Khuyến mãi",
+      "gender": "FEMININE"
+    },
+    {
+      "id": "shopping_quittung",
+      "german": "Quittung",
+      "swiss": "Quettig",
+      "phonetic": "Quét-tìg",
+      "vietnamese": "Hóa đơn",
+      "gender": "FEMININE"
+    },
+    {
+      "id": "shopping_tasche",
+      "german": "Tasche",
+      "swiss": "Tääsche",
+      "phonetic": "Tää-schặ",
+      "vietnamese": "Túi",
+      "gender": "FEMININE"
+    },
+    {
+      "id": "shopping_saeckli",
+      "german": "Säckli",
+      "swiss": "Seckli",
+      "phonetic": "Séck-lị",
+      "vietnamese": "Túi nhỏ",
+      "gender": "NEUTER",
+      "notes": "Plastiktüte. é=gespannt (Mundwinkel gezogen)"
+    },
+    {
+      "id": "shopping_zahlen",
+      "german": "zahlen",
+      "swiss": "zauä",
+      "phonetic": "tsà-wặ",
+      "vietnamese": "Trả tiền",
+      "notes": "Z→TS, L-Vokalisierung mit w-Hauch"
+    },
+    {
+      "id": "shopping_bar",
+      "german": "bar",
+      "swiss": "bar",
+      "phonetic": "bàr",
+      "vietnamese": "Tiền mặt",
+      "notes": "Barzahlung"
+    },
+    {
+      "id": "shopping_karte",
+      "german": "Karte",
+      "swiss": "Chartä",
+      "phonetic": "Chàr-tặ",
+      "vietnamese": "Thẻ",
+      "gender": "FEMININE",
+      "notes": "Bankkarte"
+    },
+    {
+      "id": "shopping_wechselgeld",
+      "german": "Wechselgeld",
+      "swiss": "Wächsugäut",
+      "phonetic": "Wäch-sụ-gäụt",
+      "vietnamese": "Tiền thối",
+      "gender": "NEUTER",
+      "freiamt": "Wächselgeld",
+      "rule_hint": "el→äu",
+      "notes": "D→T (Fortisierung)"
+    },
+    {
+      "id": "shopping_einkaufswagen",
+      "german": "Einkaufswagen",
+      "swiss": "Wäägeli",
+      "phonetic": "Wää-gè-lĭ",
+      "vietnamese": "xe đẩy mua sắm",
+      "gender": "NEUTER",
+      "notes": "Langes Ä"
+    },
+    {
+      "id": "shopping_korb",
+      "german": "Korb",
+      "swiss": "Chorb",
+      "phonetic": "Chòrb",
+      "vietnamese": "Giỏ",
+      "gender": "MASCULINE",
+      "notes": "Einkaufskorb"
+    },
+    {
+      "id": "shopping_offen",
+      "german": "offen",
+      "swiss": "offe",
+      "phonetic": "òf-fặ",
+      "vietnamese": "Mở cửa"
+    },
+    {
+      "id": "shopping_geschlossen",
+      "german": "geschlossen",
+      "swiss": "gschlosse",
+      "phonetic": "gschlòs-sặ",
+      "vietnamese": "Đóng cửa"
+    },
+    {
+      "id": "shopping_schlange",
+      "german": "Schlange",
+      "swiss": "Schlange",
+      "phonetic": "Schlàn-gặ",
+      "vietnamese": "Hàng chờ",
+      "gender": "FEMININE",
+      "notes": "Warteschlange"
+    },
+    {
+      "id": "shopping_volg",
+      "german": "Volg (Dorfladen)",
+      "swiss": "Voug",
+      "phonetic": "Vòụg",
+      "vietnamese": "cửa hàng tạp hóa",
+      "gender": "MASCULINE",
+      "rule_hint": "ol→òụ",
+      "notes": "Ross-O (ò). L-Vokalisierung am Ende."
+    },
+    {
+      "id": "shopping_wo_ist_volg",
+      "german": "Wo ist der Volg?",
+      "swiss": "Wo esch de Voug?",
+      "phonetic": "Wó éshh đè Vòụg?",
+      "vietnamese": "Cửa hàng Volg ở đâu?",
+      "notes": "éshh mit langem sh. đ = weiches D."
+    }
+  ]
+}

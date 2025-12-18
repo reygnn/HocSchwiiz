@@ -1,0 +1,206 @@
+{
+  "version": 4,
+  "dialect": "ag",
+  "words": [
+    {
+      "id": "health_arzt",
+      "german": "Arzt",
+      "swiss": "Arzt",
+      "phonetic": "Àrtst",
+      "vietnamese": "Bác sĩ",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "health_aerztin",
+      "german": "Ärztin",
+      "swiss": "Ärztin",
+      "phonetic": "Ärtstin",
+      "vietnamese": "Bác sĩ (nữ)",
+      "gender": "FEMININE"
+    },
+    {
+      "id": "health_doktor",
+      "german": "Doktor",
+      "swiss": "Dockter",
+      "phonetic": "Dòcktèr",
+      "vietnamese": "Bác sĩ",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "health_spital",
+      "german": "Spital",
+      "swiss": "Schpitau",
+      "phonetic": "Schpétàụ",
+      "vietnamese": "Bệnh viện",
+      "gender": "NEUTER",
+      "freiamt": "Spital",
+      "rule_hint": "i→é, al→àụ"
+    },
+    {
+      "id": "health_apotheke",
+      "german": "Apotheke",
+      "swiss": "Apitéégg",
+      "phonetic": "Àpitéégg",
+      "vietnamese": "Nhà thuốc",
+      "gender": "FEMININE"
+    },
+    {
+      "id": "health_medikament",
+      "german": "Medikament",
+      "swiss": "Medikamänt",
+      "phonetic": "Médikamänt",
+      "vietnamese": "Thuốc",
+      "gender": "NEUTER"
+    },
+    {
+      "id": "health_tablette",
+      "german": "Tablette",
+      "swiss": "Tablättä",
+      "phonetic": "Tàblèttặ",
+      "vietnamese": "Viên thuốc",
+      "gender": "FEMININE"
+    },
+    {
+      "id": "health_rezept",
+      "german": "Rezept",
+      "swiss": "Rezäpt",
+      "phonetic": "Rézäpt",
+      "vietnamese": "Đơn thuốc",
+      "gender": "NEUTER"
+    },
+    {
+      "id": "health_krank",
+      "german": "krank",
+      "swiss": "chrank",
+      "phonetic": "chràngk",
+      "vietnamese": "Ốm"
+    },
+    {
+      "id": "health_gesund",
+      "german": "gesund",
+      "swiss": "gsond",
+      "phonetic": "gsónd",
+      "vietnamese": "Khỏe",
+      "notes": "ó=geschlossen (Rose)"
+    },
+    {
+      "id": "health_krankheit",
+      "german": "Krankheit",
+      "swiss": "Chrangket",
+      "phonetic": "Chràng-két",
+      "vietnamese": "bệnh tật",
+      "gender": "FEMININE",
+      "notes": "é im Suffix"
+    },
+    {
+      "id": "health_schmerzen",
+      "german": "Schmerzen",
+      "swiss": "Schmärtse",
+      "phonetic": "Schmärtsặ",
+      "vietnamese": "Đau",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "health_kopfweh",
+      "german": "Kopfweh",
+      "swiss": "Chopfweh",
+      "phonetic": "Chòpfwéh",
+      "vietnamese": "Đau đầu",
+      "gender": "NEUTER"
+    },
+    {
+      "id": "health_bauchweh",
+      "german": "Bauchweh",
+      "swiss": "Buuchweh",
+      "phonetic": "Buuchwéh",
+      "vietnamese": "Đau bụng",
+      "gender": "NEUTER",
+      "rule_hint": "au→uu"
+    },
+    {
+      "id": "health_halsweh",
+      "german": "Halsweh",
+      "swiss": "Hauswee",
+      "phonetic": "Hàụ-s-wéé",
+      "vietnamese": "đau họng",
+      "gender": "NEUTER",
+      "rule_hint": "al→àụ",
+      "notes": "Haus = Hals"
+    },
+    {
+      "id": "health_fieber",
+      "german": "Fieber",
+      "swiss": "Fiäber",
+      "phonetic": "Fiäber",
+      "vietnamese": "Sốt",
+      "gender": "NEUTER"
+    },
+    {
+      "id": "health_husten",
+      "german": "Husten",
+      "swiss": "Hueschtä",
+      "phonetic": "Huèschtặ",
+      "vietnamese": "Ho",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "health_schnupfen",
+      "german": "Schnupfen",
+      "swiss": "Chnösu",
+      "phonetic": "Chnö́sụ",
+      "vietnamese": "Sổ mũi",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "health_erkaeltung",
+      "german": "Erkältung",
+      "swiss": "Verchöutig",
+      "phonetic": "Vèrchö́ụtìg",
+      "vietnamese": "Cảm lạnh",
+      "gender": "FEMININE",
+      "freiamt": "Erkältig",
+      "alt_spellings": ["Schnupfe"],
+      "rule_hint": "äl→öu"
+    },
+    {
+      "id": "health_schwindelig",
+      "german": "schwindelig",
+      "swiss": "trömmlig",
+      "phonetic": "trö̀mm-lĭg",
+      "vietnamese": "chóng mặt",
+      "notes": "Offenes ö̀"
+    },
+    {
+      "id": "health_termin",
+      "german": "Termin",
+      "swiss": "Termin",
+      "phonetic": "Térmiin",
+      "vietnamese": "Cuộc hẹn",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "health_wartezimmer",
+      "german": "Wartezimmer",
+      "swiss": "Wartezimmer",
+      "phonetic": "Wàrtezìmmer",
+      "vietnamese": "Phòng chờ",
+      "gender": "NEUTER"
+    },
+    {
+      "id": "health_versicherung",
+      "german": "Versicherung",
+      "swiss": "Versicherig",
+      "phonetic": "Vèrsìcherìg",
+      "vietnamese": "Bảo hiểm",
+      "gender": "FEMININE"
+    },
+    {
+      "id": "health_krankenkasse",
+      "german": "Krankenkasse",
+      "swiss": "Chrankekasse",
+      "phonetic": "Chràngkekàssặ",
+      "vietnamese": "Bảo hiểm y tế",
+      "gender": "FEMININE"
+    }
+  ]
+}

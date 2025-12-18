@@ -1,0 +1,41 @@
+{
+  "version": 4,
+  "dialect": "ag",
+  "words": [
+    {
+      "id": "farm_kuh_melken_hoeflich",
+      "german": "Haben Sie die Kuh schon gemolken?",
+      "swiss": "Händ'er d'Chuä scho gmouä?",
+      "phonetic": "Händ'èr t'Chúä shò gmòúä?",
+      "vietnamese": "Ông/Bà đã vắt sữa bò chưa ạ?",
+      "notes": "Höflichkeitsform 'Ihrzen' (Händ'er). Partizip: gmouä."
+    },
+    {
+      "id": "farm_mist",
+      "german": "Mist",
+      "swiss": "Mescht",
+      "phonetic": "Mésht",
+      "vietnamese": "phân chuồng",
+      "gender": "MASCULINE",
+      "rule_hint": "i→é",
+      "notes": "Geschlossenes é für Reitnauer Aussprache."
+    },
+    {
+      "id": "farm_fuettern",
+      "german": "füttern",
+      "swiss": "fuere",
+      "phonetic": "fú-èrä",
+      "vietnamese": "cho ăn",
+      "notes": "Wichtig: u und e werden separat ausgesprochen (kein ü-Laut)."
+    },
+    {
+      "id": "farm_ausmisten",
+      "german": "ausmisten",
+      "swiss": "usmeschte",
+      "phonetic": "úsméshtä",
+      "vietnamese": "dọn chuồng",
+      "rule_hint": "i→é",
+      "notes": "Geschlossenes é."
+    }
+  ]
+}

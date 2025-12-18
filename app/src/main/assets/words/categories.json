@@ -70,6 +70,76 @@
       "display_name_vi": "Chửi thề",
       "icon": "sentiment_very_dissatisfied",
       "order": 9
+    },
+    {
+      "id": "shopping",
+      "display_name_de": "Einkaufen",
+      "display_name_vi": "Mua sắm",
+      "icon": "shopping_cart",
+      "order": 10
+    },
+    {
+      "id": "health",
+      "display_name_de": "Gesundheit",
+      "display_name_vi": "Sức khỏe",
+      "icon": "medical_services",
+      "order": 11
+    },
+    {
+      "id": "body",
+      "display_name_de": "Körper",
+      "display_name_vi": "Cơ thể",
+      "icon": "accessibility_new",
+      "order": 12
+    },
+    {
+      "id": "animals",
+      "display_name_de": "Tiere",
+      "display_name_vi": "Động vật",
+      "icon": "pets",
+      "order": 13
+    },
+    {
+      "id": "house_home",
+      "display_name_de": "Haus & Wohnung",
+      "display_name_vi": "Nhà cửa",
+      "icon": "apartment",
+      "order": 14
+    },
+    {
+      "id": "clothing",
+      "display_name_de": "Kleidung",
+      "display_name_vi": "Quần áo",
+      "icon": "checkroom",
+      "order": 15
+    },
+    {
+      "id": "emotions",
+      "display_name_de": "Gefühle",
+      "display_name_vi": "Cảm xúc",
+      "icon": "mood",
+      "order": 16
+    },
+    {
+      "id": "questions",
+      "display_name_de": "Fragewörter",
+      "display_name_vi": "Từ để hỏi",
+      "icon": "help_outline",
+      "order": 17
+    },
+    {
+      "id": "buildings",
+      "display_name_de": "Gebäude & Orte",
+      "display_name_vi": "Tòa nhà & Địa điểm",
+      "icon": "location_city",
+      "order": 18
+    },
+    {
+      "id": "farm",
+      "display_name_de": "Bauernhof",
+      "display_name_vi": "Nông trại",
+      "icon": "agriculture",
+      "order": 19
     }
   ]
 }

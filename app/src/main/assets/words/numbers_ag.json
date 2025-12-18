@@ -1,0 +1,685 @@
+{
+  "version": 4,
+  "dialect": "ag",
+  "words": [
+    {
+      "id": "numbers_time_eins",
+      "german": "eins",
+      "swiss": "eis",
+      "phonetic": "éis",
+      "vietnamese": "một",
+      "notes": "é=geschlossen"
+    },
+    {
+      "id": "numbers_time_zwei",
+      "german": "zwei",
+      "swiss": "zwöi",
+      "phonetic": "tswő́i",
+      "vietnamese": "hai",
+      "notes": "Z→ts, spitzes ő"
+    },
+    {
+      "id": "numbers_time_drei",
+      "german": "drei",
+      "swiss": "drüü",
+      "phonetic": "đrüü",
+      "vietnamese": "ba",
+      "notes": "đ=weiches D"
+    },
+    {
+      "id": "numbers_time_vier",
+      "german": "vier",
+      "swiss": "vier",
+      "phonetic": "viär",
+      "vietnamese": "bốn"
+    },
+    {
+      "id": "numbers_time_fuenf",
+      "german": "fünf",
+      "swiss": "föif",
+      "phonetic": "fő́if",
+      "vietnamese": "năm",
+      "notes": "Spitzes Rosen-Ö (ő)"
+    },
+    {
+      "id": "numbers_time_sechs",
+      "german": "sechs",
+      "swiss": "sächs",
+      "phonetic": "sächs",
+      "vietnamese": "sáu"
+    },
+    {
+      "id": "numbers_time_sieben",
+      "german": "sieben",
+      "swiss": "sebä",
+      "phonetic": "sè-bä",
+      "vietnamese": "bảy",
+      "notes": "Kurzes ä"
+    },
+    {
+      "id": "numbers_time_acht",
+      "german": "acht",
+      "swiss": "acht",
+      "phonetic": "àcht",
+      "vietnamese": "tám"
+    },
+    {
+      "id": "numbers_time_neun",
+      "german": "neun",
+      "swiss": "nüün",
+      "phonetic": "nüün",
+      "vietnamese": "chín",
+      "notes": "Langes ü"
+    },
+    {
+      "id": "numbers_time_zehn",
+      "german": "zehn",
+      "swiss": "zää",
+      "phonetic": "tsää",
+      "vietnamese": "mười",
+      "notes": "Z→ts"
+    },
+    {
+      "id": "numbers_time_elf",
+      "german": "elf",
+      "swiss": "öuf",
+      "phonetic": "ő́uf",
+      "vietnamese": "mười một",
+      "freiamt": "elf",
+      "rule_hint": "el→öu",
+      "notes": "L-Vokalisierung!"
+    },
+    {
+      "id": "numbers_time_zwoelf",
+      "german": "zwölf",
+      "swiss": "zwöuf",
+      "phonetic": "tswő́uf",
+      "vietnamese": "mười hai",
+      "freiamt": "zwölf",
+      "rule_hint": "öl→öu",
+      "notes": "Z→ts, L-Vokalisierung"
+    },
+    {
+      "id": "numbers_time_dreizehn",
+      "german": "dreizehn",
+      "swiss": "driizä",
+      "phonetic": "đrĭĭ-tsä",
+      "vietnamese": "mười ba"
+    },
+    {
+      "id": "numbers_time_vierzehn",
+      "german": "vierzehn",
+      "swiss": "vierzä",
+      "phonetic": "viär-tsä",
+      "vietnamese": "mười bốn"
+    },
+    {
+      "id": "numbers_time_fuenfzehn",
+      "german": "fünfzehn",
+      "swiss": "föfzä",
+      "phonetic": "főf-tsä",
+      "vietnamese": "mười lăm"
+    },
+    {
+      "id": "numbers_time_sechzehn",
+      "german": "sechzehn",
+      "swiss": "sächzä",
+      "phonetic": "säch-tsä",
+      "vietnamese": "mười sáu"
+    },
+    {
+      "id": "numbers_time_siebzehn",
+      "german": "siebzehn",
+      "swiss": "sebzä",
+      "phonetic": "sèb-tsä",
+      "vietnamese": "mười bảy"
+    },
+    {
+      "id": "numbers_time_achtzehn",
+      "german": "achtzehn",
+      "swiss": "achzä",
+      "phonetic": "àch-tsä",
+      "vietnamese": "mười tám",
+      "notes": "Mit hartem ch"
+    },
+    {
+      "id": "numbers_time_neunzehn",
+      "german": "neunzehn",
+      "swiss": "nüünzä",
+      "phonetic": "nüün-tsä",
+      "vietnamese": "mười chín"
+    },
+    {
+      "id": "numbers_time_zwanzig",
+      "german": "zwanzig",
+      "swiss": "zwänzg",
+      "phonetic": "tswänts-g",
+      "vietnamese": "hai mươi"
+    },
+    {
+      "id": "numbers_time_dreissig",
+      "german": "dreissig",
+      "swiss": "drissg",
+      "phonetic": "đrĭss-g",
+      "vietnamese": "ba mươi"
+    },
+    {
+      "id": "numbers_time_vierzig",
+      "german": "vierzig",
+      "swiss": "vierzg",
+      "phonetic": "viärs-g",
+      "vietnamese": "bốn mươi"
+    },
+    {
+      "id": "numbers_time_fuenfzig",
+      "german": "fünfzig",
+      "swiss": "föfzg",
+      "phonetic": "főfs-g",
+      "vietnamese": "năm mươi"
+    },
+    {
+      "id": "numbers_time_sechzig",
+      "german": "sechzig",
+      "swiss": "sächzg",
+      "phonetic": "sächs-g",
+      "vietnamese": "sáu mươi"
+    },
+    {
+      "id": "numbers_time_siebzig",
+      "german": "siebzig",
+      "swiss": "sebäzg",
+      "phonetic": "sè-bäts-g",
+      "vietnamese": "bảy mươi"
+    },
+    {
+      "id": "numbers_time_achtzig",
+      "german": "achtzig",
+      "swiss": "achzg",
+      "phonetic": "àchts-g",
+      "vietnamese": "tám mươi"
+    },
+    {
+      "id": "numbers_time_neunzig",
+      "german": "neunzig",
+      "swiss": "nüünzg",
+      "phonetic": "nüün-ts-g",
+      "vietnamese": "chín mươi"
+    },
+    {
+      "id": "numbers_time_hundert",
+      "german": "hundert",
+      "swiss": "hondert",
+      "phonetic": "hònd-ért",
+      "vietnamese": "một trăm",
+      "notes": "Ross-O (hò)"
+    },
+    {
+      "id": "numbers_time_tausend",
+      "german": "tausend",
+      "swiss": "tuusig",
+      "phonetic": "túú-sĭg",
+      "vietnamese": "một nghìn"
+    },
+    {
+      "id": "numbers_time_tausendundeins",
+      "german": "tausendeins",
+      "swiss": "tuusigondeis",
+      "phonetic": "túú-sĭg-ònd-éis",
+      "vietnamese": "một nghìn lẻ một",
+      "notes": "Verschmelzung"
+    },
+    {
+      "id": "numbers_time_zehntausend",
+      "german": "zehntausend",
+      "swiss": "zäätuusig",
+      "phonetic": "tsää-túú-sĭg",
+      "vietnamese": "mười nghìn"
+    },
+    {
+      "id": "numbers_time_hunderttausend",
+      "german": "hunderttausend",
+      "swiss": "honderttuusig",
+      "phonetic": "hònd-ért-túú-sĭg",
+      "vietnamese": "một trăm nghìn"
+    },
+    {
+      "id": "numbers_time_million",
+      "german": "eine Million",
+      "swiss": "ä Million",
+      "phonetic": "ä mĭl-li-ón",
+      "vietnamese": "một triệu"
+    },
+    {
+      "id": "numbers_time_januar",
+      "german": "Januar",
+      "swiss": "Jäner",
+      "phonetic": "Jä́ner",
+      "vietnamese": "tháng một",
+      "gender": "MASCULINE",
+      "notes": "Nur ein N"
+    },
+    {
+      "id": "numbers_time_februar",
+      "german": "Februar",
+      "swiss": "Fébruar",
+      "phonetic": "Fé-bru-àr",
+      "vietnamese": "tháng hai",
+      "gender": "MASCULINE",
+      "notes": "é=geschlossen"
+    },
+    {
+      "id": "numbers_time_maerz",
+      "german": "März",
+      "swiss": "Mérz",
+      "phonetic": "Mérts",
+      "vietnamese": "tháng ba",
+      "gender": "MASCULINE",
+      "notes": "é=geschlossen, Z→ts"
+    },
+    {
+      "id": "numbers_time_april",
+      "german": "April",
+      "swiss": "aberöuä",
+      "phonetic": "à-bä-rő́-ụ-ä",
+      "vietnamese": "tháng tư",
+      "gender": "MASCULINE",
+      "notes": "Nicht \"abrollen\"!"
+    },
+    {
+      "id": "numbers_time_mai",
+      "german": "Mai",
+      "swiss": "Méiä",
+      "phonetic": "Méi-ä",
+      "vietnamese": "tháng năm",
+      "gender": "MASCULINE",
+      "notes": "é=geschlossen"
+    },
+    {
+      "id": "numbers_time_juni",
+      "german": "Juni",
+      "swiss": "Juni",
+      "phonetic": "Júni",
+      "vietnamese": "tháng sáu",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "numbers_time_juli",
+      "german": "Juli",
+      "swiss": "Juli",
+      "phonetic": "Júli",
+      "vietnamese": "tháng bảy",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "numbers_time_august",
+      "german": "August",
+      "swiss": "Ougschtä",
+      "phonetic": "Òụ-g-sh-tä",
+      "vietnamese": "tháng tám",
+      "gender": "MASCULINE",
+      "rule_hint": "au→òu"
+    },
+    {
+      "id": "numbers_time_september",
+      "german": "September",
+      "swiss": "Septämber",
+      "phonetic": "Sep-täm-ber",
+      "vietnamese": "tháng chín",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "numbers_time_oktober",
+      "german": "Oktober",
+      "swiss": "Oktober",
+      "phonetic": "Ok-tó-ber",
+      "vietnamese": "tháng mười",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "numbers_time_november",
+      "german": "November",
+      "swiss": "Novämber",
+      "phonetic": "No-väm-ber",
+      "vietnamese": "tháng mười một",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "numbers_time_dezember",
+      "german": "Dezember",
+      "swiss": "Dezämber",
+      "phonetic": "De-tsäm-ber",
+      "vietnamese": "tháng mười hai",
+      "gender": "MASCULINE",
+      "notes": "Z→ts"
+    },
+    {
+      "id": "numbers_time_montag",
+      "german": "Montag",
+      "swiss": "Mändig",
+      "phonetic": "Mä́n-đĭg",
+      "vietnamese": "thứ hai",
+      "gender": "MASCULINE",
+      "notes": "đ=weiches D"
+    },
+    {
+      "id": "numbers_time_dienstag",
+      "german": "Dienstag",
+      "swiss": "Zischdig",
+      "phonetic": "Tsĭsh-đĭg",
+      "vietnamese": "thứ ba",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "numbers_time_mittwoch",
+      "german": "Mittwoch",
+      "swiss": "Mettwoch",
+      "phonetic": "Mét-twòch",
+      "vietnamese": "thứ tư",
+      "gender": "MASCULINE",
+      "notes": "é=geschlossen, ò=offen"
+    },
+    {
+      "id": "numbers_time_donnerstag",
+      "german": "Donnerstag",
+      "swiss": "Donnschdig",
+      "phonetic": "Đòn-nsh-đĭg",
+      "vietnamese": "thứ năm",
+      "gender": "MASCULINE",
+      "notes": "Ross-O (ò)"
+    },
+    {
+      "id": "numbers_time_freitag",
+      "german": "Freitag",
+      "swiss": "Friitig",
+      "phonetic": "Frĭĭ-tĭg",
+      "vietnamese": "thứ sáu",
+      "gender": "MASCULINE",
+      "notes": "Langes i"
+    },
+    {
+      "id": "numbers_time_samstag",
+      "german": "Samstag",
+      "swiss": "Samschtig",
+      "phonetic": "Sàm-sh-tĭg",
+      "vietnamese": "thứ bảy",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "numbers_time_sonntag",
+      "german": "Sonntag",
+      "swiss": "Sondig",
+      "phonetic": "Sòn-đĭg",
+      "vietnamese": "chủ nhật",
+      "gender": "MASCULINE",
+      "notes": "Ross-O (ò)"
+    },
+    {
+      "id": "numbers_time_morgen_tageszeit",
+      "german": "Morgen",
+      "swiss": "Morgä",
+      "phonetic": "Mòrgä",
+      "vietnamese": "buổi sáng",
+      "gender": "MASCULINE",
+      "notes": "ò=offen (Ross)"
+    },
+    {
+      "id": "numbers_time_vormittag",
+      "german": "Vormittag",
+      "swiss": "Vormittag",
+      "phonetic": "Vòrmĭttàg",
+      "vietnamese": "buổi sáng muộn",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "numbers_time_mittag",
+      "german": "Mittag",
+      "swiss": "Mittag",
+      "phonetic": "Mĭttàg",
+      "vietnamese": "buổi trưa",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "numbers_time_nachmittag",
+      "german": "Nachmittag",
+      "swiss": "Nomittag",
+      "phonetic": "Nòmĭttàg",
+      "vietnamese": "buổi chiều",
+      "gender": "MASCULINE",
+      "freiamt": "Namittag",
+      "notes": "ò=offen (Ross)"
+    },
+    {
+      "id": "numbers_time_abend",
+      "german": "Abend",
+      "swiss": "Oobe",
+      "phonetic": "Òòbặ",
+      "vietnamese": "buổi tối",
+      "gender": "MASCULINE",
+      "notes": "Langes ò (Ross)"
+    },
+    {
+      "id": "numbers_time_nacht",
+      "german": "Nacht",
+      "swiss": "Nacht",
+      "phonetic": "Nàcht",
+      "vietnamese": "đêm",
+      "gender": "FEMININE"
+    },
+    {
+      "id": "numbers_time_heute",
+      "german": "heute",
+      "swiss": "hött",
+      "phonetic": "hö́tt",
+      "vietnamese": "hôm nay",
+      "freiamt": "hütt",
+      "notes": "Sehr kurzes, spitzes Rosen-Ö (ő). Typisch Reitnou."
+    },
+    {
+      "id": "numbers_time_morgen_zeit",
+      "german": "morgen",
+      "swiss": "morn",
+      "phonetic": "mòrn",
+      "vietnamese": "ngày mai"
+    },
+    {
+      "id": "numbers_time_uebermorgen",
+      "german": "übermorgen",
+      "swiss": "öbermorn",
+      "phonetic": "ö̀bermòrn",
+      "vietnamese": "ngày kia",
+      "freiamt": "übermorn",
+      "notes": "ö̀=offen"
+    },
+    {
+      "id": "numbers_time_gestern",
+      "german": "gestern",
+      "swiss": "geschter",
+      "phonetic": "gèschter",
+      "vietnamese": "hôm qua"
+    },
+    {
+      "id": "numbers_time_vorgestern",
+      "german": "vorgestern",
+      "swiss": "vorgeschter",
+      "phonetic": "vòrgèschter",
+      "vietnamese": "hôm kia"
+    },
+    {
+      "id": "numbers_time_jetzt",
+      "german": "jetzt",
+      "swiss": "iez",
+      "phonetic": "ièts",
+      "vietnamese": "bây giờ",
+      "notes": "è=offen"
+    },
+    {
+      "id": "numbers_time_spaeter",
+      "german": "später",
+      "swiss": "schpööter",
+      "phonetic": "schpööter",
+      "vietnamese": "sau"
+    },
+    {
+      "id": "numbers_time_frueher",
+      "german": "früher",
+      "swiss": "früecher",
+      "phonetic": "früècher",
+      "vietnamese": "trước đây",
+      "notes": "è=offen"
+    },
+    {
+      "id": "numbers_time_bald",
+      "german": "bald",
+      "swiss": "baud",
+      "phonetic": "bàụd",
+      "vietnamese": "sớm",
+      "freiamt": "bald",
+      "rule_hint": "al→àụ"
+    },
+    {
+      "id": "numbers_time_immer",
+      "german": "immer",
+      "swiss": "emmer",
+      "phonetic": "émmer",
+      "vietnamese": "luôn luôn",
+      "freiamt": "immer",
+      "rule_hint": "i→é"
+    },
+    {
+      "id": "numbers_time_nie",
+      "german": "nie",
+      "swiss": "niä",
+      "phonetic": "niặ",
+      "vietnamese": "không bao giờ",
+      "notes": "ặ=Stopp"
+    },
+    {
+      "id": "numbers_time_manchmal",
+      "german": "manchmal",
+      "swiss": "mängisch",
+      "phonetic": "mänggisch",
+      "vietnamese": "đôi khi",
+      "notes": "Doppel-G für Bindung"
+    },
+    {
+      "id": "numbers_time_tag",
+      "german": "Tag",
+      "swiss": "Tag",
+      "phonetic": "Tàg",
+      "vietnamese": "ngày",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "numbers_time_woche",
+      "german": "Woche",
+      "swiss": "Wuche",
+      "phonetic": "Wúchặ",
+      "vietnamese": "tuần",
+      "gender": "FEMININE",
+      "notes": "ú=geschlossen"
+    },
+    {
+      "id": "numbers_time_monat",
+      "german": "Monat",
+      "swiss": "Monet",
+      "phonetic": "Mònet",
+      "vietnamese": "tháng",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "numbers_time_jahr",
+      "german": "Jahr",
+      "swiss": "Joor",
+      "phonetic": "Jòòr",
+      "vietnamese": "năm",
+      "gender": "NEUTER",
+      "notes": "Langes ò (Ross)"
+    },
+    {
+      "id": "numbers_time_stunde",
+      "german": "Stunde",
+      "swiss": "Schtond",
+      "phonetic": "Schtónd",
+      "vietnamese": "giờ",
+      "gender": "FEMININE",
+      "notes": "ó=geschlossen"
+    },
+    {
+      "id": "numbers_time_minute",
+      "german": "Minute",
+      "swiss": "Minute",
+      "phonetic": "Minútặ",
+      "vietnamese": "phút",
+      "gender": "FEMININE"
+    },
+    {
+      "id": "numbers_time_sekunde",
+      "german": "Sekunde",
+      "swiss": "Sekunde",
+      "phonetic": "Sekùndặ",
+      "vietnamese": "giây",
+      "gender": "FEMININE"
+    },
+    {
+      "id": "numbers_time_halb",
+      "german": "halb",
+      "swiss": "haub",
+      "phonetic": "hàụb",
+      "vietnamese": "nửa",
+      "freiamt": "halb",
+      "rule_hint": "al→àụ"
+    },
+    {
+      "id": "numbers_time_halb_uhrzeit",
+      "german": "halb (Uhrzeit)",
+      "swiss": "haubi",
+      "phonetic": "hàụbi",
+      "vietnamese": "rưỡi",
+      "freiamt": "halbi",
+      "rule_hint": "al→àụ",
+      "notes": "Vor Zahlen: haubi vieri",
+      "examples": ["haubi vieri = halb vier"]
+    },
+    {
+      "id": "numbers_time_viertel",
+      "german": "Viertel",
+      "swiss": "Viertu",
+      "phonetic": "Viertụ",
+      "vietnamese": "mười lăm phút",
+      "gender": "NEUTER",
+      "freiamt": "Viertel",
+      "rule_hint": "el→u"
+    },
+    {
+      "id": "numbers_time_uhr",
+      "german": "Uhr",
+      "swiss": "Uhr",
+      "phonetic": "Uhr",
+      "vietnamese": "đồng hồ",
+      "gender": "FEMININE"
+    },
+    {
+      "id": "numbers_time_halb_sechs",
+      "german": "Um halb sechs (05:30 / 17:30)",
+      "swiss": "am haubi Sächsi",
+      "phonetic": "àm hàú-bĭ Säch-sĭ",
+      "vietnamese": "lúc năm giờ rưỡi",
+      "rule_hint": "al→àụ",
+      "notes": "haubi mit L-Vokalisierung (l wird zu u)."
+    },
+    {
+      "id": "numbers_time_gestern_abend",
+      "german": "gestern Abend",
+      "swiss": "geschter am Oobe",
+      "phonetic": "gèschter‿àm‿Òòbặ",
+      "vietnamese": "tối hôm qua"
+    },
+    {
+      "id": "numbers_time_heute_morgen",
+      "german": "heute Morgen",
+      "swiss": "hött am Morgä",
+      "phonetic": "hö́tt‿àm‿Mòrgä",
+      "vietnamese": "sáng nay"
+    }
+  ]
+}

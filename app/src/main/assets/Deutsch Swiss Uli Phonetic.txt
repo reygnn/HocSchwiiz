@@ -1,0 +1,36 @@
+Deutsch,Swiss (Uli),Phonetic,Vietnamese,Gender,Freiamt,Notes
+abgelegenes Tal,Chrachä,Chrā-chặ,thung lũng hẻo lánh,MASCULINE,–,💡 Kratzendes CH
+macht nichts / tja,Aba,À-bà,Trời ơi / Không sao,PHRASE,–,💡 Emotionaler Ausruf
+Estrich / Dachboden,Eschträch,Ésh-träch,gác mái,MASCULINE,–,É-Regel am Anfang
+Milch,Möuch,Mö́ụch,sữa,FEMININE,Milch,Spitzes ö́! (Sonst Molche)
+Frostbeule (Pers.),Gfröörli,Gfrőő-rlị,người chịu lạnh kém,NEUTER,–,"Spitzes ö́, Stopp-i"
+Schwelle / Stufe,Schwöuä,Shwő́-ụ-ä,ngưỡng cửa,FEMININE,Schwelle,el→äu Vokalisierung
+Arbeitsjacke / Kittel,Chéttu,Chét-tụ,áo khoác,MASCULINE,Chittel,"L-Vokal. (el→ụ), é-Regel"
+Einkaufswagen,Wäägeli,Wää-gè-lĭ,xe đẩy mua sắm,NEUTER,–,Langes Ä
+Brot-Anschnitt,Aheilig,À-héi-lĭg,đầu ổ bánh mì,FEMININE,–,Erster Anschnitt vom Brot
+wählerisch essen,schnöise,shnő́i-sặ,ăn kén chọn,VERB,–,Spitzes ö́
+Apfelgehäuse,Görpsi,Gö̀rp-sĭ,lõi táo,NEUTER,–,Offenes ö̀ (Nicht Rülpser)
+plappern,schnädärä,shnä-đä-rä,nói liến thoắng,VERB,–,Weiches đ
+Krankheit,Chrangket,Chràng-két,bệnh tật,FEMININE,–,é im Suffix
+April,aberöuä,à-bä-rő́-ụ-ä,tháng tư,MASCULINE,–,"💡 Nicht ""abrollen""!"
+August,Ougschtä,Òụ-g-sh-tä,tháng tám,MASCULINE,–,au→òu Muster
+Cousin / Cousine,Gusäng / Gusine,Gù-säng / Gù-sĭ-nặ,anh em họ,M/F,–,Franz. Lehnwörter
+Hügel,Hoger,Hò-gär,đồi,MASCULINE,–,Ross-O (ò)
+Kochtopf,Hafe,Hà-fặ,nồi,MASCULINE,–,Reitnau-Lexikon!
+Schöpfkelle,Chouä,Chő́-ụ-ä,muôi múc canh,FEMININE,Chäle,"el→äu, Spitzes ő!"
+Besteck,Bschteck,B-sh-tèck,bộ đồ ăn,NEUTER,–,Schd-Verschiebung
+Spinne,Schbénn,Shbénn,con nhện,FEMININE,Spinne,é-Regel
+Wespe,Wäschbi,Wäsh-bĭ,ong vò vẽ,FEMININE,–,Weiches b
+Hornisse,Hornussi,Hòr-nùs-sĭ,ong bắp cày,FEMININE,–,Ross-U (ù)
+hart arbeiten,chrampfä,chràm-pfä,làm việc cực nhọc,VERB,–,à-Stopp
+sachte arbeiten,süüferli schaffä,süü-fèr-lĭ shàffä,làm việc nhẹ nhàng,PHRASE,–,Langes üü
+Matsch / Schnee,Pflotsch,Pflòtsh,bùn lầy,MASCULINE,–,Ross-O (ò)
+Hemd,Hömmli,Hö́mm-lĭ,áo sơ mi,NEUTER,–,💡 Kein Diminutiv!
+Hose,Hosä,Hò-sä,quần dài,FEMININE,–,Ross-O (ò)
+Schuhe,Schuä,Shú-ä,giày,PLURAL,–,u-ä Gleitlaut
+Erkältung,Verchöutig,Vär-chő́-ụ-tĭg,cảm lạnh,FEMININE,Verchältig,"el→äu, NIEMALS Schnupfe!"
+Halsweh,Hauswee,Hàụ-s-wéé,đau họng,NEUTER,–,Haus = Hals (al→àu)
+schwindelig,trömmlig,trö̀mm-lĭg,chóng mặt,ADJECTIVE,–,Offenes ö̀
+Kirche,Cheuä,Ché-ụ-ä,nhà thờ,FEMININE,Chille,"il→öu, Geschlossenes é!"
+Frau / Mann,Frou / Maa,Fròụ / Màà,phụ nữ / đàn ông,F / M,–,💡 Frou (ou-Muster)
+Schaufel / schaufeln,Schuuflä,Shúú-flä,cái xẻng / xúc,F / V,–,Nomen/Verb identisch

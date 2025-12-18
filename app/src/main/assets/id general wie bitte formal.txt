@@ -1,0 +1,660 @@
+    {
+  "id": "general_wie_bitte_formal_modern",
+  "german": "Wie bitte? (Modern höflich)",
+  "swiss": "Was händ Si gseit?",
+  "phonetic": "Wàs händ Sĭ gsèit?",
+  "vietnamese": "Dạ, ngài nói gì ạ?",
+  "notes": "Siezen (modern). Gegenüber völlig Fremden oder im offiziellen Kontext."
+},
+{
+  "id": "general_wie_bitte_formal_traditionell",
+  "german": "Wie bitte? (Traditionelle Höflichkeit)",
+  "swiss": "Was händ'er gseit?",
+  "phonetic": "Wàs händ'èr gsèit?",
+  "vietnamese": "Dạ, ông/bà nói gì ạ?",
+  "notes": "Ihrzen. Die alte Höflichkeitsform für ältere Leute im Dorf und Respektspersonen. Herzlicher als 'Si'."
+},
+{
+  "id": "general_wie_bitte_informal",
+  "german": "Was hast du gesagt?",
+  "swiss": "Was hesch gseit?",
+  "phonetic": "Wàs hèsh gsèit?",
+  "vietnamese": "Bạn nói gì cơ?",
+  "notes": "Duzen. Nur unter Freunden, Gleichaltrigen oder wenn man sich gut kennt."
+}
+
+
+{
+  "id": "farm_milked_cow_polite",
+  "german": "Haben Sie (Höflichkeitsform) die Kuh schon gemolken?",
+  "swiss": "Händ'er d'Chuä scho gmouä?",
+  "phonetic": "Händ'èr t'Chúä shò gmòúä?",
+  "vietnamese": "Ông/Bà đã vắt sữa bò chưa ạ?",
+  "notes": "Höflichkeitsform 'Ihrzen' (Händ'er). Partizip: gmouä."
+},
+{
+  "id": "farm_shovel",
+  "german": "Schaufel",
+  "swiss": "Schuuflä",
+  "phonetic": "Shúúflä",
+  "vietnamese": " cái xẻng",
+  "notes": "Hier bleibt das L erhalten (keine Vokalisierung am Silbenende)."
+},
+{
+  "id": "farm_cows_plural",
+  "german": "Kühe",
+  "swiss": "Chüä",
+  "phonetic": "Chǘä",
+  "vietnamese": "những con bò",
+  "notes": "Pluralbildung durch Umlaut (uä -> üä)."
+}
+{
+  "id": "farm_manure",
+  "german": "Mist",
+  "swiss": "Mescht",
+  "phonetic": "Mésht",
+  "vietnamese": "phân chuồng",
+  "notes": "Im Schweizerdeutschen Feld 'normal' geschrieben, in der Phonetik mit é für die korrekte Reitnauer Aussprache."
+},
+{
+  "id": "farm_broom",
+  "german": "Besen",
+  "swiss": "Bäsä",
+  "phonetic": "Bäsä",
+  "vietnamese": "cái chổi",
+  "notes": "Standard-Begriff für den Besen."
+},
+{
+  "id": "farm_action_feed",
+  "german": "füttern",
+  "swiss": "fuere",
+  "phonetic": "fú-èrä",
+  "vietnamese": "cho ăn",
+  "notes": "Wichtig: u und e werden separat ausgesprochen (kein ü-Laut)."
+},
+{
+  "id": "farm_action_clean",
+  "german": "ausmisten",
+  "swiss": "usmeschte",
+  "phonetic": "úsméshtä",
+  "vietnamese": "dọn chuồng",
+  "notes": "Geschlossenes é in der Phonetik."
+},
+{
+  "id": "farm_boots",
+  "german": "Gummistiefel",
+  "swiss": "Gummistible",
+  "phonetic": "Gùmmĭ-stĭblä",
+  "vietnamese": "ủng cao su",
+  "notes": "Plural: d'Stible. Das L bleibt."
+}
+{
+  "id": "farm_after_work",
+  "german": "Feierabend",
+  "swiss": "fyrobe",
+  "phonetic": "fȳr-òbé",
+  "vietnamese": "nghỉ làm",
+  "notes": "y=breites i. ò=Ross-O (tief/offen). é=geschlossenes e. Ein Reitnauer Prachtwort."
+},
+{
+  "id": "farm_finished",
+  "german": "Wir sind fertig",
+  "swiss": "Mer send fertig",
+  "phonetic": "Mér sénd fèrtig",
+  "vietnamese": "Chúng tôi xong rồi",
+  "notes": "Drei verschiedene E-Laute für maximale Präzision."
+}
+
+{
+  "id": "food_drink_present",
+  "german": "trinken",
+  "swiss": "trengke",
+  "phonetic": "tréngkä",
+  "vietnamese": "uống",
+  "notes": "Präsens (Gegenwart). Geschlossenes é und hartes k."
+},
+{
+  "id": "food_drink_past",
+  "german": "getrunken",
+  "swiss": "trongke",
+  "phonetic": "tróngkä",
+  "vietnamese": "đã uống",
+  "notes": "Partizip Perfekt (Vergangenheit). Geschlossenes Rosen-O (Lippen spitz). Vietnamesisch: ô."
+},
+{
+  "id": "food_meat",
+  "german": "Fleisch",
+  "swiss": "Fleisch",
+  "phonetic": "Fléish",
+  "vietnamese": "thịt",
+  "notes": "Geschlossenes é, das in ein i gleitet. Sehr typischer Diphthong."
+},
+{
+  "id": "food_sausage_singular",
+  "german": "Wurst",
+  "swiss": "Worscht",
+  "phonetic": "Wórsht",
+  "vietnamese": "xúc xích",
+  "notes": "Geschlossenes Rosen-O (ó)."
+},
+{
+  "id": "food_sausage_plural",
+  "german": "Würste",
+  "swiss": "Woerscht",
+  "phonetic": "Wőrsht",
+  "vietnamese": "những cái xúc xích",
+  "notes": "Spitzes, geschlossenes Ö (ő). Lippen sind fast geschlossen."
+},
+{
+  "id": "food_spoon",
+  "german": "Löffel",
+  "swiss": "Loeffu",
+  "phonetic": "Löffu",
+  "vietnamese": "cái thìa",
+  "notes": "Offenes ö am Anfang, L-Vokalisierung am Ende (-u)."
+},
+{
+  "id": "food_cheese",
+  "german": "Käse",
+  "swiss": "Chas",
+  "phonetic": "Chàs",
+  "vietnamese": "phô mai",
+  "notes": "Breites à (kein ä)."
+},
+{
+  "id": "food_offer_wurst",
+  "german": "Willst du noch eine Wurst?",
+  "swiss": "Wotsch no e Worscht?",
+  "phonetic": "Wòtsh nò è Wórsht?",
+  "vietnamese": "Bạn có muốn ăn thêm xúc xích không?",
+  "notes": "Wòtsh (Ross-O), Wórsht (Rosen-O). 'e' ist hier neutral/offen."
+}
+{
+  "id": "food_cheese",
+  "german": "Käse",
+  "swiss": "Chaes",
+  "phonetic": "Chääs",
+  "vietnamese": "phô mai",
+  "notes": "Sehr offen und 'dreckig' ausgesprochen (wie rääss). Kinn tief!"
+},
+{
+  "id": "food_plate",
+  "german": "Teller",
+  "swiss": "Taeuer",
+  "phonetic": "Täúär",
+  "vietnamese": "cái đĩa",
+  "notes": "Paradebeispiel für L-Vokalisierung am Silbenende (Täuer statt Teller)."
+},
+{
+  "id": "food_glass",
+  "german": "Glas",
+  "swiss": "Glaas",
+  "phonetic": "Glààs",
+  "vietnamese": "cái cốc / ly",
+  "notes": "Langes, tiefes à."
+},
+{
+  "id": "food_table",
+  "german": "Tisch",
+  "swiss": "Tesch",
+  "phonetic": "Téshh",
+  "vietnamese": "cái bàn",
+  "notes": "Kurzes, geschlossenes é, gefolgt von einem langen, gezogenen sh."
+},
+{
+  "id": "food_action_clear",
+  "german": "den Tisch abräumen",
+  "swiss": "de Tesch abruume",
+  "phonetic": "tè Téshh àbrúúmä",
+  "vietnamese": "dọn bàn ăn",
+  "notes": "Langes sh am Ende von Tésch."
+},
+{
+  "id": "food_thanks_meal",
+  "german": "Vielen Dank für das Essen!",
+  "swiss": "Danke voeumou foers Aesse!",
+  "phonetic": "Đàngkặ vö́ú-mòú fers Ä́ssä!",
+  "vietnamese": "Cảm ơn rất nhiều vì bữa ăn!",
+  "notes": "Đ = hartes D (Vietn. đ). vö́ú-mòú = extreme L-Vokalisierung."
+},
+{
+  "id": "food_was_good",
+  "german": "Es war sehr gut!",
+  "swiss": "S'esch raechti guet gsi!",
+  "phonetic": "S'éshh rächti gúät gsĭ!",
+  "vietnamese": "Ngon lắm!",
+  "notes": "éshh mit langem sh (wie bei Téschh). rächti = Verstärkung (sehr)."
+}
+{
+  "id": "village_shop",
+  "german": "Volg (Dorfladen)",
+  "swiss": "Voug",
+  "phonetic": "Vòúg",
+  "vietnamese": "cửa hàng tạp hóa",
+  "notes": "ò = Ross-O. L-Vokalisierung am Ende: das L wird zum u."
+},
+{
+  "id": "village_bus",
+  "german": "Postauto / Bus",
+  "swiss": "Poschtouto",
+  "phonetic": "Pòsht-òútò",
+  "vietnamese": "xe buýt bưu điện",
+  "notes": "Zweimal Ross-O (ò) und L-Vokalisierung im 'outo' (Auto)."
+},
+{
+  "id": "village_houses",
+  "german": "Häuser",
+  "swiss": "Huueser",
+  "phonetic": "Hüü-sär",
+  "vietnamese": "những ngôi nhà",
+  "notes": "Langes, klares üü. Einzahl wäre: Huus."
+},
+{
+  "id": "village_street",
+  "german": "Strasse",
+  "swiss": "Shtross",
+  "phonetic": "Shtròòss",
+  "vietnamese": "đường phố",
+  "notes": "Langes Ross-O (òò) und scharfes ss."
+}
+{
+  "id": "village_where_is_volg",
+  "german": "Wo ist der Volg?",
+  "swiss": "Wo esch de Voug?",
+  "phonetic": "Wó éshh đè Vóúg?",
+  "vietnamese": "Cửa hàng Volg ở đâu?",
+  "notes": "Wó und Vóug mit Rosen-O (ó). éshh mit langem sh. đ = hartes D."
+},
+{
+  "id": "village_go_to_post",
+  "german": "Wir gehen auf die Post.",
+  "swiss": "Mer gönd ed Poscht.",
+  "phonetic": "Mér gónd èđ Pòsht.",
+  "vietnamese": "Chúng tôi đi đến bưu điện.",
+  "notes": "gónd (Rosen-O), èđ (offenes è), Pòsht (Ross-O)."
+},
+{
+  "id": "village_neighbor",
+  "german": "Nachbar",
+  "swiss": "Nochbr",
+  "phonetic": "Nòch-br",
+  "vietnamese": "hàng xóm",
+  "notes": "ò = Ross-O. Das Wort endet sehr kurz auf -br."
+}
+{
+  "id": "village_help_offer",
+  "german": "Kann ich (oder können wir) Euch helfen?",
+  "swiss": "Cha'n i (oder choemmer) oeich haeufe?",
+  "phonetic": "Chà-n i (òđèr chö́mmèr) öich häúfä?",
+  "vietnamese": "Tôi (hoặc chúng tôi) có thể giúp ông/bà được không?",
+  "notes": "Höfliches Ihrzen (öich). häufä mit L-Vokalisierung."
+},
+{
+  "id": "village_church",
+  "german": "Kirche",
+  "swiss": "Cheuä",
+  "phonetic": "Ché-ú-ä",
+  "vietnamese": "nhà thờ",
+  "notes": "Extrem wichtig: Chéuä statt Chilche. é-u-ä sind drei klare Laute."
+},
+{
+  "id": "village_main_street",
+  "german": "Hauptstrasse",
+  "swiss": "Houptschtross",
+  "phonetic": "Hòúpt-shtròòss",
+  "vietnamese": "đường chính",
+  "notes": "L-Vokalisierung bei Houpt (vom l in Haupt). Ross-O bei Schtrooss."
+}
+{
+  "id": "village_action_wood",
+  "german": "Holz beigen (stapeln)",
+  "swiss": "Houz biigä",
+  "phonetic": "Hòúts bĭĭ-gä",
+  "vietnamese": "xếp củi",
+  "notes": "L-Vokalisierung bei Houz. biigä mit langem i."
+},
+{
+  "id": "village_action_sweep",
+  "german": "die Strasse kehren",
+  "swiss": "d'Shtross woeschä",
+  "phonetic": "t'Shtròòss wő-shä",
+  "vietnamese": "quét đường",
+  "notes": "Wichtig: Spitzes ő (geschlossen). Sonst wäre es Wäsche!"
+},
+{
+  "id": "weather_rain",
+  "german": "es regnet",
+  "swiss": "es räätnet",
+  "phonetic": "ès rääät-nèt",
+  "vietnamese": "trời đang mưa",
+  "notes": "Kein g! Das ä ist extrem lang gezogen."
+},
+{
+  "id": "weather_sun",
+  "german": "die Sonne scheint",
+  "swiss": "d'Sonnä schiint",
+  "phonetic": "t'Són-nä shĭĭnt",
+  "vietnamese": "trời đang nắng",
+  "notes": "Sónnä mit Rosen-O (spitz/geschlossen). schiint mit langem i."
+},
+{
+  "id": "village_fence",
+  "german": "Zaun (Hag)",
+  "swiss": "Haag",
+  "phonetic": "Hààg",
+  "vietnamese": "hàng rào",
+  "notes": "Langes, tiefes àà."
+}
+{
+  "id": "village_wood_pile",
+  "german": "Holzbeige (Holzstapel)",
+  "swiss": "Houzbiigi",
+  "phonetic": "Hòúts-bĭĭ-gĭ",
+  "vietnamese": "đống củi",
+  "notes": "Houz mit L-Vokalisierung. biigi mit zwei langen i."
+},
+{
+  "id": "weather_pouring",
+  "german": "es schüttet (starker Regen)",
+  "swiss": "es schoettet",
+  "phonetic": "ès shő́t-tèt",
+  "vietnamese": "trời mưa như trút nước",
+  "notes": "Wichtig: Spitzes ő (geschlossen). Kurze, betonte erste Silbe."
+},
+{
+  "id": "general_very",
+  "german": "richtig / sehr (Verstärkung)",
+  "swiss": "raecht",
+  "phonetic": "rächt",
+  "vietnamese": "rất / thực sự",
+  "notes": "Wird oft zur Verstärkung gebraucht (z.B. rächt guet)."
+},
+{
+  "id": "weather_strong_rain_sentence",
+  "german": "Es regnet richtig fest.",
+  "swiss": "Es raeatnet raecht fèrtig.",
+  "phonetic": "Ès rääät-nèt rächt fèr-tĭg.",
+  "vietnamese": "Trời mưa thực sự rất to.",
+  "notes": "rääätnet (kein g!), rächt (Verstärkung), fèrtig (hier: heftig)."
+}
+{
+  "id": "village_garden",
+  "german": "Garten",
+  "swiss": "Gartä",
+  "phonetic": "Gàrtä",
+  "vietnamese": "vườn",
+  "notes": "Das r wird leicht angerollt, das ä am Ende ist kurz."
+},
+{
+  "id": "weather_today",
+  "german": "heute",
+  "swiss": "hoett",
+  "phonetic": "hö́tt",
+  "vietnamese": "hôm nay",
+  "notes": "Sehr kurzes, spitzes Rosen-Ö (ő). Typisch Reitnou."
+},
+{
+  "id": "weather_hot",
+  "german": "heiss",
+  "swiss": "heiss",
+  "phonetic": "héiss",
+  "vietnamese": "nóng",
+  "notes": "Geschlossenes é, das in ein i gleitet."
+},
+{
+  "id": "village_weeding",
+  "german": "Unkraut jäten",
+  "swiss": "Ochruut iaettae",
+  "phonetic": "Óch-rúút iättä",
+  "vietnamese": "nhổ cỏ",
+  "notes": "iättä: Das i gleitet direkt ins ä (Gleitlaut)."
+}
+{
+  "id": "sentence_give_food_child",
+  "german": "Ich gebe dem Kind ein bisschen zu essen.",
+  "swiss": "i gebä em Chend ae chli z'Aesse.",
+  "phonetic": "i gébä èm Chénd ä chli z'Ässä.",
+  "vietnamese": "Tôi cho đứa trẻ một ít đồ ăn.",
+  "notes": "'ä chli' (ein bisschen) ist die alte Form. 'es bitzeli' ist neu."
+}
+{
+  "id": "kitchen_room",
+  "german": "Küche",
+  "swiss": "Chochi",
+  "phonetic": "Chó-chĭ",
+  "vietnamese": "nhà bếp",
+  "notes": "Rosen-O (ó). Nicht Chuchi!"
+},
+{
+  "id": "kitchen_cupboard",
+  "german": "Küchenschrank",
+  "swiss": "Chaschtä",
+  "phonetic": "Chàsh-tä",
+  "vietnamese": "tủ bếp",
+  "notes": "Kurzes a. Nicht dehnen."
+},
+{
+  "id": "kitchen_pot",
+  "german": "Kochtopf",
+  "swiss": "Hafa",
+  "phonetic": "Hà-fä",
+  "vietnamese": "nồi",
+  "notes": "Hafä mit a statt ä."
+},
+{
+  "id": "kitchen_laundry",
+  "german": "Wäsche",
+  "swiss": "Wösch",
+  "phonetic": "Wòsh",
+  "vietnamese": "quần áo giặt",
+  "notes": "Das Nomen hat ein offenes Ross-O (ò)."
+},
+{
+  "id": "kitchen_wash_water",
+  "german": "waschen (mit Wasser)",
+  "swiss": "wäschä",
+  "phonetic": "wä-shä",
+  "vietnamese": "giặt / rửa",
+  "notes": "Offenes ä. Bezieht sich auf Wasser (Hände, Geschirr)."
+},
+{
+  "id": "kitchen_sweep_broom",
+  "german": "kehren / wischen (mit dem Besen)",
+  "swiss": "wöschä",
+  "phonetic": "wő-shä",
+  "vietnamese": "quét",
+  "notes": "Spitzes Rosen-Ö (ő). Bezieht sich auf den Besen."
+},
+{
+  "id": "kitchen_laundry_nomen",
+  "german": "die Wäsche (Nomen)",
+  "swiss": "Wösch",
+  "phonetic": "Wòsh",
+  "vietnamese": "quần áo giặt",
+  "notes": "Offenes Ross-O (ò). Nicht spitz!"
+}
+{
+  "id": "household_hang_laundry",
+  "german": "aufhängen",
+  "swiss": "ufhaengkae",
+  "phonetic": "úf-häng-kä",
+  "vietnamese": "treo lên",
+  "notes": "Ganz wichtiges -gk-! Das k wird deutlich mitgesprochen."
+},
+{
+  "id": "household_wash_hands",
+  "german": "Hände waschen",
+  "swiss": "Haend waeschae",
+  "phonetic": "Händ wä-shä",
+  "vietnamese": "rửa tay",
+  "notes": "Händ (offenes ä), wäschä (offenes ä, mit Wasser)."
+},
+{
+  "id": "household_sweep_street",
+  "german": "Strasse kehren",
+  "swiss": "Shtross woeschae",
+  "phonetic": "Shtròòss wő-shä",
+  "vietnamese": "quét đường",
+  "notes": "Shtròòss (Ross-O), wőschä (spitzes Rosen-Ö, mit dem Besen)."
+}
+{
+  "id": "house_living_room",
+  "german": "Wohnzimmer (Stube)",
+  "swiss": "Schtobae",
+  "phonetic": "Shtó-bä",
+  "vietnamese": "phòng khách",
+  "notes": "Spitzes Rosen-O (ó). Nicht Stube, sondern Schtobä!"
+},
+{
+  "id": "house_stairs",
+  "german": "Treppe",
+  "swiss": "Schtägae",
+  "phonetic": "Shtä-gä",
+  "vietnamese": "cầu thang",
+  "notes": "Zwei offene ä. Kurz und bündig."
+},
+{
+  "id": "house_clean_stairs",
+  "german": "die Treppe reinigen",
+  "swiss": "d'Schtaegae waeschae / woeschae",
+  "phonetic": "t'Shtä-gä wä-shä / wő-shä",
+  "vietnamese": "lau cầu thang / quét cầu thang",
+  "notes": "wäschä = mit Wasser; wőschä = mit dem Besen."
+}
+{
+  "id": "house_bedroom",
+  "german": "Schlafzimmer",
+  "swiss": "Schloofzimmer",
+  "phonetic": "Shlòòf-tsémmär",
+  "vietnamese": "phòng ngủ",
+  "notes": "Shlòòf (tiefes Ross-O), tsémmär (geschlossenes é)."
+},
+{
+  "id": "house_bed",
+  "german": "Bett",
+  "swiss": "Bett",
+  "phonetic": "Bétt",
+  "vietnamese": "cái giường",
+  "notes": "Geschlossenes é. Kurz und knackig."
+},
+{
+  "id": "house_bathroom",
+  "german": "Badezimmer",
+  "swiss": "Badzemmer",
+  "phonetic": "Bàd-tsémmär",
+  "vietnamese": "phòng tắm",
+  "notes": "Bàd (tiefes, langes à), tsémmär (geschlossenes é)."
+},
+{
+  "id": "clothing_pajamas",
+  "german": "Schlafanzug (Pyjama)",
+  "swiss": "Bischama",
+  "phonetic": "Bĭ-shà-mà",
+  "vietnamese": "đồ ngủ",
+  "notes": "Urchige Dialektausdruck für Pyjama."
+}
+{
+  "id": "clothing_pajamas_diminutive",
+  "german": "Pyjama-chen (niedlich)",
+  "swiss": "Bischämänggeli",
+  "phonetic": "Bĭ-shä-mäng-gè-lĭ",
+  "vietnamese": "đồ ngủ nhỏ / dễ thương",
+  "notes": "Der ultimative Reitnauer Diminutiv. Mit starkem -ngg- in der Mitte."
+}
+{
+  "id": "beiz_beer",
+  "german": "Stange Bier (0,3l)",
+  "swiss": "Schdangä",
+  "phonetic": "Sh-đà-ng-ä",
+  "vietnamese": "ly bia nhỏ",
+  "notes": "đ = explosives D (Zunge am Gaumen). ä = offener Abschluss."
+},
+{
+  "id": "food_bacon_salad",
+  "german": "Specksalat",
+  "swiss": "Shpaecksaloot",
+  "phonetic": "Shpäck-sà-lòòt",
+  "vietnamese": "nộm thịt xông khói",
+  "notes": "lòòt mit tiefem Ross-O (òò). Sehr typisches Beizengericht."
+},
+{
+  "id": "diminutive_dog",
+  "german": "Hündchen",
+  "swiss": "Hoendli",
+  "phonetic": "Hő́nd-lĭ",
+  "vietnamese": "cún con",
+  "notes": "Hőndli mit spitzem Rosen-Ö (ö)."
+},
+{
+  "id": "diminutive_house",
+  "german": "Häuschen / WC",
+  "swiss": "Hüüsli",
+  "phonetic": "Hüü-slĭ",
+  "vietnamese": "ngôi nhà nhỏ / nhà vệ sinh",
+  "notes": "Langes, klares üü."
+}
+{
+  "id": "beiz_pay_1",
+  "german": "Fräulein, könnte ich zahlen, bitte?",
+  "swiss": "Froelein, chönnti zale, bitte",
+  "phonetic": "Frő́-léin, chönn-tĭ tsà-lä, bĭt-tè",
+  "vietnamese": "Chị ơi, cho tôi thanh toán tiền.",
+  "notes": "Frőlein mit spitzem ö. Chönnti = Konjunktiv (höflich)."
+},
+{
+  "id": "beiz_pay_2",
+  "german": "Könnte ich die Rechnung haben?",
+  "swiss": "Chönnti d'Rächnig haa",
+  "phonetic": "Chönn-tĭ t'Räch-nĭg hàà",
+  "vietnamese": "Cho tôi xin hóa đơn.",
+  "notes": "Hàà mit langem, tiefem à. t'Rächnig verschmilzt."
+},
+{
+  "id": "time_half_six",
+  "german": "Um halb sechs (05:30 / 17:30)",
+  "swiss": "am haubi Saechsi",
+  "phonetic": "àm hàú-bĭ Säch-sĭ",
+  "vietnamese": "lúc năm giờ rưỡi",
+  "notes": "haubi mit L-Vokalisierung (l wird zu u)."
+}
+{
+  "id": "numbers_1_10",
+  "german": "1 bis 10",
+  "swiss": "eis, zwoei, drüü, vier, föif, sächs, sebä, acht, nüün, zää",
+  "phonetic": "éis, tswő́i, đrüü, viär, fő́if, sächs, sè-bä, àcht, nüün, tsää",
+  "vietnamese": "một đến mười",
+  "notes": "főif (spitzes Rosen-Ö). sebä (kurzes ä)."
+},
+{
+  "id": "numbers_11_20",
+  "german": "11 bis 20",
+  "swiss": "öuf, zwöuf, driizä, vierzä, föfzä, saechzä, sebzä, achzä, nüünzä, zwänzg",
+  "phonetic": "ő́uf, tswő́uf, đrĭĭ-tsä, viär-tsä, főf-tsä, säch-tsä, sèb-tsä, àch-tsä, nüün-tsä, tswänts-g",
+  "vietnamese": "mười một đến hai mươi",
+  "notes": "öuf (L-Vokalisierung!). achzae (mit hartem ch)."
+},
+{
+  "id": "numbers_tens",
+  "german": "Zehnerzahlen (30-100)",
+  "swiss": "drissg, vierzg, föfzg, sächzg, sebäzg, achzg, nüünzg, hondert",
+  "phonetic": "đrĭss-g, viärs-g, főfs-g, sächs-g, sè-bäts-g, àchts-g, nüün-ts-g, hònd-ért",
+  "vietnamese": "ba mươi đến một trăm",
+  "notes": "hondert mit Ross-O (hò). achzg (hartes g am Ende)."
+},
+{
+  "id": "numbers_high",
+  "german": "Grosse Zahlen",
+  "swiss": "tuusig, tuusigondeis, zäatuusig, honderttuusig, ä Million",
+  "phonetic": "túú-sĭg, túú-sĭg-ònd-éis, tsää-túú-sĭg, hònd-ért-túú-sĭg, ä mĭl-li-ón",
+  "vietnamese": "một nghìn đến một triệu",
+  "notes": "tuusigondeis (Verschmelzung bei 1001)."
+}
+{
+  "id": "calendar_weekdays",
+  "german": "Wochentage",
+  "swiss": "maendig, zischdig, Mettwoch, Donnschdig, Friitig, Samschtig, Sondig",
+  "phonetic": "mä́n-đĭg, tsĭsh-đĭg, Mét-twòch, Đòn-nsh-đĭg, Frĭĭ-tĭg, Sàm-sh-tĭg, Sòn-đĭg",
+  "vietnamese": "các ngày trong tuần",
+  "notes": "đ = weiches, aber klares D (wie Donner). Méttwoch mit geschlossenem é. Dònnschdig und Sondig mit Ross-O (ò)."
+}
+

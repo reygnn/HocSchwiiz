@@ -3,47 +3,67 @@
   "dialect": "ag",
   "words": [
     {
-      "id": "daily_011",
+      "id": "daily_life_muelleimer",
       "german": "Mülleimer",
-      "swiss": "Chübel",
+      "swiss": "Abfauchöbu",
+      "phonetic": "Àb-fàụ-chö̀-bụ",
       "vietnamese": "Thùng rác",
-      "gender": "MASCULINE"
+      "gender": "MASCULINE",
+      "alt_spellings": ["Güselchübel"],
+      "notes": "àụ=L-Vokalisierung, ö̀=offen, ụ=L-Vokal"
     },
     {
-      "id": "daily_012",
+      "id": "daily_life_einkaufen",
       "german": "Einkaufen",
       "swiss": "Poschte",
+      "phonetic": "Pòsh-tặ",
       "vietnamese": "Mua sắm",
-      "notes": "Verb (I go go poschte)",
-      "examples": [
-        "I go go poschte"
-      ]
+      "notes": "Verb. ò=kurz offen, ặ=Stopp",
+      "examples": ["I go go poschte"]
     },
     {
-      "id": "daily_013",
+      "id": "daily_life_handy",
       "german": "Handy",
       "swiss": "Natel",
+      "phonetic": "Na-tél",
       "vietnamese": "Điện thoại di động",
       "gender": "NEUTER"
     },
     {
-      "id": "daily_014",
+      "id": "daily_life_schwamm",
       "german": "Schwamm",
       "swiss": "Schwomm",
+      "phonetic": "Schwòmm",
       "vietnamese": "Miếng bọt biển",
       "gender": "MASCULINE",
-      "notes": "Zum Putzen. (Gleiches Wort wie für Pilz)"
+      "notes": "Zum Putzen. Gleiches Wort wie für Pilz"
     },
     {
-      "id": "daily_015",
+      "id": "daily_life_seele",
       "german": "Seele",
       "swiss": "Seu",
+      "phonetic": "Séụ",
       "vietnamese": "Linh hồn",
       "gender": "FEMININE",
-      "alt_spellings": [
-        "Sewu"
-      ],
-      "notes": "Sehr weiches w, fast vokalisiert."
+      "rule_hint": "el→ụ",
+      "notes": "L-Vokalisierung: Seel→Seu"
+    },
+    {
+      "id": "daily_life_post_gehen",
+      "german": "Wir gehen auf die Post.",
+      "swiss": "Mer gönd ed Poscht.",
+      "phonetic": "Mér gónd èđ Pòsht.",
+      "vietnamese": "Chúng tôi đi đến bưu điện.",
+      "notes": "gónd (Rosen-O), èđ (offenes è), Pòsht (Ross-O)."
+    },
+    {
+      "id": "daily_life_nachbar",
+      "german": "Nachbar",
+      "swiss": "Nochbr",
+      "phonetic": "Nòch-br",
+      "vietnamese": "hàng xóm",
+      "gender": "MASCULINE",
+      "notes": "Ross-O (ò). Das Wort endet sehr kurz auf -br."
     }
   ]
 }

@@ -3,59 +3,74 @@
   "dialect": "ag",
   "words": [
     {
-      "id": "work_001",
+      "id": "work_arbeiten",
       "german": "Arbeiten",
       "swiss": "Schaffe",
+      "phonetic": "Schàffặ",
       "vietnamese": "Làm việc",
-      "examples": [
-        "I mues go schaffe"
-      ]
+      "notes": "Verb"
     },
     {
-      "id": "work_002",
+      "id": "work_feierabend",
       "german": "Feierabend",
-      "swiss": "Fyrobe",
+      "swiss": "Fürobä",
+      "phonetic": "Fűròbặ",
       "vietnamese": "Giờ tan tầm",
       "gender": "MASCULINE",
-      "alt_spellings": [
-        "Fiirabig"
-      ],
-      "notes": "Suhrental/Bern-Aargau: Fyrobe (dunkles o)"
+      "freiamt": "Fiirabig",
+      "notes": "Spitzes ű, Ross-O (ò), Stopp-Ä (ặ)"
     },
     {
-      "id": "work_003",
+      "id": "work_buero",
       "german": "Büro",
       "swiss": "Büro",
+      "phonetic": "Büró",
       "vietnamese": "Văn phòng",
       "gender": "NEUTER"
     },
     {
-      "id": "work_004",
+      "id": "work_geld",
       "german": "Geld",
       "swiss": "Gäut",
+      "phonetic": "Gäụt",
       "vietnamese": "Tiền",
       "gender": "NEUTER",
-      "alt_spellings": [
-        "Stutz"
-      ],
-      "notes": "Mit L-Vokalisierung (statt Gäld)"
+      "freiamt": "Gäld",
+      "rule_hint": "ld→ụt"
     },
     {
-      "id": "work_005",
+      "id": "work_chef",
       "german": "Chef",
       "swiss": "Chef",
+      "phonetic": "Schèf",
       "vietnamese": "Sếp",
       "gender": "MASCULINE"
     },
     {
-      "id": "work_007",
+      "id": "work_melken",
       "german": "Melken",
       "swiss": "Mäuä",
+      "phonetic": "Mặụặ",
       "vietnamese": "Vắt sữa",
-      "notes": "Reitnau: Mäuä / Bottenwil: Mälä",
-      "examples": [
-        "D'Chue mäuä"
-      ]
+      "freiamt": "melche",
+      "rule_hint": "el→äụ",
+      "notes": "Verb"
+    },
+    {
+      "id": "work_chrampfae",
+      "german": "hart arbeiten",
+      "swiss": "chrampfä",
+      "phonetic": "chràm-pfä",
+      "vietnamese": "làm việc cực nhọc",
+      "notes": "à-Stopp"
+    },
+    {
+      "id": "work_sueuferli_schaffae",
+      "german": "sachte arbeiten",
+      "swiss": "süüferli schaffä",
+      "phonetic": "süü-fèr-lĭ shàffä",
+      "vietnamese": "làm việc nhẹ nhàng",
+      "notes": "Langes üü"
     }
   ]
 }

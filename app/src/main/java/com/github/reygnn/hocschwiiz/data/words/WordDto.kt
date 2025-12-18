@@ -4,49 +4,50 @@ import com.github.reygnn.hocschwiiz.domain.model.Category
 import com.github.reygnn.hocschwiiz.domain.model.Dialect
 import com.github.reygnn.hocschwiiz.domain.model.Gender
 import com.github.reygnn.hocschwiiz.domain.model.Word
-import kotlinx.serialization.SerialName
+import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.Serializable
-
-/**
- * Root object for word JSON files.
- *
- * Note: Category is no longer in this file - it's derived from the filename.
- */
-@Serializable
-data class WordFileDto(
-    val version: Int,
-    val dialect: String,
-    val words: List<WordDto>
-)
+import kotlinx.serialization.json.JsonNames
 
 /**
  * DTO for a single word entry in JSON.
  *
  * Note: category field removed - category is determined by which file the word is in.
+ *
+ * Supports both snake_case and camelCase field names for backwards compatibility.
  */
+@OptIn(ExperimentalSerializationApi::class)
 @Serializable
 data class WordDto(
     val id: String,
     val german: String,
     val swiss: String,
+    // Accepts: "phonetic", "swissPhonetic", "swiss_phonetic"
+    @JsonNames("swissPhonetic", "swiss_phonetic")
+    val phonetic: String? = null,
+    val freiamt: String? = null,
+    // Accepts: "freiamtPhonetic", "freiamt_phonetic"
+    @JsonNames("freiamt_phonetic")
+    val freiamtPhonetic: String? = null,
+    // Accepts: "ruleHint", "rule_hint"
+    @JsonNames("rule_hint")
+    val ruleHint: String? = null,
     val vietnamese: String,
     val gender: String? = null,
-    @SerialName("alt_spellings")
+    // Accepts: "altSpellings", "alt_spellings"
+    @JsonNames("alt_spellings")
     val altSpellings: List<String> = emptyList(),
     val notes: String? = null,
     val examples: List<String> = emptyList()
 ) {
-    /**
-     * Convert DTO to domain model.
-     *
-     * @param dialect The dialect this word belongs to
-     * @param category The category this word belongs to (from filename)
-     */
     fun toDomain(dialect: Dialect, category: Category): Word {
         return Word(
             id = id,
             german = german,
             swiss = swiss,
+            phonetic = phonetic,
+            freiamt = freiamt,
+            freiamtPhonetic = freiamtPhonetic,
+            ruleHint = ruleHint,
             vietnamese = vietnamese,
             category = category,
             dialect = dialect,

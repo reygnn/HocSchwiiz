@@ -3,30 +3,87 @@
   "dialect": "ag",
   "words": [
     {
-      "id": "expressions_001",
-      "german": "Ich verstehe nicht",
-      "swiss": "I verstoh ned",
-      "vietnamese": "Tôi không hiểu",
-      "notes": "'I' statt 'Ich', 'ned' statt 'nöd'"
+      "id": "expressions_huere",
+      "german": "sau-, mega-",
+      "swiss": "huere",
+      "phonetic": "huärä",
+      "vietnamese": "rất, cực kỳ",
+      "notes": "Informeller Verstärker! Nur unter Freunden oder als Stammgast per Du. Sonst fliegst raus!"
     },
     {
-      "id": "expressions_002",
-      "german": "Kein Problem",
-      "swiss": "Keis Problem",
-      "vietnamese": "Không sao"
+      "id": "expressions_sau",
+      "german": "sau-",
+      "swiss": "sau",
+      "phonetic": "sàu",
+      "vietnamese": "rất"
     },
     {
-      "id": "expressions_006",
-      "german": "Schau mal",
-      "swiss": "Lueg mol",
-      "vietnamese": "Nhìn kìa",
-      "notes": "'mol' statt 'mal'"
+      "id": "expressions_mega",
+      "german": "mega-",
+      "swiss": "mega",
+      "phonetic": "méga",
+      "vietnamese": "siêu"
     },
     {
-      "id": "expressions_007",
-      "german": "Komm jetzt",
-      "swiss": "Chumm jetzt",
-      "vietnamese": "Đến đây nào"
+      "id": "expressions_super",
+      "german": "super-",
+      "swiss": "super",
+      "phonetic": "súper",
+      "vietnamese": "siêu"
+    },
+    {
+      "id": "expressions_voll",
+      "german": "voll",
+      "swiss": "vou",
+      "phonetic": "vòu",
+      "vietnamese": "rất",
+      "notes": "Achtung Minimalpaar: vòu=voll, vö́ụ=viel!"
+    },
+    {
+      "id": "expressions_megageil",
+      "german": "megageil",
+      "swiss": "megageil",
+      "phonetic": "mégagèil",
+      "vietnamese": "tuyệt vời",
+      "notes": "DAS Modewort"
+    },
+    {
+      "id": "expressions_geil",
+      "german": "geil",
+      "swiss": "geil",
+      "phonetic": "gèil",
+      "vietnamese": "tuyệt",
+      "notes": "è=offen"
+    },
+    {
+      "id": "expressions_extrem",
+      "german": "extrem",
+      "swiss": "extrem",
+      "phonetic": "égstrém",
+      "vietnamese": "cực kỳ",
+      "notes": "Viet. X=S → fast wie égstrém!"
+    },
+    {
+      "id": "expressions_aecht",
+      "german": "echt",
+      "swiss": "ächt",
+      "phonetic": "ächt",
+      "vietnamese": "thật sự"
+    },
+    {
+      "id": "expressions_total",
+      "german": "total",
+      "swiss": "totau",
+      "phonetic": "tòtàu",
+      "vietnamese": "hoàn toàn",
+      "notes": "L-Vokalisierung"
+    },
+    {
+      "id": "expressions_richtig",
+      "german": "richtig",
+      "swiss": "réchtig",
+      "phonetic": "réchtĭg",
+      "vietnamese": "thật sự"
     }
   ]
 }

@@ -1,0 +1,35 @@
+{
+  "version": 4,
+  "dialect": "ag",
+  "words": [
+    {
+      "id": "house_home_estrich",
+      "german": "Estrich / Dachboden",
+      "swiss": "Eschträch",
+      "phonetic": "Ésh-träch",
+      "vietnamese": "gác mái",
+      "gender": "MASCULINE",
+      "rule_hint": "i→é",
+      "notes": "É-Regel am Anfang"
+    },
+    {
+      "id": "house_home_schwelle",
+      "german": "Schwelle / Stufe",
+      "swiss": "Schwöuä",
+      "phonetic": "Shwő́-ụ-ä",
+      "vietnamese": "ngưỡng cửa",
+      "gender": "FEMININE",
+      "freiamt": "Schwelle",
+      "rule_hint": "el→äu"
+    },
+    {
+      "id": "house_home_schaufel",
+      "german": "Schaufel",
+      "swiss": "Schuuflä",
+      "phonetic": "Shúú-flä",
+      "vietnamese": "cái xẻng",
+      "gender": "FEMININE",
+      "notes": "Nomen/Verb identisch"
+    }
+  ]
+}

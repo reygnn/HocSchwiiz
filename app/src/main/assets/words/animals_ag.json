@@ -1,0 +1,244 @@
+{
+  "version": 4,
+  "dialect": "ag",
+  "words": [
+    {
+      "id": "animals_hund",
+      "german": "Hund",
+      "swiss": "Hond",
+      "phonetic": "Hónd",
+      "vietnamese": "Chó",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "animals_huendchen",
+      "german": "Hündchen",
+      "swiss": "Höndli",
+      "phonetic": "Hő́nd-lĭ",
+      "vietnamese": "cún con",
+      "gender": "NEUTER",
+      "notes": "Höndli mit spitzem Rosen-Ö (ő)."
+    },
+    {
+      "id": "animals_katze",
+      "german": "Katze",
+      "swiss": "Chatz",
+      "phonetic": "Chàts",
+      "vietnamese": "Mèo",
+      "gender": "FEMININE"
+    },
+    {
+      "id": "animals_vogel",
+      "german": "Vogel",
+      "swiss": "Vogu",
+      "phonetic": "Vògụ",
+      "vietnamese": "Chim",
+      "gender": "MASCULINE",
+      "freiamt": "Vogel",
+      "rule_hint": "el→u"
+    },
+    {
+      "id": "animals_fisch",
+      "german": "Fisch",
+      "swiss": "Fesch",
+      "phonetic": "Fésch",
+      "vietnamese": "Cá",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "animals_kuh",
+      "german": "Kuh",
+      "swiss": "Chuä",
+      "phonetic": "Chuặ",
+      "vietnamese": "Bò",
+      "gender": "FEMININE"
+    },
+    {
+      "id": "animals_kuehe",
+      "german": "Kühe",
+      "swiss": "Chüä",
+      "phonetic": "Chǘä",
+      "vietnamese": "những con bò",
+      "gender": "FEMININE",
+      "notes": "Pluralbildung durch Umlaut (uä → üä)."
+    },
+    {
+      "id": "animals_schwein",
+      "german": "Schwein",
+      "swiss": "Sou",
+      "phonetic": "Sòụ",
+      "vietnamese": "Heo",
+      "gender": "NEUTER",
+      "notes": "Plural: Söi (Sö́i)"
+    },
+    {
+      "id": "animals_pferd",
+      "german": "Pferd",
+      "swiss": "Ross",
+      "phonetic": "Ròss",
+      "vietnamese": "Ngựa",
+      "gender": "NEUTER"
+    },
+    {
+      "id": "animals_huhn",
+      "german": "Huhn",
+      "swiss": "Huen",
+      "phonetic": "Huèn",
+      "vietnamese": "Gà",
+      "gender": "NEUTER"
+    },
+    {
+      "id": "animals_hahn",
+      "german": "Hahn",
+      "swiss": "Göggu",
+      "phonetic": "Gö́ggụ",
+      "vietnamese": "Gà trống",
+      "gender": "MASCULINE",
+      "freiamt": "Göggel",
+      "rule_hint": "el→u"
+    },
+    {
+      "id": "animals_schaf",
+      "german": "Schaf",
+      "swiss": "Schoof",
+      "phonetic": "Schóóf",
+      "vietnamese": "Cừu",
+      "gender": "NEUTER"
+    },
+    {
+      "id": "animals_ziege",
+      "german": "Ziege",
+      "swiss": "Geiss",
+      "phonetic": "Géiss",
+      "vietnamese": "Dê",
+      "gender": "FEMININE",
+      "notes": "Horoskop/Kalender: Mùi"
+    },
+    {
+      "id": "animals_maus",
+      "german": "Maus",
+      "swiss": "Muus",
+      "phonetic": "Muus",
+      "vietnamese": "Chuột",
+      "gender": "FEMININE",
+      "rule_hint": "au→uu"
+    },
+    {
+      "id": "animals_ratte",
+      "german": "Ratte",
+      "swiss": "Ratte",
+      "phonetic": "Ràttặ",
+      "vietnamese": "Chuột cống",
+      "gender": "FEMININE"
+    },
+    {
+      "id": "animals_kaninchen",
+      "german": "Kaninchen",
+      "swiss": "Chönggu",
+      "phonetic": "Chö́ng·gụ",
+      "vietnamese": "Thỏ",
+      "gender": "NEUTER",
+      "freiamt": "Chüngel",
+      "rule_hint": "el→u",
+      "notes": "öng=Einheit, zweites G separat"
+    },
+    {
+      "id": "animals_eichhoernchen",
+      "german": "Eichhörnchen",
+      "swiss": "Eichhörndli",
+      "phonetic": "Éichhö́rndlị",
+      "vietnamese": "Sóc",
+      "gender": "NEUTER",
+      "notes": "Schwaches zweites H"
+    },
+    {
+      "id": "animals_fuchs",
+      "german": "Fuchs",
+      "swiss": "Fochs",
+      "phonetic": "Fóchs",
+      "vietnamese": "Cáo",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "animals_reh",
+      "german": "Reh",
+      "swiss": "Reh",
+      "phonetic": "Réh",
+      "vietnamese": "Nai",
+      "gender": "NEUTER"
+    },
+    {
+      "id": "animals_baer",
+      "german": "Bär",
+      "swiss": "Bäär",
+      "phonetic": "Bäär",
+      "vietnamese": "Gấu",
+      "gender": "MASCULINE"
+    },
+    {
+      "id": "animals_wolf",
+      "german": "Wolf",
+      "swiss": "Wouf",
+      "phonetic": "Wòụf",
+      "vietnamese": "Sói",
+      "gender": "MASCULINE",
+      "freiamt": "Wolf",
+      "rule_hint": "ol→òụ"
+    },
+    {
+      "id": "animals_ente",
+      "german": "Ente",
+      "swiss": "Änte",
+      "phonetic": "Äntặ",
+      "vietnamese": "Vịt",
+      "gender": "FEMININE"
+    },
+    {
+      "id": "animals_biene",
+      "german": "Biene",
+      "swiss": "Beii",
+      "phonetic": "Béiyĭ",
+      "vietnamese": "Ong",
+      "gender": "FEMININE",
+      "notes": "y als 'Swing'-Laut wie in 'Fabijona', kurzes i am Ende"
+    },
+    {
+      "id": "animals_schmetterling",
+      "german": "Schmetterling",
+      "swiss": "Sommervogu",
+      "phonetic": "Sómmervògụ",
+      "vietnamese": "Bướm",
+      "gender": "MASCULINE",
+      "freiamt": "Sommervogel",
+      "rule_hint": "el→u"
+    },
+    {
+      "id": "animals_spinne",
+      "german": "Spinne",
+      "swiss": "Schbénn",
+      "phonetic": "Shbénn",
+      "vietnamese": "con nhện",
+      "gender": "FEMININE",
+      "freiamt": "Spinne",
+      "rule_hint": "i→é"
+    },
+    {
+      "id": "animals_wespe",
+      "german": "Wespe",
+      "swiss": "Wäschbi",
+      "phonetic": "Wäsh-bĭ",
+      "vietnamese": "ong vò vẽ",
+      "gender": "FEMININE",
+      "notes": "Weiches b"
+    },
+    {
+      "id": "animals_hornisse",
+      "german": "Hornisse",
+      "swiss": "Hornussi",
+      "phonetic": "Hòr-nùs-sĭ",
+      "vietnamese": "ong bắp cày",
+      "gender": "FEMININE",
+      "notes": "Ross-U (ù)"
+    }
+  ]
+}

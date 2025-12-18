@@ -1,0 +1,35 @@
+{
+  "version": 4,
+  "dialect": "ag",
+  "words": [
+    {
+      "id": "buildings_kirche",
+      "german": "Kirche",
+      "swiss": "Cheuä",
+      "phonetic": "Ché-ụ-ä",
+      "vietnamese": "nhà thờ",
+      "gender": "FEMININE",
+      "freiamt": "Chille",
+      "rule_hint": "il→öu",
+      "notes": "Geschlossenes é! Chéuä statt Chilche. é-u-ä sind drei klare Laute."
+    },
+    {
+      "id": "buildings_haeuser",
+      "german": "Häuser",
+      "swiss": "Hüüser",
+      "phonetic": "Hüü-sär",
+      "vietnamese": "những ngôi nhà",
+      "gender": "PLURAL",
+      "notes": "Langes, klares üü. Einzahl wäre: Huus."
+    },
+    {
+      "id": "buildings_strasse",
+      "german": "Strasse",
+      "swiss": "Shtross",
+      "phonetic": "Shtròòss",
+      "vietnamese": "đường phố",
+      "gender": "FEMININE",
+      "notes": "Langes Ross-O (òò) und scharfes ss."
+    }
+  ]
+}

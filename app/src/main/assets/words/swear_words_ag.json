@@ -3,35 +3,75 @@
   "dialect": "ag",
   "words": [
     {
-      "id": "swear_001",
-      "german": "Verdammt",
-      "swiss": "Huere",
-      "vietnamese": "Chết tiệt",
-      "notes": "Verstärker (huere guet, huere siech)"
-    },
-    {
-      "id": "swear_002",
-      "german": "Gottverdammt",
-      "swiss": "Gopferdammi",
-      "vietnamese": "Chết tiệt (nặng hơn)",
-      "alt_spellings": [
-        "Gopf"
-      ]
-    },
-    {
-      "id": "swear_003",
-      "german": "Dummkopf",
-      "swiss": "Löli",
-      "vietnamese": "Kẻ ngốc nghếch",
+      "id": "swear_tubel",
+      "german": "Trottel (Tubel)",
+      "swiss": "Tobu",
+      "phonetic": "Tòbŭ",
+      "vietnamese": "Đồ ngốc",
       "gender": "MASCULINE",
-      "notes": "Typisch Aargau/Solothurn"
+      "notes": "ò=Gott, ŭ=kurz"
     },
     {
-      "id": "swear_004",
-      "german": "Arschloch",
-      "swiss": "Schoofseckel",
+      "id": "swear_trottel",
+      "german": "Trottel",
+      "swiss": "Trottu",
+      "phonetic": "Tròttŭ",
+      "vietnamese": "Đồ ngốc",
+      "gender": "MASCULINE",
+      "notes": "L-Vokalisierung"
+    },
+    {
+      "id": "swear_siech",
+      "german": "Depp",
+      "swiss": "Siech",
+      "phonetic": "Sĭặch",
       "vietnamese": "Đồ khốn",
-      "gender": "MASCULINE"
+      "gender": "MASCULINE",
+      "notes": "ĭ+ặ separat; urspr. 'Kranker'"
+    },
+    {
+      "id": "swear_chabis",
+      "german": "Blödsinn",
+      "swiss": "Chabis",
+      "phonetic": "Chàbĭs",
+      "vietnamese": "Vớ vẩn",
+      "gender": "MASCULINE",
+      "notes": "Auch als Schimpfwort für Person"
+    },
+    {
+      "id": "swear_lappi",
+      "german": "Trottel",
+      "swiss": "Lappi",
+      "phonetic": "Lạppĭ",
+      "vietnamese": "Đồ ngốc",
+      "gender": "MASCULINE",
+      "notes": "ạ=Mini-Pause vor PP"
+    },
+    {
+      "id": "swear_tschooli",
+      "german": "Trottel",
+      "swiss": "Tschooli",
+      "phonetic": "Tschóólĭ",
+      "vietnamese": "Đồ ngốc",
+      "gender": "MASCULINE",
+      "notes": "ó=Rose"
+    },
+    {
+      "id": "swear_cheib",
+      "german": "Kerl/Teufel",
+      "swiss": "Cheib",
+      "phonetic": "Chéĭb",
+      "vietnamese": "Đồ quỷ",
+      "gender": "MASCULINE",
+      "notes": "é+ĭ separat (kein Diphthong)"
+    },
+    {
+      "id": "swear_gopfredstotz",
+      "german": "Verdammt",
+      "swiss": "Gopfredstotz",
+      "phonetic": "Gòpfrédstòtz",
+      "vietnamese": "Chết tiệt",
+      "notes": "Abgemilderte Variante"
     }
   ]
 }

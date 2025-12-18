@@ -3,97 +3,335 @@
   "dialect": "ag",
   "words": [
     {
-      "id": "food_001",
+      "id": "food_drink_fruehstueck",
       "german": "Frühstück",
       "swiss": "Zmorge",
+      "phonetic": "Zmòrgặ",
       "vietnamese": "Bữa sáng",
       "gender": "NEUTER",
-      "examples": [
-        "I iss es Zmorge"
-      ]
+      "examples": ["I esä Zmorge"]
     },
     {
-      "id": "food_002",
+      "id": "food_drink_mittagessen",
       "german": "Mittagessen",
       "swiss": "Zmittag",
+      "phonetic": "Zmĭttàgh",
       "vietnamese": "Bữa trưa",
       "gender": "NEUTER"
     },
     {
-      "id": "food_003",
+      "id": "food_drink_abendessen",
       "german": "Abendessen",
       "swiss": "Znacht",
+      "phonetic": "Znàcht",
       "vietnamese": "Bữa tối",
       "gender": "NEUTER"
     },
     {
-      "id": "food_005",
+      "id": "food_drink_butter",
       "german": "Butter",
       "swiss": "Anke",
+      "phonetic": "Àngkặ",
       "vietnamese": "Bơ",
       "gender": "MASCULINE",
-      "notes": "Suhrental: Anke (statt Butter)"
+      "freiamt": "Butter",
+      "notes": "Westaargau: Anke. ng = velarer Nasal wie viet. 'ngày'"
     },
     {
-      "id": "food_010",
+      "id": "food_drink_milch",
       "german": "Milch",
       "swiss": "Möuch",
-      "vietnamese": "Sữa",
+      "phonetic": "Mö́ụch",
+      "vietnamese": "sữa",
       "gender": "FEMININE",
-      "notes": "L-Vokalisierung: Möuch (Vorsicht: Betonung anders als bei 'de Möuch'/Molch!)"
+      "freiamt": "Milch",
+      "rule_hint": "il→öu",
+      "notes": "Spitzes ö́! (Sonst Molche)"
     },
     {
-      "id": "food_011",
+      "id": "food_drink_karotte",
       "german": "Karotte",
       "swiss": "Rüebli",
+      "phonetic": "Rüeblị",
       "vietnamese": "Cà rốt",
       "gender": "NEUTER",
-      "notes": "Das Aargauer Gemüse!"
+      "notes": "Das Aargauer Gemüse! üe = Diphthong"
     },
     {
-      "id": "food_012",
+      "id": "food_drink_schokolade",
       "german": "Schokolade",
       "swiss": "Schoggi",
+      "phonetic": "Schògghị",
       "vietnamese": "Sô cô la",
-      "gender": "FEMININE"
+      "gender": "FEMININE",
+      "notes": "ggh = sanftes doppel-g mit Hauch am Ende"
     },
     {
-      "id": "food_013",
+      "id": "food_drink_kartoffel",
       "german": "Kartoffel",
-      "swiss": "Härdöpfel",
+      "swiss": "Härdöpfu",
+      "phonetic": "Härdö̀pfụ",
       "vietnamese": "Khoai tây",
+      "gender": "MASCULINE",
+      "freiamt": "Härdöpfel",
+      "notes": "Härd-Öpfu = Erd-Apfel. ö̀=offen"
+    },
+    {
+      "id": "food_drink_honig",
+      "german": "Honig",
+      "swiss": "Hongg",
+      "phonetic": "Hònggh",
+      "vietnamese": "Mật ong",
+      "gender": "MASCULINE",
+      "notes": "Typisch: Hongg und Anke. ò=offen (Ross)"
+    },
+    {
+      "id": "food_drink_zwiebel",
+      "german": "Zwiebel",
+      "swiss": "Zebälä",
+      "phonetic": "Zèbälặ",
+      "vietnamese": "Hành tây",
+      "gender": "FEMININE",
+      "notes": "Suhrental: Zebälä (andere Regionen: Bölle)"
+    },
+    {
+      "id": "food_drink_apfelgehaeuse",
+      "german": "Apfel-Kerngehäuse",
+      "swiss": "Öpfugörpsi",
+      "phonetic": "Ö̀pfụgö́rpsị",
+      "vietnamese": "Lõi táo",
+      "gender": "NEUTER",
+      "notes": "Ö̀pfu (offen) + gö́rpsi (geschlossen) – beide ö unterschiedlich!"
+    },
+    {
+      "id": "food_drink_aheilig",
+      "german": "Brot-Anschnitt",
+      "swiss": "Aheilig",
+      "phonetic": "À-héi-lĭg",
+      "vietnamese": "đầu ổ bánh mì",
+      "gender": "FEMININE",
+      "notes": "Erster Anschnitt vom Brot"
+    },
+    {
+      "id": "food_drink_schnoese",
+      "german": "wählerisch essen",
+      "swiss": "schnöise",
+      "phonetic": "shnő́i-sặ",
+      "vietnamese": "ăn kén chọn",
+      "notes": "Spitzes ö́"
+    },
+    {
+      "id": "food_drink_goerpsi",
+      "german": "Apfelgehäuse",
+      "swiss": "Görpsi",
+      "phonetic": "Gö̀rp-sĭ",
+      "vietnamese": "lõi táo",
+      "gender": "NEUTER",
+      "notes": "Offenes ö̀ (Nicht Rülpser)"
+    },
+    {
+      "id": "food_drink_kochtopf",
+      "german": "Kochtopf",
+      "swiss": "Hafe",
+      "phonetic": "Hà-fặ",
+      "vietnamese": "nồi",
+      "gender": "MASCULINE",
+      "notes": "Reitnau-Lexikon!"
+    },
+    {
+      "id": "food_drink_schoepfkelle",
+      "german": "Schöpfkelle",
+      "swiss": "Chouä",
+      "phonetic": "Chő́-ụ-ä",
+      "vietnamese": "muôi múc canh",
+      "gender": "FEMININE",
+      "freiamt": "Chäle",
+      "rule_hint": "el→äu",
+      "notes": "Spitzes ő!"
+    },
+    {
+      "id": "food_drink_besteck",
+      "german": "Besteck",
+      "swiss": "Bschteck",
+      "phonetic": "B-sh-tèck",
+      "vietnamese": "bộ đồ ăn",
+      "gender": "NEUTER",
+      "notes": "Schd-Verschiebung"
+    },
+    {
+      "id": "food_drink_trinken",
+      "german": "trinken",
+      "swiss": "trengke",
+      "phonetic": "tréngkä",
+      "vietnamese": "uống",
+      "notes": "Präsens. Geschlossenes é und hartes k."
+    },
+    {
+      "id": "food_drink_getrunken",
+      "german": "getrunken",
+      "swiss": "trongke",
+      "phonetic": "tróngkä",
+      "vietnamese": "đã uống",
+      "notes": "Partizip Perfekt. Geschlossenes Rosen-O (ó)."
+    },
+    {
+      "id": "food_drink_fleisch",
+      "german": "Fleisch",
+      "swiss": "Fleisch",
+      "phonetic": "Fléish",
+      "vietnamese": "thịt",
+      "gender": "NEUTER",
+      "notes": "Geschlossenes é, das in ein i gleitet."
+    },
+    {
+      "id": "food_drink_wurst",
+      "german": "Wurst",
+      "swiss": "Worscht",
+      "phonetic": "Wórsht",
+      "vietnamese": "xúc xích",
+      "gender": "FEMININE",
+      "notes": "Geschlossenes Rosen-O (ó)."
+    },
+    {
+      "id": "food_drink_wuerste",
+      "german": "Würste",
+      "swiss": "Wörscht",
+      "phonetic": "Wőrsht",
+      "vietnamese": "những cái xúc xích",
+      "gender": "FEMININE",
+      "notes": "Spitzes, geschlossenes Ö (ő). Pluralbildung durch Umlaut."
+    },
+    {
+      "id": "food_drink_loeffel",
+      "german": "Löffel",
+      "swiss": "Löffu",
+      "phonetic": "Löffu",
+      "vietnamese": "cái thìa",
+      "gender": "MASCULINE",
+      "rule_hint": "el→ụ",
+      "notes": "Offenes ö am Anfang, L-Vokalisierung am Ende."
+    },
+    {
+      "id": "food_drink_kaese",
+      "german": "Käse",
+      "swiss": "Chääs",
+      "phonetic": "Chääs",
+      "vietnamese": "phô mai",
+      "gender": "MASCULINE",
+      "notes": "Sehr offen und 'dreckig' ausgesprochen. Kinn tief!"
+    },
+    {
+      "id": "food_drink_wurst_angebot",
+      "german": "Willst du noch eine Wurst?",
+      "swiss": "Wotsch no e Worscht?",
+      "phonetic": "Wòtsh nò è Wórsht?",
+      "vietnamese": "Bạn có muốn ăn thêm xúc xích không?",
+      "notes": "Wòtsh (Ross-O), Wórsht (Rosen-O)."
+    },
+    {
+      "id": "food_drink_teller",
+      "german": "Teller",
+      "swiss": "Täuer",
+      "phonetic": "Täúär",
+      "vietnamese": "cái đĩa",
+      "gender": "MASCULINE",
+      "rule_hint": "el→äu",
+      "notes": "Paradebeispiel für L-Vokalisierung am Silbenende."
+    },
+    {
+      "id": "food_drink_glas",
+      "german": "Glas",
+      "swiss": "Glaas",
+      "phonetic": "Glààs",
+      "vietnamese": "cái cốc / ly",
+      "gender": "NEUTER",
+      "notes": "Langes, tiefes à."
+    },
+    {
+      "id": "food_drink_tisch",
+      "german": "Tisch",
+      "swiss": "Tesch",
+      "phonetic": "Téshh",
+      "vietnamese": "cái bàn",
+      "gender": "MASCULINE",
+      "rule_hint": "i→é",
+      "notes": "Kurzes, geschlossenes é, gefolgt von langem sh."
+    },
+    {
+      "id": "food_drink_tisch_abraeumen",
+      "german": "den Tisch abräumen",
+      "swiss": "de Tesch abruumä",
+      "phonetic": "tè Téshh àbrúúmä",
+      "vietnamese": "dọn bàn ăn",
+      "notes": "Langes sh am Ende von Tésch."
+    },
+    {
+      "id": "food_drink_stange_bier",
+      "german": "Stange Bier (0,3l)",
+      "swiss": "Schdangä",
+      "phonetic": "Sh-đà-ng-ä",
+      "vietnamese": "ly bia nhỏ",
+      "gender": "FEMININE",
+      "notes": "đ = explosives D. ä = offener Abschluss."
+    },
+    {
+      "id": "food_drink_specksalat",
+      "german": "Specksalat",
+      "swiss": "Schpäcksaloot",
+      "phonetic": "Shpäck-sà-lòòt",
+      "vietnamese": "nộm thịt xông khói",
+      "gender": "MASCULINE",
+      "notes": "lòòt mit tiefem Ross-O. Typisches Beizengericht."
+    },
+    {
+      "id": "food_drink_brot",
+      "german": "Brot",
+      "swiss": "Broot",
+      "phonetic": "Bròòt",
+      "vietnamese": "Bánh mì",
+      "gender": "NEUTER",
+      "notes": "Langes offenes ò (Ross)"
+    },
+    {
+      "id": "food_drink_wasser",
+      "german": "Wasser",
+      "swiss": "Wasser",
+      "phonetic": "Wàsser",
+      "vietnamese": "Nước",
+      "gender": "NEUTER"
+    },
+    {
+      "id": "food_drink_kaffee",
+      "german": "Kaffee",
+      "swiss": "Kafi",
+      "phonetic": "Kàfị",
+      "vietnamese": "Cà phê",
       "gender": "MASCULINE"
     },
     {
-      "id": "food_014",
-      "german": "Bier",
-      "swiss": "Stange",
-      "vietnamese": "Bia",
-      "gender": "FEMININE"
+      "id": "food_drink_tee",
+      "german": "Tee",
+      "swiss": "Tee",
+      "phonetic": "Tee",
+      "vietnamese": "Trà",
+      "gender": "MASCULINE"
     },
     {
-      "id": "food_015",
-      "german": "Honig",
-      "swiss": "Hongg",
-      "vietnamese": "Mật ong",
+      "id": "food_drink_wein",
+      "german": "Wein",
+      "swiss": "Wii",
+      "phonetic": "Wii",
+      "vietnamese": "Rượu vang",
       "gender": "MASCULINE",
-      "notes": "Typisch: Hongg und Anke"
+      "notes": "Langes i"
     },
     {
-      "id": "food_016",
-      "german": "Zwiebel",
-      "swiss": "Zebälä",
-      "vietnamese": "Hành tây",
-      "gender": "FEMININE",
-      "notes": "Suhrental: Zebälä (statt Bölle)"
-    },
-    {
-      "id": "food_017",
-      "german": "Apfel-Kerngehäuse",
-      "swiss": "Öpfugörpsi",
-      "vietnamese": "Lõi táo",
-      "gender": "NEUTER",
-      "notes": "Spezifisch! 'Öpfu' + 'Görpsi'."
+      "id": "food_drink_bier",
+      "german": "Bier",
+      "swiss": "Bier",
+      "phonetic": "Biär",
+      "vietnamese": "Bia",
+      "gender": "NEUTER"
     }
   ]
 }
